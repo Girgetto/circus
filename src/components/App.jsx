@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import { Switch } from 'react-router-dom';
 import Navbar from './Navbar';
 import spainTexts from '../assets/texts/spain.json';
 import portugueseTexts from '../assets/texts/portuguese.json';
 import First from './First';
 import Second from './Second';
-
+import Third from './Third';
+import Fourth from './Fourth';
+import Fifth from './Fifth';
 
 export default class App extends Component {
   constructor(props) {
@@ -28,9 +31,14 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Navbar getLanguage={this.getLanguage} text={this.setLanguage()} />
+        <Switch>
+          <Navbar getLanguage={this.getLanguage} text={this.setLanguage()} />
+        </Switch>
         <First text={this.setLanguage()} />
         <Second text={this.setLanguage()} />
+        <Third text={this.setLanguage()} />
+        <Fourth text={this.setLanguage()} />
+        <Fifth text={this.setLanguage()} />
       </div>
     );
   }
