@@ -19,7 +19,7 @@ export default class Seventh extends Component {
     return (
       <div
         className="translate"
-        style={{ display: 'flex', height: '40rem', backgroundColor: 'red' }}
+        style={{ display: 'flex', height: '40rem' }}
       >
         <div className="translate-child center" style={{ width: '100%' }}>
           <h1>Proximas fechas</h1>
