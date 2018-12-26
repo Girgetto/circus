@@ -12,3 +12,7 @@
 .translate-child {
   transform: skewY(5deg);
 }
+
+.button:focus {
+  outline: none;
+}

@@ -4,5 +4,11 @@
   "navbar3":  "Que importamos",
   "navbar4":  "Proximas Fechas",
   "first": "Inside Circus",
-  "second": "Pero ¿que es Circus?"
+  "second": "Pero ¿que es Circus?",
+  "fifth": [
+    {"title": "1", "color": "red"},
+    {"title": "2", "color": "pink"},
+    {"title": "3", "color": "blue"},
+    {"title": "4", "color": "green"}
+  ]
 }
