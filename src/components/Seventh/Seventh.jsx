@@ -56,9 +56,11 @@ export default class Seventh extends Component {
             width: '100%', backgroundColor: 'yellow', zIndex: '-1', position: 'relative',
           }}
         >
-          <h1>
-      Prova
-          </h1>
+          <div className="translate-child">
+            <h1>
+                Prova
+            </h1>
+          </div>
         </div>
       </div>
     );
