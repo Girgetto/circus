@@ -28,7 +28,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Navbar style={{ zIndex: '100' }} getLanguage={this.getLanguage} text={this.setLanguage()} />
+        <Navbar getLanguage={this.getLanguage} text={this.setLanguage()} />
         <First text={this.setLanguage()} />
         <Second text={this.setLanguage()} />
       </div>

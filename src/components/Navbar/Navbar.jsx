@@ -7,7 +7,10 @@ import portugalFlag from '../../assets/img/portugal.svg';
 import './Navbar.css';
 
 const Navbar = ({ text, location, getLanguage }) => (
-  <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+  <div style={{
+    position: 'relative', display: 'flex', justifyContent: 'space-evenly', zIndex: '100', backgroundColor: 'red',
+  }}
+  >
     <img src={circusLogo} alt="" />
     <Link to="/">{text.navbar1}</Link>
     <Link to="/">{text.navbar2}</Link>
