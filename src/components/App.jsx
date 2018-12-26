@@ -8,6 +8,8 @@ import Second from './Second';
 import Third from './Third';
 import Fourth from './Fourth';
 import Fifth from './Fifth';
+import Sixth from './Sixth';
+import Seventh from './Seventh';
 
 export default class App extends Component {
   constructor(props) {
@@ -39,6 +41,8 @@ export default class App extends Component {
         <Third text={this.setLanguage()} />
         <Fourth text={this.setLanguage()} />
         <Fifth text={this.setLanguage()} />
+        <Sixth text={this.setLanguage()} />
+        <Seventh text={this.setLanguage()} />
       </div>
     );
   }

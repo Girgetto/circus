@@ -29,10 +29,10 @@ export default class Fifth extends Component {
           <div style={{ display: 'flex' }}>
             <div style={{ padding: '4rem' }}>
               <ul>
-                <div tabIndex="0" role="button" onClick={() => this.changer(0)} onKeyDown={this.handleKeyDown}>⃝</div>
-                <div tabIndex="0" role="button" onClick={() => this.changer(1)} onKeyDown={this.handleKeyDown}>⃝</div>
-                <div tabIndex="0" role="button" onClick={() => this.changer(2)} onKeyDown={this.handleKeyDown}>⃝</div>
-                <div tabIndex="0" role="button" onClick={() => this.changer(3)} onKeyDown={this.handleKeyDown}>⃝</div>
+                <div style={{ color: 'red', margin: '1rem 0' }} tabIndex="0" role="button" onClick={() => this.changer(0)} onKeyDown={this.handleKeyDown}>⃝</div>
+                <div style={{ color: 'green', margin: '1rem 0' }} tabIndex="0" role="button" onClick={() => this.changer(1)} onKeyDown={this.handleKeyDown}>⃝</div>
+                <div style={{ color: 'blue', margin: '1rem 0' }} tabIndex="0" role="button" onClick={() => this.changer(2)} onKeyDown={this.handleKeyDown}>⃝</div>
+                <div style={{ color: 'pink', margin: '1rem 0' }} tabIndex="0" role="button" onClick={() => this.changer(3)} onKeyDown={this.handleKeyDown}>⃝</div>
               </ul>
             </div>
             <div>
