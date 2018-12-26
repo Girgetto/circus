@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
 import Navbar from './Navbar';
 import spainTexts from '../assets/texts/spain.json';
 import portugueseTexts from '../assets/texts/portuguese.json';
+import First from './First';
+import Second from './Second';
 
 
 export default class App extends Component {
@@ -26,10 +27,11 @@ export default class App extends Component {
 
   render() {
     return (
-      <Switch>
-        <Navbar getLanguage={this.getLanguage} text={this.setLanguage()} />
-        <Route exect path="/es" Component={Navbar} />
-      </Switch>
+      <div>
+        <Navbar style={{ zIndex: '100' }} getLanguage={this.getLanguage} text={this.setLanguage()} />
+        <First text={this.setLanguage()} />
+        <Second text={this.setLanguage()} />
+      </div>
     );
   }
 }

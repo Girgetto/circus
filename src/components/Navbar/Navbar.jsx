@@ -22,7 +22,7 @@ const Navbar = ({ text, location, getLanguage }) => (
         </Link>
         <Link to="es" onClick={() => getLanguage('es')}>
           <img src={spainFlag} alt="" />
-          spainFlag
+          Spanish
         </Link>
       </div>
     </div>
@@ -31,7 +31,7 @@ const Navbar = ({ text, location, getLanguage }) => (
 
 Navbar.defaultProps = {
   text: 'Loading',
-  location: PropTypes.func,
+  location: {},
   getLanguage: PropTypes.func,
 };
 
@@ -42,7 +42,7 @@ Navbar.propTypes = {
     navbar3: PropTypes.string,
     navbar4: PropTypes.string,
   }),
-  location: PropTypes.func,
+  location: PropTypes.shape({}),
   getLanguage: PropTypes.func,
 };
 

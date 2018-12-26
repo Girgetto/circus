@@ -1,0 +1,14 @@
+.translate {
+  transform: skewY(0deg);
+}
+
+.translate-child {
+  transform: skewY(0deg);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
