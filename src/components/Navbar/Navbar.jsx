@@ -18,48 +18,46 @@ export default class Navbar extends Component {
       <div style={{
         position: 'relative',
         display: 'flex',
-        justifyContent: 'space-evenly',
         zIndex: '1',
         backgroundColor: '#F2F2F2',
-        padding: '1rem 0',
+        padding: '1.75rem 0',
+        justifyContent: 'space-evenly',
       }}
       >
         <img src={circusLogo} alt="" />
-        <div
-          style={{ paddingTop: '0.7rem' }}
-        >
+        <div>
           <Link to="/">{text.navbar1}</Link>
           <Link to="/">{text.navbar2}</Link>
           <Link to="/">{text.navbar3}</Link>
           <Link to="/">{text.navbar4}</Link>
-        </div>
-        <div className="dropdown">
-          <img
-            style={{ paddingTop: '0.7rem' }}
-            src={
+          <div className="dropdown">
+            <img
+              style={{ paddingTop: '0.7rem' }}
+              src={
             location.pathname === '/es' ? spainFlag : portugalFlag}
-            alt=""
-          />
-          <div className="dropdown-content">
-            <Link
-              to={`${location.pathname === '/es' ? '/pt' : '/es'}`}
-              onClick={
+              alt=""
+            />
+            <div className="dropdown-content">
+              <Link
+                to={`${location.pathname === '/es' ? '/pt' : '/es'}`}
+                onClick={
                 () => getLanguage(
                   location.pathname.replace('/', '') === 'es' ? 'pt' : 'es',
                 )}
-            >
-              <div style={{ display: 'flex' }}>
-                <img
-                  src={
+              >
+                <div style={{ display: 'flex' }}>
+                  <img
+                    src={
                   location.pathname === '/es' ? portugalFlag : spainFlag
                   }
-                  alt=""
-                />
-                <p style={{ padding: '0 0.5rem' }}>
-                  {location.pathname === '/es' ? 'Portuguese' : 'Spanish'}
-                </p>
-              </div>
-            </Link>
+                    alt=""
+                  />
+                  <p style={{ padding: '0 0.5rem' }}>
+                    {location.pathname === '/es' ? 'Portuguese' : 'Spanish'}
+                  </p>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

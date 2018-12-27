@@ -21,8 +21,14 @@ const InsideCircus = ({ text }) => (
     }}
     >
       <div style={{ padding: '1rem 2rem' }}>
-        <h1>{text.first}</h1>
-        <p>Donde comienza tu transormacion digital</p>
+        <h1
+          style={{ paddingTop: '5vh' }}
+        >
+          {text.first}
+        </h1>
+        <h3 style={{ paddingTop: '5vh' }}>
+          Donde comienza tu transormacion digital
+        </h3>
         <p>Da el primer paso</p>
         <button
           type="button"
@@ -31,9 +37,15 @@ const InsideCircus = ({ text }) => (
             color: 'white',
             padding: '1rem 10rem',
             borderRadius: '20px',
+            marginTop: '10vh',
           }}
         >
-  Ver fechas
+          <a
+            href="1"
+            style={{ color: 'white' }}
+          >
+          Ver Fechas
+          </a>
 
         </button>
       </div>

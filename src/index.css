@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,6 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	outline: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -56,20 +52,34 @@ a {
 h1 {
 	font-family: Helvetica Neue;
 	color: #2D293C;
-	font-size: 3rem;
+	font-weight: 500;
+	font-size: 10vh;
 	letter-spacing: 0.5rem;
-	line-height: 12rem;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 h2 {
 	font-family: Helvetica Neue;
 	color: #2D293C;
-	font-size: 1.5rem;
+	font-size: 6vh;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: Helvetica Neue;
+	color: #2D293C;
+	font-size: 4vh;
+	font-weight: bold;
 }
 
 p {
 	font-family: Helvetica Neue;
-	line-height: 3rem;
-	font-size: 1rem;
+	line-height: 2rem;
+	font-size: 3vh;
 	color: #2D293C;
+	font-weight: 500;
+}
+
+button {
+	outline: none;
 }

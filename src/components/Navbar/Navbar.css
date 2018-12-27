@@ -20,7 +20,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #E8F0FE;
   border-radius: 5px;
 }
 
@@ -31,5 +31,7 @@
 
 a {
   color:black;
-  padding: 1rem;
+  padding: 1rem ;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
 }

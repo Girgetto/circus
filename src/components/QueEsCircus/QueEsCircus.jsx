@@ -16,9 +16,16 @@ const QueEsCircus = ({ text }) => (
       className="translate-child"
       style={{ width: '100%' }}
     >
-      <h2 style={{ marginTop: '10rem' }}>
-        {text.second}
-      </h2>
+      <div
+        style={{ margin: '0 3rem' }}
+      >
+        <h2 style={{ marginTop: '10rem', marginBottom: '8rem' }}>
+          {text.queEsCircusTitle}
+        </h2>
+        <p>
+          {text.queEsCircusDescription}
+        </p>
+      </div>
     </div>
     <div style={{ width: '100%' }}>
       <img

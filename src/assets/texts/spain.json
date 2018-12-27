@@ -4,11 +4,17 @@
   "navbar3":  "Que importamos",
   "navbar4":  "Proximas Fechas",
   "first": "Inside Circus",
-  "second": "Pero ¿que es Circus?",
+  "queEsCircusTitle": "Pero ¿que es Circus?",
+  "queEsCircusDescription": "Queremos ayudarte a entrar en el mundo digital, Circus es un proyecto apoyado por empresas del sector tecnológico que quieren acercar el mundo digital a más personas mediante formaciones gratuitas.",
+  "sabiasQueTitle":"¿Sabias que?",  
+  "sabiasQueDescription":"9/10 trabajos en el futuro requerirán habilidades digitales. No sólo nuevos puestos de trabajo, sino el que ocupas ahora mismo necesitará que estés al día en cuanto a conocimiento tecnológico.",  
+  "esParaTiTitle":"¿Es para ti?",
+  "esParaTIDescription":"Circus está destinado para todo el que quiera iniciarse en el mundo tech, sabemos que es difícil comenzar ya que se dan por entendidos muchos conceptos. En Circus comenzamos desde cero.",
   "fifth": [
     {"title": "1", "color": "red"},
     {"title": "2", "color": "pink"},
     {"title": "3", "color": "blue"},
-    {"title": "4", "color": "green"}
+    {"title": "4", "color": "green"},
+    {"title": "5", "color": "green"}
   ]
 }

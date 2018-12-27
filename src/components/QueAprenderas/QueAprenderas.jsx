@@ -102,6 +102,25 @@ export default class QueAprenderas extends Component {
                   </svg>
 
                 </div>
+                <div
+                  style={{ color: 'pink', margin: '1rem 0' }}
+                  tabIndex="0"
+                  role="button"
+                  onClick={() => this.changer(4)}
+                  onKeyDown={this.handleKeyDown}
+                >
+                  <svg height="50" width="50">
+                    <circle
+                      cx="10"
+                      cy="10"
+                      r="8"
+                      stroke={`${text.fifth[4].color}`}
+                      strokeWidth="1"
+                      fill={`${index === 4 ? text.fifth[4].color : 'white'}`}
+                    />
+                  </svg>
+
+                </div>
               </ul>
             </div>
             <div>

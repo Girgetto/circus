@@ -25,6 +25,9 @@ export default class Seventh extends Component {
           <h1>Proximas fechas</h1>
           <ul style={{ width: '100%', marginLeft: '50%' }}>
             <li
+              tabIndex="0"
+              role="button"
+              onKeyDown={this.handleKeyDown}
               onClick={e => this.setColor(e.target.id)}
               style={{
                 backgroundColor: `${index === '1' ? '#FFF6C1' : ''}`,
@@ -36,6 +39,9 @@ export default class Seventh extends Component {
               </div>
             </li>
             <li
+              tabIndex="0"
+              role="button"
+              onKeyDown={this.handleKeyDown}
               onClick={e => this.setColor(e.target.id)}
               style={{
                 backgroundColor: `${index === '2' ? '#FFF6C1' : ''}`,
@@ -47,6 +53,9 @@ export default class Seventh extends Component {
               </div>
             </li>
             <li
+              tabIndex="0"
+              role="button"
+              onKeyDown={this.handleKeyDown}
               onClick={e => this.setColor(e.target.id)}
               style={{
                 backgroundColor: `${index === '3' ? '#FFF6C1' : ''}`,
@@ -58,6 +67,9 @@ export default class Seventh extends Component {
               </div>
             </li>
             <li
+              tabIndex="0"
+              role="button"
+              onKeyDown={this.handleKeyDown}
               onClick={e => this.setColor(e.target.id)}
               style={{
                 backgroundColor: `${index === '4' ? '#FFF6C1' : ''}`,
@@ -83,6 +95,17 @@ export default class Seventh extends Component {
             <h1>
                 Prova
             </h1>
+            <button
+              type="button"
+              style={{
+                backgroundColor: '#2D293C',
+                color: 'white',
+                padding: '1rem 10rem',
+                borderRadius: '20px',
+              }}
+            >
+              Aplicar
+            </button>
           </div>
         </div>
       </div>
