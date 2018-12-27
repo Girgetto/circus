@@ -22,7 +22,7 @@ export default class Seventh extends Component {
         style={{ display: 'flex', height: '40rem' }}
       >
         <div className="translate-child center" style={{ width: '100%' }}>
-          <h1>Proximas fechas</h1>
+          <h2>Próximas fechas</h2>
           <ul style={{ width: '100%', marginLeft: '50%' }}>
             <li
               tabIndex="0"
