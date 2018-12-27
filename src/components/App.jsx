@@ -3,7 +3,7 @@ import { Switch } from 'react-router-dom';
 import Navbar from './Navbar';
 import spainTexts from '../assets/texts/spain.json';
 import portugueseTexts from '../assets/texts/portuguese.json';
-import First from './First';
+import InsideCircus from './InsideCircus';
 import Second from './Second';
 import Third from './Third';
 import Fourth from './Fourth';
@@ -39,7 +39,7 @@ export default class App extends Component {
         <Switch>
           <Navbar getLanguage={this.getLanguage} text={this.setLanguage()} />
         </Switch>
-        <First text={this.setLanguage()} />
+        <InsideCircus text={this.setLanguage()} />
         <Second text={this.setLanguage()} />
         <Third text={this.setLanguage()} />
         <Fourth text={this.setLanguage()} />
