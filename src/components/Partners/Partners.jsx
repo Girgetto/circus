@@ -7,8 +7,11 @@ import opinator from '../../assets/img/logos/opinator.svg';
 const Eight = () => (
   <div className="translate center" style={{ height: '20rem' }}>
     <div className="translate-child center">
-      <h1>Partners que apoyan Circus.</h1>
-      <div style={{ display: 'flex', flexDirection: 'row' }}>
+      <h2>Partners que apoyan Circus.</h2>
+      <div style={{
+        display: 'flex', flexDirection: 'row', marginTop: '5rem', justifyContent: 'space-evenly',
+      }}
+      >
         <img src={ironHack} alt="" />
         <img src={campusMadrid} alt="" />
         <img src={cabify} alt="" />

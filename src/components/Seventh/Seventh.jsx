@@ -22,7 +22,7 @@ export default class Seventh extends Component {
         style={{ display: 'flex', height: '40rem' }}
       >
         <div className="translate-child center" style={{ width: '100%' }}>
-          <h2>Próximas fechas</h2>
+          <h2 style={{ marginBottom: '3rem' }}>Próximas fechas</h2>
           <ul style={{ width: '100%', marginLeft: '50%' }}>
             <li
               tabIndex="0"
@@ -35,7 +35,10 @@ export default class Seventh extends Component {
             >
               <div id="1" style={{ display: 'flex' }}>
                 <img src={first} alt="1" />
-                <p>Dia 1 - impartido por Playtomic</p>
+                <div style={{ flexDirection: 'column' }}>
+                  <p>15-16 Diciembre - 10 hrs.</p>
+                  <p>WeCode</p>
+                </div>
               </div>
             </li>
             <li
@@ -49,7 +52,10 @@ export default class Seventh extends Component {
             >
               <div id="2" style={{ display: 'flex' }}>
                 <img src={first} alt="2" />
-                <p>WeCode & WeDesign - WeWork </p>
+                <div style={{ flexDirection: 'column' }}>
+                  <p>15-16 Diciembre - 10 hrs.</p>
+                  <p>WeCode</p>
+                </div>
               </div>
             </li>
             <li
@@ -63,7 +69,10 @@ export default class Seventh extends Component {
             >
               <div id="3" style={{ display: 'flex' }}>
                 <img src={first} alt="3" />
-                <p>Topping croissant cookie</p>
+                <div style={{ flexDirection: 'column' }}>
+                  <p>15-16 Diciembre - 10 hrs.</p>
+                  <p>WeCode</p>
+                </div>
               </div>
             </li>
             <li
@@ -77,7 +86,10 @@ export default class Seventh extends Component {
             >
               <div id="4" style={{ display: 'flex' }}>
                 <img src={first} alt="4" />
-                <p>WeCode</p>
+                <div style={{ flexDirection: 'column' }}>
+                  <p>15-16 Diciembre - 10 hrs.</p>
+                  <p>WeCode</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -87,25 +99,30 @@ export default class Seventh extends Component {
           style={{
             width: '100%',
             backgroundColor: '#FFF6C1',
-            zIndex: '-1',
+            zIndex: '1',
             position: 'relative',
           }}
         >
           <div className="translate-child">
-            <h1>
-                Prova
-            </h1>
-            <button
-              type="button"
-              style={{
-                backgroundColor: '#2D293C',
-                color: 'white',
-                padding: '1rem 10rem',
-                borderRadius: '20px',
-              }}
-            >
-              Aplicar
-            </button>
+            <div style={{ margin: '2rem 4rem' }}>
+              <p style={{ color: 'gray' }}>15-16 Diciembre - 10 hrs.</p>
+              <h2>Dia 1- Playtomic</h2>
+              <p>
+  Workshop impartido por Playtomic donde nos contaran como trabajan sus
+              equipos de diseño, desarollo para evolucionar su startup
+              </p>
+              <button
+                type="button"
+                style={{
+                  backgroundColor: '#2D293C',
+                  color: 'white',
+                  padding: '1rem 10rem',
+                  borderRadius: '20px',
+                }}
+              >
+                Aplicar
+              </button>
+            </div>
           </div>
         </div>
       </div>
