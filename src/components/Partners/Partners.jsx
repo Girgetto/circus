@@ -5,7 +5,7 @@ import cabify from '../../assets/img/logos/cabify.svg';
 import opinator from '../../assets/img/logos/opinator.svg';
 
 const Eight = () => (
-  <div className="translate">
+  <div className="translate center" style={{ height: '20rem' }}>
     <div className="translate-child center">
       <h1>Partners que apoyan Circus.</h1>
       <div style={{ display: 'flex', flexDirection: 'row' }}>

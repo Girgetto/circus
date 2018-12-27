@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import circusLogo from '../../assets/img/circus.svg';
@@ -6,31 +6,59 @@ import spainFlag from '../../assets/img/spain.svg';
 import portugalFlag from '../../assets/img/portugal.svg';
 import './Navbar.css';
 
-const Navbar = ({ text, location, getLanguage }) => (
-  <div style={{
-    position: 'relative', display: 'flex', justifyContent: 'space-evenly', zIndex: '100', backgroundColor: 'red',
-  }}
-  >
-    <img src={circusLogo} alt="" />
-    <Link to="/">{text.navbar1}</Link>
-    <Link to="/">{text.navbar2}</Link>
-    <Link to="/">{text.navbar3}</Link>
-    <Link to="/">{text.navbar4}</Link>
-    <div className="dropdown">
-      <img src={location.pathname === '/es' ? spainFlag : portugalFlag} alt="" />
-      <div className="dropdown-content">
-        <Link to="pt" onClick={() => getLanguage('pt')}>
-          <img src={portugalFlag} alt="" />
-          Portugues
-        </Link>
-        <Link to="es" onClick={() => getLanguage('es')}>
-          <img src={spainFlag} alt="" />
-          Spanish
-        </Link>
+export default class Navbar extends Component {
+  componentWillMount() {
+    const { getLanguage, location } = this.props;
+    getLanguage(location.pathname.replace('/', ''));
+  }
+
+  render() {
+    const { text, location, getLanguage } = this.props;
+    return (
+      <div style={{
+        position: 'relative',
+        display: 'flex',
+        justifyContent: 'space-evenly',
+        zIndex: '1',
+        backgroundColor: '#F2F2F2',
+        padding: '1rem 0',
+      }}
+      >
+        <img src={circusLogo} alt="" />
+        <div>
+          <Link to="/">{text.navbar1}</Link>
+          <Link to="/">{text.navbar2}</Link>
+          <Link to="/">{text.navbar3}</Link>
+          <Link to="/">{text.navbar4}</Link>
+        </div>
+        <div className="dropdown">
+          <img
+            src={
+            location.pathname === '/es' ? spainFlag : portugalFlag}
+            alt=""
+          />
+          <div className="dropdown-content">
+            <Link
+              to={`${location.pathname === '/es' ? '/pt' : '/es'}`}
+              onClick={
+                () => getLanguage(
+                  location.pathname.replace('/', '') === 'es' ? 'pt' : 'es',
+                )}
+            >
+              <img
+                src={
+                location.pathname === '/es' ? portugalFlag : spainFlag
+                }
+                alt=""
+              />
+              {location.pathname === '/es' ? 'Portuguese' : 'Spanish'}
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-);
+    );
+  }
+}
 
 Navbar.defaultProps = {
   text: 'Loading',
@@ -48,5 +76,3 @@ Navbar.propTypes = {
   location: PropTypes.shape({}),
   getLanguage: PropTypes.func,
 };
-
-export default Navbar;

@@ -4,7 +4,7 @@ import second from '../../assets/img/second.svg';
 import './Second.css';
 
 const Second = ({ text }) => (
-  <div className="translate" style={{ display: 'flex', backgroundColor: 'green', marginTop: '-4.5rem' }}>
+  <div className="translate" style={{ display: 'flex', backgroundColor: '#E8F0FE', marginTop: '-4.5rem' }}>
     <div className="translate-child center" style={{ width: '100%' }}>
       <h1 style={{ marginTop: '10rem' }}>
         {text.second}

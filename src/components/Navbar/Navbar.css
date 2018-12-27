@@ -19,8 +19,17 @@
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+  border-radius: 5px;
+}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+a {
+  color:black;
+  padding: 1rem;
+}

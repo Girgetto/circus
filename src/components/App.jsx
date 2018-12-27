@@ -10,7 +10,7 @@ import Fourth from './Fourth';
 import Fifth from './Fifth';
 import Sixth from './Sixth';
 import Seventh from './Seventh';
-import Eight from './Eight';
+import Partners from './Partners';
 import NewsLetter from './NewsLetter';
 import Footer from './Footer/Footer';
 
@@ -46,7 +46,7 @@ export default class App extends Component {
         <Fifth text={this.setLanguage()} />
         <Sixth text={this.setLanguage()} />
         <Seventh text={this.setLanguage()} />
-        <Eight text={this.setLanguage()} />
+        <Partners text={this.setLanguage()} />
         <NewsLetter text={this.setLanguage()} />
         <Footer text={this.setLanguage()} />
       </div>

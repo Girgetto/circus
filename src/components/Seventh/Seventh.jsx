@@ -24,28 +24,28 @@ export default class Seventh extends Component {
         <div className="translate-child center" style={{ width: '100%' }}>
           <h1>Proximas fechas</h1>
           <ul style={{ width: '100%', marginLeft: '50%' }}>
-            <li onClick={e => this.setColor(e.target.id)} style={{ backgroundColor: `${index === '1' ? 'yellow' : ''}` }}>
+            <li onClick={e => this.setColor(e.target.id)} style={{ backgroundColor: `${index === '1' ? '#FFF6C1' : ''}` }}>
               <div id="1" style={{ display: 'flex' }}>
                 <img src={first} alt="1" />
-                <p>1</p>
+                <p>Dia 1 - impartido por Playtomic</p>
               </div>
             </li>
-            <li onClick={e => this.setColor(e.target.id)} style={{ backgroundColor: `${index === '2' ? 'yellow' : ''}` }}>
+            <li onClick={e => this.setColor(e.target.id)} style={{ backgroundColor: `${index === '2' ? '#FFF6C1' : ''}` }}>
               <div id="2" style={{ display: 'flex' }}>
                 <img src={first} alt="2" />
-                <p>1</p>
+                <p>WeCode & WeDesign - WeWork </p>
               </div>
             </li>
-            <li onClick={e => this.setColor(e.target.id)} style={{ backgroundColor: `${index === '3' ? 'yellow' : ''}` }}>
+            <li onClick={e => this.setColor(e.target.id)} style={{ backgroundColor: `${index === '3' ? '#FFF6C1' : ''}` }}>
               <div id="3" style={{ display: 'flex' }}>
                 <img src={first} alt="3" />
-                <p>1</p>
+                <p>Topping croissant cookie</p>
               </div>
             </li>
-            <li onClick={e => this.setColor(e.target.id)} style={{ backgroundColor: `${index === '4' ? 'yellow' : ''}` }}>
+            <li onClick={e => this.setColor(e.target.id)} style={{ backgroundColor: `${index === '4' ? '#FFF6C1' : ''}` }}>
               <div id="4" style={{ display: 'flex' }}>
                 <img src={first} alt="4" />
-                <p>1</p>
+                <p>WeCode</p>
               </div>
             </li>
           </ul>
@@ -53,7 +53,7 @@ export default class Seventh extends Component {
         <div
           className="center"
           style={{
-            width: '100%', backgroundColor: 'yellow', zIndex: '-1', position: 'relative',
+            width: '100%', backgroundColor: '#FFF6C1', zIndex: '-1', position: 'relative',
           }}
         >
           <div className="translate-child">
