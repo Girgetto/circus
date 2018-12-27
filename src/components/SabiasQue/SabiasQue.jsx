@@ -1,8 +1,8 @@
 import React from 'react';
 import red from '../../assets/img/red.svg';
-import './Third.css';
+import './SabiasQue.css';
 
-const Third = () => (
+const SabiasQue = () => (
   <div style={{ display: 'flex', height: '40rem' }}>
     <div className="center" style={{ backgroundColor: '#fdc6cb', width: '100%' }}>
       <img src={red} alt="red" />
@@ -13,4 +13,4 @@ const Third = () => (
   </div>
 );
 
-export default Third;
+export default SabiasQue;

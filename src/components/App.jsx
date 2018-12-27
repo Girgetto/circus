@@ -4,10 +4,10 @@ import Navbar from './Navbar';
 import spainTexts from '../assets/texts/spain.json';
 import portugueseTexts from '../assets/texts/portuguese.json';
 import InsideCircus from './InsideCircus';
-import Second from './Second';
-import Third from './Third';
+import QueEsCircus from './QueEsCircus';
+import SabiasQue from './SabiasQue';
 import Fourth from './Fourth';
-import Fifth from './Fifth';
+import QueAprenderas from './QueAprenderas';
 import Sixth from './Sixth';
 import Seventh from './Seventh';
 import Partners from './Partners';
@@ -40,10 +40,10 @@ export default class App extends Component {
           <Navbar getLanguage={this.getLanguage} text={this.setLanguage()} />
         </Switch>
         <InsideCircus text={this.setLanguage()} />
-        <Second text={this.setLanguage()} />
-        <Third text={this.setLanguage()} />
+        <QueEsCircus text={this.setLanguage()} />
+        <SabiasQue text={this.setLanguage()} />
         <Fourth text={this.setLanguage()} />
-        <Fifth text={this.setLanguage()} />
+        <QueAprenderas text={this.setLanguage()} />
         <Sixth text={this.setLanguage()} />
         <Seventh text={this.setLanguage()} />
         <Partners text={this.setLanguage()} />

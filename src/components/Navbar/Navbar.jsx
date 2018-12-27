@@ -25,7 +25,9 @@ export default class Navbar extends Component {
       }}
       >
         <img src={circusLogo} alt="" />
-        <div>
+        <div
+          style={{ paddingTop: '0.7rem' }}
+        >
           <Link to="/">{text.navbar1}</Link>
           <Link to="/">{text.navbar2}</Link>
           <Link to="/">{text.navbar3}</Link>
@@ -33,6 +35,7 @@ export default class Navbar extends Component {
         </div>
         <div className="dropdown">
           <img
+            style={{ paddingTop: '0.7rem' }}
             src={
             location.pathname === '/es' ? spainFlag : portugalFlag}
             alt=""
@@ -45,13 +48,17 @@ export default class Navbar extends Component {
                   location.pathname.replace('/', '') === 'es' ? 'pt' : 'es',
                 )}
             >
-              <img
-                src={
-                location.pathname === '/es' ? portugalFlag : spainFlag
-                }
-                alt=""
-              />
-              {location.pathname === '/es' ? 'Portuguese' : 'Spanish'}
+              <div style={{ display: 'flex' }}>
+                <img
+                  src={
+                  location.pathname === '/es' ? portugalFlag : spainFlag
+                  }
+                  alt=""
+                />
+                <p style={{ padding: '0 0.5rem' }}>
+                  {location.pathname === '/es' ? 'Portuguese' : 'Spanish'}
+                </p>
+              </div>
             </Link>
           </div>
         </div>

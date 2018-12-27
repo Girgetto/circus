@@ -58,12 +58,18 @@ h1 {
 	color: #2D293C;
 	font-size: 3rem;
 	letter-spacing: 0.5rem;
-	line-height: 3rem;
+	line-height: 12rem;
+}
+
+h2 {
+	font-family: Helvetica Neue;
+	color: #2D293C;
+	font-size: 1.5rem;
 }
 
 p {
 	font-family: Helvetica Neue;
-	line-height: 20px;
+	line-height: 3rem;
 	font-size: 1rem;
 	color: #2D293C;
 }

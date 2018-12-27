@@ -17,16 +17,16 @@ const Footer = () => (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
       <div>
         <ul>
-          <li>Apply</li>
-          <li>Work with us</li>
-          <li>Press</li>
+          <li><a href="1" style={{ color: 'white' }}>Apply</a></li>
+          <li><a href="2" style={{ color: 'white' }}>Work with us</a></li>
+          <li><a href="2" style={{ color: 'white' }}>Press</a></li>
         </ul>
       </div>
       <div>
         <ul>
-          <li>FAQ</li>
-          <li>Contact</li>
-          <li>Privacy Policy</li>
+          <li><a href="1">FAQ</a></li>
+          <li><a href="1">Contact</a></li>
+          <li><a href="1">Privacy Policy</a></li>
         </ul>
       </div>
       <div>
@@ -42,7 +42,14 @@ const Footer = () => (
       <div><img src={circus} alt="" /></div>
       <div style={{ display: 'flex', flexDirection: 'row' }}>
         <img src={ironHackFooter} alt="" />
-        <p>Powered by ironhack</p>
+        <p
+          style={{
+            color: 'white',
+          }}
+        >
+Powered by ironhack
+
+        </p>
       </div>
     </div>
   </div>
