@@ -24,26 +24,26 @@ export default class Seventh extends Component {
         <div className="translate-child center" style={{ width: '100%' }}>
           <h1>Proximas fechas</h1>
           <ul style={{ width: '100%', marginLeft: '50%' }}>
-            <li style={{ backgroundColor: `${index === '1' ? 'yellow' : ''}` }}>
-              <div onClick={e => this.setColor(e.target.alt)} tabIndex="0" role="button" style={{ display: 'flex' }} onKeyDown={this.handleKeyDown}>
+            <li onClick={e => this.setColor(e.target.id)} style={{ backgroundColor: `${index === '1' ? 'yellow' : ''}` }}>
+              <div id="1" style={{ display: 'flex' }}>
                 <img src={first} alt="1" />
                 <p>1</p>
               </div>
             </li>
-            <li style={{ backgroundColor: `${index === '2' ? 'yellow' : ''}` }}>
-              <div onClick={e => this.setColor(e.target.alt)} tabIndex="0" role="button" style={{ display: 'flex' }} onKeyDown={this.handleKeyDown}>
+            <li onClick={e => this.setColor(e.target.id)} style={{ backgroundColor: `${index === '2' ? 'yellow' : ''}` }}>
+              <div id="2" style={{ display: 'flex' }}>
                 <img src={first} alt="2" />
                 <p>1</p>
               </div>
             </li>
-            <li style={{ backgroundColor: `${index === '3' ? 'yellow' : ''}` }}>
-              <div onClick={e => this.setColor(e.target.alt)} tabIndex="0" role="button" style={{ display: 'flex' }} onKeyDown={this.handleKeyDown}>
+            <li onClick={e => this.setColor(e.target.id)} style={{ backgroundColor: `${index === '3' ? 'yellow' : ''}` }}>
+              <div id="3" style={{ display: 'flex' }}>
                 <img src={first} alt="3" />
                 <p>1</p>
               </div>
             </li>
-            <li style={{ backgroundColor: `${index === '4' ? 'yellow' : ''}` }}>
-              <div onClick={e => this.setColor(e.target.alt)} tabIndex="0" role="button" style={{ display: 'flex' }} onKeyDown={this.handleKeyDown}>
+            <li onClick={e => this.setColor(e.target.id)} style={{ backgroundColor: `${index === '4' ? 'yellow' : ''}` }}>
+              <div id="4" style={{ display: 'flex' }}>
                 <img src={first} alt="4" />
                 <p>1</p>
               </div>

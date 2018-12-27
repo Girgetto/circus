@@ -23,7 +23,7 @@ export default class Fifth extends Component {
     return (
       <div style={{ display: 'flex', padding: '10rem' }}>
         <div className="center" style={{ width: '100%' }}>
-          <img src={image} alt="" />
+          <img src={image} alt="" style={{ maxWidth: '50%' }} />
         </div>
         <div className="center" style={{ width: '100%' }}>
           <div style={{ display: 'flex' }}>

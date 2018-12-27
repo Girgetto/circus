@@ -1,0 +1,18 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.translate {
+  transform: skewY(-5deg);
+}
+
+.translate-child {
+  transform: skewY(5deg);
+}
+
+.button:focus {
+  outline: none;
+}

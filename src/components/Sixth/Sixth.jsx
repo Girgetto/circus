@@ -6,7 +6,7 @@ const Sixth = () => (
   <div className="translate" style={{ display: 'flex', backgroundColor: 'green' }}>
     <div className="translate-child center" style={{ width: '100%' }}>Priova</div>
     <div style={{ width: '100%' }}>
-      <img src={face} alt="" />
+      <img src={face} alt="" style={{ width: '100%' }} />
     </div>
   </div>
 );
