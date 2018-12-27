@@ -46,15 +46,15 @@ export default class Navbar extends Component {
                 )}
               >
                 <div style={{ display: 'flex' }}>
+                  <p style={{ padding: '0 0.5rem' }}>
+                    {location.pathname === '/es' ? 'Portugal' : 'Spain'}
+                  </p>
                   <img
                     src={
                   location.pathname === '/es' ? portugalFlag : spainFlag
                   }
                     alt=""
                   />
-                  <p style={{ padding: '0 0.5rem' }}>
-                    {location.pathname === '/es' ? 'Portuguese' : 'Spanish'}
-                  </p>
                 </div>
               </Link>
             </div>

@@ -125,12 +125,12 @@ export default class QueAprenderas extends Component {
             </div>
             <div>
               <h2>Que aprendaras</h2>
-              <p
+              <h1
                 style={{ color: `${text.fifth[index].color}` }}
               >
                 {text.fifth[index].title}
-
-              </p>
+              </h1>
+              <p>{text.fifth[index].description}</p>
             </div>
           </div>
         </div>
