@@ -1,12 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ironHack from '../../assets/img/logos/ironHack.svg';
 import campusMadrid from '../../assets/img/logos/campusMadrid.svg';
 import cabify from '../../assets/img/logos/cabify.svg';
 import opinator from '../../assets/img/logos/opinator.svg';
 import './Partners.css';
 
-const Eight = () => (
-  <div className="translate center shadow" style={{ height: '20rem', paddingBottom:'10rem' }}>
+const Partners = ({ margin }) => (
+  <div
+    className="translate center shadow"
+    style={{
+      height: '20rem',
+      paddingBottom: '10rem',
+      marginTop: `${-margin + 40}rem`,
+      backgroundColor: 'white',
+    }}
+  >
     <div className="translate-child center">
       <h2 style={{ marginTop: '5rem' }}>Partners que apoyan Circus.</h2>
       <div style={{
@@ -28,4 +37,17 @@ const Eight = () => (
   </div>
 );
 
-export default Eight;
+Partners.defaultProps = {
+  text: { fourthText: ['Loading', 'Loading'] },
+  margin: '',
+};
+
+Partners.propTypes = {
+  text: PropTypes.shape({
+    fourthText: PropTypes.array,
+  }),
+  margin: PropTypes.string,
+};
+
+
+export default Partners;
