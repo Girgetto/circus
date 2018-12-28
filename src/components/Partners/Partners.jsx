@@ -6,9 +6,9 @@ import opinator from '../../assets/img/logos/opinator.svg';
 import './Partners.css';
 
 const Eight = () => (
-  <div className="translate center" style={{ height: '20rem' }}>
+  <div className="translate center shadow" style={{ height: '20rem', paddingBottom:'10rem' }}>
     <div className="translate-child center">
-      <h2 style={{ marginTop: '3rem' }}>Partners que apoyan Circus.</h2>
+      <h2 style={{ marginTop: '5rem' }}>Partners que apoyan Circus.</h2>
       <div style={{
         display: 'flex', flexDirection: 'row', marginTop: '3rem', justifyContent: 'space-evenly',
       }}

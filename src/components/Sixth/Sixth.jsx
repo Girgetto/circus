@@ -23,7 +23,7 @@ export default class Sixth extends Component {
     const { text } = this.props;
     return (
   <div
-    className="translate"
+    className="translate shadow"
     style={{
       display: 'flex',
       backgroundColor: '#E8F0FE',

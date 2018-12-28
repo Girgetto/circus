@@ -6,7 +6,6 @@ const newsLetter = () => (
     style={{
       backgroundColor: '#F5C8CD',
       minHeight: '20rem',
-      marginTop: '10rem',
     }}
   >
     <div

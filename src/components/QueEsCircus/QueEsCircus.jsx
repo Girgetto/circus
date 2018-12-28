@@ -5,7 +5,7 @@ import './QueEsCircus.css';
 
 const QueEsCircus = ({ text }) => (
   <div
-    className="translate"
+    className="translate shadow"
     style={{
       display: 'flex',
       backgroundColor: '#E8F0FE',
