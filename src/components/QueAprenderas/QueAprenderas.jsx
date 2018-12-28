@@ -123,7 +123,7 @@ export default class QueAprenderas extends Component {
                 </div>
               </ul>
             </div>
-            <div>
+            <div style={{ maxWidth: '23rem', maxHeight: '10rem' }}>
               <h2>Que aprendaras</h2>
               <h1
                 style={{ color: `${text.fifth[index].color}` }}

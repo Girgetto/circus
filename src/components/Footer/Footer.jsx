@@ -19,29 +19,29 @@ const Footer = () => (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
       <div className="box">
         <ul>
-          <li><a href="1">Apply</a></li>
-          <li><a href="2">Work with us</a></li>
-          <li><a href="2">Press</a></li>
+          <li><a href="1" className="footer-a">Apply</a></li>
+          <li><a href="1" className="footer-a">Work with us</a></li>
+          <li><a href="1" className="footer-a">Press</a></li>
         </ul>
       </div>
       <div className="box">
         <ul>
-          <li><a href="1">FAQ</a></li>
-          <li><a href="1">Contact</a></li>
-          <li><a href="1">Privacy Policy</a></li>
+          <li><a href="1" className="footer-a">FAQ</a></li>
+          <li><a href="1" className="footer-a">Contact</a></li>
+          <li><a href="1" className="footer-a">Privacy Policy</a></li>
         </ul>
       </div>
       <div className="box">
         <ul>
-          <li><a href="1">Twitter</a></li>
-          <li><a href="1">Facebook</a></li>
-          <li><a href="1">Instagram</a></li>
-          <li><a href="1">Youtube</a></li>
+          <li><a href="1" className="footer-a">Twitter</a></li>
+          <li><a href="1" className="footer-a">Facebook</a></li>
+          <li><a href="1" className="footer-a">Instagram</a></li>
+          <li><a href="1" className="footer-a">Youtube</a></li>
         </ul>
       </div>
     </div>
     <div style={{ display: 'flex', flexDirection: 'row' }}>
-      <div style={{ padding: '0 10rem' }}>
+      <div style={{ padding: '0 1rem' }}>
         <img src={circus} alt="" />
       </div>
       <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -51,9 +51,9 @@ const Footer = () => (
             color: 'white',
             fontWeight: '100',
           }}
+          className="footer-p"
         >
 Powered by ironhack
-
         </p>
       </div>
     </div>
