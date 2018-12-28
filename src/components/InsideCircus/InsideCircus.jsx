@@ -4,7 +4,7 @@ import first from '../../assets/img/first.svg';
 import './InsideCircus.css';
 
 const InsideCircus = ({ text }) => (
-  <div style={{ display: 'flex' }}>
+  <div style={{ display: 'flex', marginBottom: '-4.5rem' }}>
     <div style={{ width: '100%' }}>
       <img
         style={{

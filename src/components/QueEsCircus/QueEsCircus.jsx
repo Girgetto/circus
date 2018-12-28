@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import second from '../../assets/img/second.svg';
 import './QueEsCircus.css';
 
-const QueEsCircus = ({ text }) => (
+const QueEsCircus = ({ text, margin }) => (
   <div
     className="translate shadow"
     style={{
       display: 'flex',
       backgroundColor: '#E8F0FE',
-      marginTop: '-4.5rem',
+      marginTop: `-${margin}rem`,
     }}
   >
     <div
@@ -42,12 +42,14 @@ const QueEsCircus = ({ text }) => (
 
 QueEsCircus.defaultProps = {
   text: 'Loading',
+  margin: '-4.5rem',
 };
 
 QueEsCircus.propTypes = {
   text: PropTypes.shape({
     first: PropTypes.string,
   }),
+  margin: PropTypes.string,
 };
 
 export default QueEsCircus;
