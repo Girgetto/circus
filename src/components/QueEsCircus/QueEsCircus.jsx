@@ -42,7 +42,7 @@ const QueEsCircus = ({ text, margin }) => (
 
 QueEsCircus.defaultProps = {
   text: 'Loading',
-  margin: '-4.5rem',
+  margin: '',
 };
 
 QueEsCircus.propTypes = {

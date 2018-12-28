@@ -16,3 +16,7 @@
 .button:focus {
   outline: none;
 }
+
+.circle {
+  margin: 0.3rem;
+}

@@ -9,7 +9,7 @@ import SabiasQue from './SabiasQue';
 import Fourth from './Fourth';
 import QueAprenderas from './QueAprenderas';
 import Sixth from './Sixth';
-import Seventh from './Seventh';
+import ProximasFechas from './ProximasFechas';
 import Partners from './Partners';
 import NewsLetter from './NewsLetter';
 import Footer from './Footer/Footer';
@@ -19,7 +19,7 @@ export default class App extends Component {
     super(props);
     this.state = {
       language: 'es',
-      margin: 0,
+      margin: '',
     };
     this.getLanguage = this.getLanguage.bind(this);
     this.setLanguage = this.setLanguage.bind(this);
@@ -54,7 +54,7 @@ export default class App extends Component {
         <Fourth text={this.setLanguage()} />
         <QueAprenderas text={this.setLanguage()} />
         <Sixth text={this.setLanguage()} />
-        <Seventh text={this.setLanguage()} />
+        <ProximasFechas text={this.setLanguage()} />
         <Partners text={this.setLanguage()} />
         <NewsLetter text={this.setLanguage()} />
         <Footer text={this.setLanguage()} />
