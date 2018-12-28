@@ -51,11 +51,11 @@ export default class App extends Component {
         <InsideCircus text={this.setLanguage()} />
         <QueEsCircus margin={margin} text={this.setLanguage()} />
         <SabiasQue text={this.setLanguage()} />
-        <Fourth text={this.setLanguage()} />
+        <Fourth margin={margin} text={this.setLanguage()} />
         <QueAprenderas text={this.setLanguage()} />
-        <Sixth text={this.setLanguage()} />
+        <Sixth margin={margin} text={this.setLanguage()} />
         <ProximasFechas text={this.setLanguage()} />
-        <Partners text={this.setLanguage()} />
+        <Partners margin={margin} text={this.setLanguage()} />
         <NewsLetter text={this.setLanguage()} />
         <Footer text={this.setLanguage()} />
       </div>

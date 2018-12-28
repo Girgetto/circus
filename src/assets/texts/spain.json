@@ -4,6 +4,9 @@
   "navbar3":  "Que importamos",
   "navbar4":  "Proximas Fechas",
   "first": "Inside Circus",
+  "insideDescription":"Donde comienza tu transormacion digital",
+  "inside3": "Da el primer paso",
+  "insideButton": "Ver Fechas",
   "queEsCircusTitle": "Pero ¿que es Circus?",
   "queEsCircusDescription": "Queremos ayudarte a entrar en el mundo digital, Circus es un proyecto apoyado por empresas del sector tecnológico que quieren acercar el mundo digital a más personas mediante formaciones gratuitas.",
   "sabiasQueTitle":"¿Sabias que?",  
@@ -13,7 +16,7 @@
   "fourthText":
   [
     "Circus was for me the beginning of a life changing experience. I didn’t know all these opportunities where waiting for me",
-    "Secondo"
+    "lorem ipsum dolor sit amet"
   ],
   "fourthCit":"Chris Cornell - Circus I attendant",
   "fifth": [
@@ -26,7 +29,7 @@
   "six" :
   [
     "Circus was for me the beginning of a life changing experience. I didn’t know all these opportunities where waiting for me",
-    "Secondo"
+    "lorem ipsum dolor sit amet"
   ],
   "proximasFechas":[
     "Dia 1- Playtomic",

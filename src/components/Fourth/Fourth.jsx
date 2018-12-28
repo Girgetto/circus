@@ -22,14 +22,14 @@ export default class Fourth extends Component {
 
   render() {
     const { counter } = this.state;
-    const { text } = this.props;
+    const { text, margin } = this.props;
     return (
       <div
         className="translate shadow"
         style={{
           backgroundColor: '#E8F0FE',
           display: 'flex',
-          marginTop: '-4.5rem',
+          marginTop: `${margin < 15 ? -4.5 : -margin + 11}rem`,
         }}
       >
         <div className="center" style={{ width: '100%' }}>
@@ -94,10 +94,12 @@ export default class Fourth extends Component {
 
 Fourth.defaultProps = {
   text: { fourthText: ['Loading', 'Loading'] },
+  margin: '',
 };
 
 Fourth.propTypes = {
   text: PropTypes.shape({
     fourthText: PropTypes.array,
   }),
+  margin: PropTypes.string,
 };

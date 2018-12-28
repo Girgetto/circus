@@ -6,6 +6,7 @@ const newsLetter = () => (
     style={{
       backgroundColor: '#F5C8CD',
       minHeight: '20rem',
+      width: '100%',
     }}
   >
     <div
@@ -16,7 +17,12 @@ const newsLetter = () => (
       }}
     >
 
-      <h2>Suscríbete a la newsletter</h2>
+      <h2
+        style={{ fontWeight: '400' }}
+      >
+Suscríbete a la newsletter
+
+      </h2>
       <input
         type="text"
         placeholder="Tu correo electronico"
@@ -29,7 +35,9 @@ const newsLetter = () => (
           height: '2rem',
           width: '20rem',
           margin: '0 3rem',
-          outline:'none'
+          outline: 'none',
+          fontSize: '1.2rem',
+          paddingBottom: '1rem',
         }}
       />
       <button

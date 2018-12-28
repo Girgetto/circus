@@ -9,7 +9,7 @@ const QueEsCircus = ({ text, margin }) => (
     style={{
       display: 'flex',
       backgroundColor: '#E8F0FE',
-      marginTop: `-${margin}rem`,
+      marginTop: `-${margin < 10 ? margin : 10}rem`,
     }}
   >
     <div

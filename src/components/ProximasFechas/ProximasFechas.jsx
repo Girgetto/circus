@@ -12,7 +12,7 @@ export default class ProximasFechas extends Component {
   }
 
   setColor(index) {
-    this.setState({ index });
+    return index === '' ? '' : this.setState({ index });
   }
 
   render() {
@@ -77,6 +77,9 @@ export default class ProximasFechas extends Component {
                   color: 'white',
                   padding: '1rem 10rem',
                   borderRadius: '20px',
+                  marginTop: '5rem',
+                  width: '100%',
+                  fontSize: '2rem',
                 }}
               >
                 Aplicar

@@ -4,11 +4,37 @@
   "navbar3":  "Quem importamos",
   "navbar4":  "Proximaç Fechas",
   "first": "Inside Circus",
+  "insideDescription":"Onde sua transformação digital começa",
+  "inside3": "Dê o primeiro passo",
+  "insideButton": "Veja datas",
+  "queEsCircusTitle": "Pero ¿que es Circus?",
+  "queEsCircusDescription": "Queremos ayudarte a entrar en el mundo digital, Circus es un proyecto apoyado por empresas del sector tecnológico que quieren acercar el mundo digital a más personas mediante formaciones gratuitas.",
+  "sabiasQueTitle":"¿Sabias que?",  
+  "sabiasQueDescription":"9/10 trabajos en el futuro requerirán habilidades digitales. No sólo nuevos puestos de trabajo, sino el que ocupas ahora mismo necesitará que estés al día en cuanto a conocimiento tecnológico.",  
+  "esParaTiTitle":"¿Es para ti?",
+  "esParaTIDescription":"Circus está destinado para todo el que quiera iniciarse en el mundo tech, sabemos que es difícil comenzar ya que se dan por entendidos muchos conceptos. En Circus comenzamos desde cero.",
+  "fourthText":
+  [
+    "Circus was for me the beginning of a life changing experience. I didn’t know all these opportunities where waiting for me",
+    "lorem ipsum dolor sit amet"
+  ],
+  "fourthCit":"Chris Cornell - Circus I attendant",
   "fifth": [
-    {"title": "1"},
-    {"title": "2"},
-    {"title": "3"},
-    {"title": "4"},
-    {"title": "5"}
+    {"title": "01 Como funciona Internet","description":"VPN, IP, HTTP, cuantas siglas más pueden tener? Ya hay tanta terminología alrededor de Internet que creemos que es importante empezar desde lo más básico explicándote cómo funciona..", "color": "#F5C8CD"},
+    {"title": "02 Perfiles tech","description":"No todos los programadores son genios de matemática ni todos los diseñadores Picassos frustrados, entérate de qué habilidades se necesitan para cada perfil dentro de un equipo tech.", "color": "#CADFFF"},
+    {"title": "03 Metodolias ageiles","description":"Algo que tienen en común la mayoría de las empresas tecnológicas es el uso de formas de trabajo ágiles que permiten trabajar de manera iterativa sobre el producto que están desarrollando.", "color": "#FFEA6B"},
+    {"title": "04 Marketing digital","description":"La forma en la cual consumimos productos o elegimos determinadas marcas ha cambiado radicalmente: esto significa que las empresas han tenido que replantear cómo llegar a sus clientes.", "color": "#B9E9E4"},
+    {"title": "04 Design thinking","description":"Conocer los roles y habilidades necesarias dentro de un equipo de producto digital. Conocer los roles y habilidades necesarias dentro de un equipo de producto digital.", "color": "#2D293C"}
+  ],
+  "six" :
+  [
+    "Circus was for me the beginning of a life changing experience. I didn’t know all these opportunities where waiting for me",
+    "lorem ipsum dolor sit amet"
+  ],
+  "proximasFechas":[
+    "Dia 1- Playtomic",
+    "Dia 2- Playtomic",
+    "Dia 3- Playtomic",
+    "Dia 4- Playtomic"
   ]
 }

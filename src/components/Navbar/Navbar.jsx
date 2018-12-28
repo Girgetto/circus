@@ -19,7 +19,6 @@ export default class Navbar extends Component {
         position: 'relative',
         display: 'flex',
         zIndex: '1',
-        backgroundColor: '#F2F2F2',
         padding: '1.75rem 0',
         justifyContent: 'space-evenly',
       }}
