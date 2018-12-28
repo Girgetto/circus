@@ -1,0 +1,17 @@
+a {
+  color:white;
+  font-weight: 200 !important;
+  font-size: 1rem !important;
+  line-height: 2rem !important;
+}
+
+.box {
+  padding: 0 4rem;
+}
+
+p {
+  color:white;
+  font-weight: 200 !important;
+  font-size: 1rem !important;
+  line-height: 2rem !important;
+}
