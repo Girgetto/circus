@@ -44,7 +44,7 @@ export default class App extends Component {
       this.setState({ margin: (scrollBarPosition / 80).toFixed(2) });
     };
     return (
-      <div>
+      <React.Fragment>
         <Switch>
           <Navbar getLanguage={this.getLanguage} text={this.setLanguage()} />
         </Switch>
@@ -58,7 +58,7 @@ export default class App extends Component {
         <Partners margin={margin} text={this.setLanguage()} />
         <NewsLetter text={this.setLanguage()} />
         <Footer text={this.setLanguage()} />
-      </div>
+      </React.Fragment>
     );
   }
 }

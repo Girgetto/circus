@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import image from '../../assets/img/Fifth.svg';
-import './QueAprenderas.css';
 
 export default class QueAprenderas extends Component {
   constructor(props) {

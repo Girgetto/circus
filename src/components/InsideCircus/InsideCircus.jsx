@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import first from '../../assets/img/first.svg';
-import './InsideCircus.css';
 
 const InsideCircus = ({ text }) => (
   <div style={{ display: 'flex', marginBottom: '-4.5rem' }}>

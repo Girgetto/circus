@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import red from '../../assets/img/red.svg';
-import './SabiasQue.css';
 
 
 const SabiasQue = ({ text }) => (

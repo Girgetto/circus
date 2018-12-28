@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import face from '../../assets/img/face.svg';
-import './Sixth.css';
-
 
 export default class Sixth extends Component {
   constructor(props) {

@@ -1,63 +1,48 @@
 import React from 'react';
 import circus from '../../assets/img/footerImg/circus.svg';
 import ironHackFooter from '../../assets/img/footerImg/ironHackFooter.svg';
-import './Footer.css';
+import {
+  A, Box, P, Div, Row,
+} from './style';
 
 const Footer = () => (
-  <div
-    style={{
-      position: 'relative',
-      zIndex: '2',
-      backgroundColor: '#2D293C',
-      color: 'white',
-      marginTop: '-5rem',
-      height: '20rem',
-      justifyContent: 'space-around',
-    }}
-    className="center"
-  >
-    <div style={{ display: 'flex', flexDirection: 'row' }}>
-      <div className="box">
+  <Div className="center">
+    <Row>
+      <Box>
         <ul>
-          <li><a href="1" className="footer-a">Apply</a></li>
-          <li><a href="1" className="footer-a">Work with us</a></li>
-          <li><a href="1" className="footer-a">Press</a></li>
+          <li><A href="1">Apply</A></li>
+          <li><A href="1">Work with us</A></li>
+          <li><A href="1">Press</A></li>
         </ul>
-      </div>
-      <div className="box">
+      </Box>
+      <Box>
         <ul>
-          <li><a href="1" className="footer-a">FAQ</a></li>
-          <li><a href="1" className="footer-a">Contact</a></li>
-          <li><a href="1" className="footer-a">Privacy Policy</a></li>
+          <li><A href="1">FAQ</A></li>
+          <li><A href="1">Contact</A></li>
+          <li><A href="1">Privacy Policy</A></li>
         </ul>
-      </div>
-      <div className="box">
+      </Box>
+      <Box>
         <ul>
-          <li><a href="1" className="footer-a">Twitter</a></li>
-          <li><a href="1" className="footer-a">Facebook</a></li>
-          <li><a href="1" className="footer-a">Instagram</a></li>
-          <li><a href="1" className="footer-a">Youtube</a></li>
+          <li><A href="1">Twitter</A></li>
+          <li><A href="1">Facebook</A></li>
+          <li><A href="1">Instagram</A></li>
+          <li><A href="1">Youtube</A></li>
         </ul>
-      </div>
-    </div>
-    <div style={{ display: 'flex', flexDirection: 'row' }}>
+      </Box>
+    </Row>
+    <Row>
       <div style={{ padding: '0 1rem' }}>
         <img src={circus} alt="" />
       </div>
-      <div style={{ display: 'flex', flexDirection: 'row' }}>
+      <Row>
         <img src={ironHackFooter} style={{ padding: '0 1rem' }} alt="" />
-        <p
-          style={{
-            color: 'white',
-            fontWeight: '100',
-          }}
-          className="footer-p"
-        >
+        <P>
 Powered by ironhack
-        </p>
-      </div>
-    </div>
-  </div>
+        </P>
+      </Row>
+    </Row>
+  </Div>
 );
 
 export default Footer;
