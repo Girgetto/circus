@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import fourth from '../../assets/img/fourth.svg';
-import Div from './style';
+import { Div, MainDiv } from './style';
 
 export default class Fourth extends Component {
   constructor(props) {
@@ -24,13 +24,9 @@ export default class Fourth extends Component {
     const { counter } = this.state;
     const { text, margin } = this.props;
     return (
-      <div
+      <MainDiv
         className="translate shadow"
-        style={{
-          backgroundColor: '#E8F0FE',
-          display: 'flex',
-          marginTop: `${margin < 15 ? -4.5 : -margin + 11}rem`,
-        }}
+        style={{ marginTop: `${margin < 15 ? -4.5 : -margin + 11}rem` }}
       >
         <div className="center" style={{ width: '100%' }}>
           <img
@@ -82,7 +78,7 @@ export default class Fourth extends Component {
             ))}
           </div>
         </div>
-      </div>
+      </MainDiv>
     );
   }
 }

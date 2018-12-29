@@ -9,7 +9,7 @@ const closeNav = () => {
 const Sidenav = () => (
   <div id="mySidenav" className="sidenav">
     <button type="button" href="/" className="closebtn" onClick={closeNav}>
-      &times;adsfdsa
+      &times;
     </button>
     <a href="/">About</a>
     <a href="/">Services</a>

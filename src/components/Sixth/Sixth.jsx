@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import face from '../../assets/img/face.svg';
+import { MainDiv } from './style';
 
 export default class Sixth extends Component {
   constructor(props) {
@@ -23,13 +24,9 @@ export default class Sixth extends Component {
     const { counter } = this.state;
     const { text, margin } = this.props;
     return (
-      <div
+      <MainDiv
         className="translate shadow"
-        style={{
-          display: 'flex',
-          backgroundColor: '#E8F0FE',
-          marginTop: `${margin < 30 ? -4.5 : -margin + 30}rem`,
-        }}
+        style={{ marginTop: `${margin < 30 ? -4.5 : -margin + 30}rem` }}
       >
         <div
           className="translate-child"
@@ -78,7 +75,7 @@ export default class Sixth extends Component {
         <div style={{ width: '100%' }}>
           <img src={face} alt="" style={{ width: '100%' }} />
         </div>
-      </div>
+      </MainDiv>
     );
   }
 }

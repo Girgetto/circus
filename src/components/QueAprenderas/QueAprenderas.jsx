@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import image from '../../assets/img/Fifth.svg';
+import { MainDiv, ImgDiv } from './style';
 
 export default class QueAprenderas extends Component {
   constructor(props) {
@@ -19,10 +20,10 @@ export default class QueAprenderas extends Component {
     const { index } = this.state;
     const { text } = this.props;
     return (
-      <div style={{ display: 'flex', padding: '10rem 5rem' }}>
-        <div className="center" style={{ width: '100%' }}>
+      <MainDiv>
+        <ImgDiv className="center">
           <img src={image} alt="" />
-        </div>
+        </ImgDiv>
         <div style={{ width: '100%' }}>
           <div style={{ display: 'flex' }}>
             <div style={{ padding: '3rem' }}>
@@ -60,7 +61,7 @@ export default class QueAprenderas extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </MainDiv>
     );
   }
 }

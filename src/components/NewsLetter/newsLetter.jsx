@@ -1,7 +1,8 @@
 import React from 'react';
+import { Input, MainDiv } from './style';
 
 const newsLetter = () => (
-  <div
+  <MainDiv
     className="translate center"
     style={{
       backgroundColor: '#F5C8CD',
@@ -23,23 +24,7 @@ const newsLetter = () => (
 Suscríbete a la newsletter
 
       </h2>
-      <input
-        type="text"
-        placeholder="Tu correo electronico"
-        style={{
-          backgroundColor: '#F5C8CD',
-          borderBottom: '2px solid black',
-          borderTop: 'none',
-          borderLeft: 'none',
-          borderRight: 'none',
-          height: '2rem',
-          width: '20rem',
-          margin: '0 3rem',
-          outline: 'none',
-          fontSize: '1.2rem',
-          paddingBottom: '1rem',
-        }}
-      />
+      <Input type="text" defaultValue="Tu correo electronico" />
       <button
         style={{
           backgroundColor: '#2D293C',
@@ -51,7 +36,7 @@ Suscríbete a la newsletter
         <p style={{ color: '#FFF' }}>Subscribirse</p>
       </button>
     </div>
-  </div>
+  </MainDiv>
 );
 
 export default newsLetter;

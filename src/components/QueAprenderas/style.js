@@ -1,15 +1,13 @@
 import styled from 'styled-components';
 
-export const Div = styled.div`
-  .circle {
-    margin:0.3rem;
-  }
+export const MainDiv = styled.div`
+  display: flex;
+  padding: 10rem 5rem;
 `;
 
-export const MainDiv = styled.div`
-  background-color: #E8F0FE;
-  display: flex;
+export const ImgDiv = styled.div`
+  width: 100%;
   @media(max-width:768px){
-    flex-direction: column;
+    display: none !important;
   }
 `;

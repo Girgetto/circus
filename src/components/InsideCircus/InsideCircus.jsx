@@ -1,33 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import first from '../../assets/img/first.svg';
-import { Button, MainDiv, ButtonText } from './style';
+import {
+  Button, MainDiv, ButtonText, ImgDiv, TextDiv, TextBox, MainTitle, MainDescription, Description,
+} from './style';
 
 const InsideCircus = ({ text }) => (
   <MainDiv>
-    <div style={{ width: '100%' }}>
+    <ImgDiv>
       <img
         style={{ width: '100%' }}
         src={first}
         alt=""
       />
-    </div>
-    <div style={{ width: '100%' }}>
-      <div style={{ padding: '1rem 2rem' }}>
-        <h1 style={{ paddingTop: '5vh' }}>
-          {text.first}
-        </h1>
-        <h3 style={{ paddingTop: '5vh', paddingBottom: '2rem' }}>
-          {text.insideDescription}
-        </h3>
-        <p>{text.inside3}</p>
+    </ImgDiv>
+    <TextDiv>
+      <TextBox>
+        <MainTitle>{text.first}</MainTitle>
+        <MainDescription>{text.insideDescription}</MainDescription>
+        <Description>{text.inside3}</Description>
         <Button type="button">
-          <ButtonText href="/">
-            {text.insideButton}
-          </ButtonText>
+          <ButtonText href="/">{text.insideButton}</ButtonText>
         </Button>
-      </div>
-    </div>
+      </TextBox>
+    </TextDiv>
   </MainDiv>
 );
 

@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import red from '../../assets/img/red.svg';
+import { MainDiv, ImgDiv } from './style';
 
 
 const SabiasQue = ({ text }) => (
-  <div style={{ display: 'flex', height: '50rem' }}>
-    <div
+  <MainDiv>
+    <ImgDiv
       className="center"
       style={{ backgroundColor: '#fdc6cb', width: '100%' }}
     >
       <img src={red} alt="red" />
-    </div>
+    </ImgDiv>
     <div style={{
       width: '100%',
     }}
@@ -24,7 +25,7 @@ const SabiasQue = ({ text }) => (
         <p>{text.esParaTIDescription}</p>
       </div>
     </div>
-  </div>
+  </MainDiv>
 );
 
 SabiasQue.defaultProps = {

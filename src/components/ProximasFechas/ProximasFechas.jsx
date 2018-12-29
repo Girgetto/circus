@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import first from '../../assets/img/icon/first.svg';
+import { RightDiv } from './style';
 
 export default class ProximasFechas extends Component {
   constructor(props) {
@@ -51,15 +52,7 @@ export default class ProximasFechas extends Component {
             ))}
           </ul>
         </div>
-        <div
-          className="center"
-          style={{
-            width: '100%',
-            backgroundColor: '#FFF6C1',
-            zIndex: '1',
-            position: 'relative',
-          }}
-        >
+        <RightDiv className="center">
           <div className="translate-child">
             <div style={{ margin: '2rem 4rem' }}>
               <p style={{ color: 'gray' }}>15-16 Diciembre - 10 hrs.</p>
@@ -86,7 +79,7 @@ export default class ProximasFechas extends Component {
               </button>
             </div>
           </div>
-        </div>
+        </RightDiv>
       </div>
     );
   }
