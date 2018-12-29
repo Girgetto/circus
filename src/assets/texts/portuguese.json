@@ -1,8 +1,6 @@
 {
-  "navbar1":  "Quem es circus",
-  "navbar2":  "Porquem circus",
-  "navbar3":  "Quem importamos",
-  "navbar4":  "Proximaç Fechas",
+  "navbar": 
+  ["Que es circus","Porque circus","Que importamos","Proximas Fechas"],
   "first": "Inside Circus",
   "insideDescription":"Onde sua transformação digital começa",
   "inside3": "Dê o primeiro passo",

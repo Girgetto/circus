@@ -1,24 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import second from '../../assets/img/second.svg';
-import './QueEsCircus.css';
+import MainDiv from './style';
 
 const QueEsCircus = ({ text, margin }) => (
-  <div
+  <MainDiv
     className="translate shadow"
-    style={{
-      display: 'flex',
-      backgroundColor: '#E8F0FE',
-      marginTop: `${(margin < 0 || margin > 15) ? 0 : -margin}rem`,
-    }}
+    margin={margin}
   >
     <div
       className="translate-child"
       style={{ width: '100%' }}
     >
-      <div
-        style={{ margin: '0 3rem' }}
-      >
+      <div style={{ margin: '0 3rem' }}>
         <h2 style={{ marginTop: '10rem', marginBottom: '8rem' }}>
           {text.queEsCircusTitle}
         </h2>
@@ -37,7 +31,7 @@ const QueEsCircus = ({ text, margin }) => (
         alt=""
       />
     </div>
-  </div>
+  </MainDiv>
 );
 
 QueEsCircus.defaultProps = {
