@@ -15,7 +15,19 @@ export const Input = styled.input`
 `;
 
 export const MainDiv = styled.div`
+  background-color: #F5C8CD;
+  min-height: 20rem;
+  width: 100%;
   @media(max-width:768px){
     display: none !important;
   }
+`;
+
+export const Button = styled.button`
+  background-color: #2D293C;
+  border-radius: 20px;
+  padding: 1rem 6rem;
+  :focus{
+  outline: none;
+}
 `;

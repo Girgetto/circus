@@ -10,4 +10,12 @@ export const RightDiv = styled.div`
   }
 `;
 
-export const _ = styled.div``;
+export const Button = styled.button`
+  background-color: #2D293C;
+  color: white;
+  padding: 1rem 10rem;
+  border-radius: 20px;
+  margin-top: 5rem;
+  width: 100%;
+  font-size: 2rem;
+`;

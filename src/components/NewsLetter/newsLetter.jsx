@@ -1,40 +1,17 @@
 import React from 'react';
-import { Input, MainDiv } from './style';
+import { Input, MainDiv, Button } from './style';
 
 const newsLetter = () => (
-  <MainDiv
-    className="translate center"
-    style={{
-      backgroundColor: '#F5C8CD',
-      minHeight: '20rem',
-      width: '100%',
-    }}
-  >
+  <MainDiv className="translate center">
     <div
       className="translate-child"
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-      }}
+      style={{ display: 'flex', flexDirection: 'row' }}
     >
-
-      <h2
-        style={{ fontWeight: '400' }}
-      >
-Suscríbete a la newsletter
-
-      </h2>
+      <h2 style={{ fontWeight: '400' }}>Suscríbete a la newsletter</h2>
       <Input type="text" defaultValue="Tu correo electronico" />
-      <button
-        style={{
-          backgroundColor: '#2D293C',
-          borderRadius: '20px',
-          padding: '1rem 6rem',
-        }}
-        type="submit"
-      >
+      <Button type="submit">
         <p style={{ color: '#FFF' }}>Subscribirse</p>
-      </button>
+      </Button>
     </div>
   </MainDiv>
 );

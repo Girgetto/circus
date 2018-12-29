@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Div = styled.div`
+export const CircleDiv = styled.div`
   .circle {
     margin:0.3rem;
   }

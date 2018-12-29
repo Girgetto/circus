@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import first from '../../assets/img/icon/first.svg';
-import { RightDiv } from './style';
+import { RightDiv, Button } from './style';
 
 export default class ProximasFechas extends Component {
   constructor(props) {
@@ -63,20 +63,9 @@ export default class ProximasFechas extends Component {
   Workshop impartido por Playtomic donde nos contaran como trabajan sus
               equipos de diseño, desarollo para evolucionar su startup
               </p>
-              <button
-                type="button"
-                style={{
-                  backgroundColor: '#2D293C',
-                  color: 'white',
-                  padding: '1rem 10rem',
-                  borderRadius: '20px',
-                  marginTop: '5rem',
-                  width: '100%',
-                  fontSize: '2rem',
-                }}
-              >
+              <Button type="button">
                 Aplicar
-              </button>
+              </Button>
             </div>
           </div>
         </RightDiv>

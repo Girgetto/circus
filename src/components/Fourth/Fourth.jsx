@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import fourth from '../../assets/img/fourth.svg';
-import { Div, MainDiv } from './style';
+import { CircleDiv, MainDiv } from './style';
 
 export default class Fourth extends Component {
   constructor(props) {
@@ -64,7 +64,7 @@ export default class Fourth extends Component {
           </div>
           <div className="center" style={{ flexDirection: 'row' }}>
             {text.fourthText.map((x, i) => (
-              <Div key={x}>
+              <CircleDiv key={x}>
                 <svg className="circle" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     opacity={counter === i ? '' : '0.1'}
@@ -74,7 +74,7 @@ export default class Fourth extends Component {
                     fill="#414141"
                   />
                 </svg>
-              </Div>
+              </CircleDiv>
             ))}
           </div>
         </div>

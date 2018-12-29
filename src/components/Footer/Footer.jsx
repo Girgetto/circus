@@ -5,31 +5,28 @@ import {
   A, Box, P, Div, Row,
 } from './style';
 
+const footer = [
+  ['Apply', 'work with us', 'Press'],
+  ['FAQ', 'Contact', 'Privacy Policy'],
+  ['Twitter', 'Facebook', 'Instagram', 'YouTube'],
+];
+
 const Footer = () => (
   <Div className="center">
     <Row>
-      <Box>
-        <ul>
-          <li><A href="1">Apply</A></li>
-          <li><A href="1">Work with us</A></li>
-          <li><A href="1">Press</A></li>
-        </ul>
-      </Box>
-      <Box>
-        <ul>
-          <li><A href="1">FAQ</A></li>
-          <li><A href="1">Contact</A></li>
-          <li><A href="1">Privacy Policy</A></li>
-        </ul>
-      </Box>
-      <Box>
-        <ul>
-          <li><A href="1">Twitter</A></li>
-          <li><A href="1">Facebook</A></li>
-          <li><A href="1">Instagram</A></li>
-          <li><A href="1">Youtube</A></li>
-        </ul>
-      </Box>
+      {footer.map((x, i) => (
+        <Box key={`${x + i}`}>
+          <ul>
+            {x.map((word, index) => (
+              <li key={`${x + index}`}>
+                <A href="/">
+                  {word}
+                </A>
+              </li>
+            ))}
+          </ul>
+        </Box>
+      ))}
     </Row>
     <Row>
       <div style={{ padding: '0 1rem' }}>
