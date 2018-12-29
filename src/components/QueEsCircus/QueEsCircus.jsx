@@ -7,6 +7,7 @@ const QueEsCircus = ({ text, margin }) => (
   <MainDiv
     className="translate shadow"
     margin={margin}
+    id="queEsCircus"
   >
     <div
       className="translate-child"

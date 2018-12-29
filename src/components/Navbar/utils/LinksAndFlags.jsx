@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import spainFlag from '../../../assets/img/spain.svg';
 import portugalFlag from '../../../assets/img/portugal.svg';
-import { DropDown, DropdownContent, MainDiv } from '../style';
+import {
+  DropDown, DropdownContent, MainDiv, Item,
+} from '../style';
 
 
 const LinksAndFlags = ({ text, location, getLanguage }) => (
   <MainDiv>
-    {text.navbar.map(x => <Link key={x} to="/">{x}</Link>)}
+    {text.navbar.map(x => <a key={x} href="#queEsCircus"><Item>{x}</Item></a>)}
     <DropDown className="dropdown">
       <img
         style={{ paddingTop: '0.7rem' }}

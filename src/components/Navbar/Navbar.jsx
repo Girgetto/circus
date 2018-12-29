@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import circusLogo from '../../assets/img/circus.svg';
 import LinksAndFlags from './utils/LinksAndFlags';
 import { NavbarDiv, MenuDiv } from './style';
-import './Navbar.css';
 import menu from '../../assets/img/menu.svg';
 import Sidenav from './utils/Sidenav';
 

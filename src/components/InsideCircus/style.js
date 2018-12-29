@@ -15,3 +15,8 @@ export const MainDiv = styled.div`
     flex-direction: column;
   }
 `;
+
+export const ButtonText = styled.a`
+  color:white;
+  font-size: 1.5vw;
+`;

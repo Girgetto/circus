@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import first from '../../assets/img/first.svg';
-import { Button, MainDiv } from './style';
+import { Button, MainDiv, ButtonText } from './style';
 
 const InsideCircus = ({ text }) => (
   <MainDiv>
@@ -22,9 +22,9 @@ const InsideCircus = ({ text }) => (
         </h3>
         <p>{text.inside3}</p>
         <Button type="button">
-          <a href="/" style={{ color: 'white' }}>
+          <ButtonText href="/">
             {text.insideButton}
-          </a>
+          </ButtonText>
         </Button>
       </div>
     </div>
