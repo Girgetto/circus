@@ -4,37 +4,30 @@ import ironHack from '../../assets/img/logos/ironHack.svg';
 import campusMadrid from '../../assets/img/logos/campusMadrid.svg';
 import cabify from '../../assets/img/logos/cabify.svg';
 import opinator from '../../assets/img/logos/opinator.svg';
-import './Partners.css';
+import {
+  Svg, ImgDiv, MainDiv, H2,
+} from './style';
+
+const photos = [ironHack, campusMadrid, cabify, opinator];
 
 const Partners = ({ margin }) => (
-  <div
+  <MainDiv
     className="translate center shadow"
-    style={{
-      height: '20rem',
-      paddingBottom: '10rem',
-      marginTop: `${-margin + 40}rem`,
-      backgroundColor: 'white',
-    }}
+    style={{ marginTop: `${-margin + 40}rem` }}
   >
     <div className="translate-child center">
-      <h2 style={{ marginTop: '5rem' }}>Partners que apoyan Circus.</h2>
-      <div style={{
-        display: 'flex', flexDirection: 'row', marginTop: '3rem', justifyContent: 'space-evenly',
-      }}
-      >
-        <svg className="photo" width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <H2 style={{ marginTop: '5rem' }}>Partners que apoyan Circus.</H2>
+      <ImgDiv>
+        <Svg width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M25 1L1 32.5L25 65.5" stroke="#2D293C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-        <img className="photo" src={ironHack} alt="" />
-        <img className="photo" src={campusMadrid} alt="" />
-        <img className="photo" src={cabify} alt="" />
-        <img className="photo" src={opinator} alt="" />
-        <svg className="photo" width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+        </Svg>
+        {photos.map(image => <img key={image} src={image} alt="" />)}
+        <Svg width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 1.49219L25 32.9922L1 65.9922" stroke="#2D293C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </div>
+        </Svg>
+      </ImgDiv>
     </div>
-  </div>
+  </MainDiv>
 );
 
 Partners.defaultProps = {
