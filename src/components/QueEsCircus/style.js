@@ -31,6 +31,10 @@ export const Img = styled.img`
 
 export const RightDiv = styled.div`
   width: 100%;
+  @media(max-width:768px){
+    position: fixed;
+    bottom: 0;
+  }
 `;
 
 export const H2 = styled.h2`
