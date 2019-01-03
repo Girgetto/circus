@@ -25,5 +25,21 @@ export const Ul = styled.ul`
   margin-left: 50%;
   @media(max-width:768px){
     margin-left: 0% !important;
+    width: 50%;
+  }
+`;
+
+export const LeftDiv = styled.div`
+  width: 100%;
+  @media(max-width: 768px){
+    width: 50%;
+  }
+`;
+
+export const SelectorDiv = styled.div`
+  flex-direction: column;
+  width: 100%;
+  @media(max-width: 768px){
+    background-color: white !important;
   }
 `;

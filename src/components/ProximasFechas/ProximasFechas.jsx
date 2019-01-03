@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import first from '../../assets/img/icon/first.svg';
-import { RightDiv, Button, Ul } from './style';
+import {
+  RightDiv, Button, Ul, SelectorDiv,
+} from './style';
 
 export default class ProximasFechas extends Component {
   constructor(props) {
@@ -32,20 +34,18 @@ export default class ProximasFechas extends Component {
           onKeyDown={this.handleKeyDown}
         >
           <h2 style={{ marginBottom: '3rem' }}>Próximas fechas</h2>
-          <Ul style={{ width: '100%', marginLeft: '50%' }}>
+          <Ul>
             {text.proximasFechas.map((x, i) => (
               <li key={x}>
                 <div id={i} style={{ display: 'flex' }}>
                   <img src={first} alt="1" style={{ marginRight: '2rem' }} />
-                  <div style={{
-                    flexDirection: 'column',
+                  <SelectorDiv style={{
                     backgroundColor: `${index === `${i}` ? '#FFF6C1' : ''}`,
-                    width: '100%',
                   }}
                   >
                     <p id={i}>{x}</p>
                     <p id={i}>WeCode</p>
-                  </div>
+                  </SelectorDiv>
                 </div>
               </li>
             ))}

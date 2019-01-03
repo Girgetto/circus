@@ -27,7 +27,7 @@ export default class QueAprenderas extends Component {
           <Img src={image} alt="" />
         </ImgDiv>
         <div style={{ width: '100%' }}>
-          <div style={{ display: 'flex' }}>
+          <div style={{ display: 'flex', maxWidth: '10vh' }}>
             <RightDiv>
               <ul>
                 {text.fifth.map((x, i) => (

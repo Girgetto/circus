@@ -65,3 +65,7 @@ export const Item = styled.div`
   font-size: 1.2rem !important;
   font-weight: bold !important;
 `;
+
+export const P = styled.p`
+  margin-right: 1rem;
+`;
