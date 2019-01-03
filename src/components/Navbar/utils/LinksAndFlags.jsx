@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import spainFlag from '../../../assets/img/spain.svg';
-import portugalFlag from '../../../assets/img/portugal.svg';
+import spainFlag from '../../../assets/img/flags/spain.svg';
+import portugalFlag from '../../../assets/img/flags/portugal.svg';
 import {
   DropDown, DropdownContent, MainDiv, Item,
 } from '../style';

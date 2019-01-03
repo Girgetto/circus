@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const MainDiv = styled.div`
+  height: 80vh;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.11);
   display: flex;
   background-color: #E8F0FE;
@@ -21,6 +22,8 @@ export const LeftDiv = styled.div`
 
 export const Img = styled.img`
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   @media(max-width:768px){
     border-radius: 20px;
   }

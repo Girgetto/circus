@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import fourth from '../../assets/img/fourth.svg';
+import fourth from '../../assets/img/fourth.jpg';
 import { CircleDiv, MainDiv } from './style';
 
 export default class Fourth extends Component {
@@ -26,13 +26,14 @@ export default class Fourth extends Component {
     return (
       <MainDiv
         className="translate shadow"
-        style={{ marginTop: '5rem' }}
       >
         <div className="center" style={{ width: '100%' }}>
           <img
             style={{
               width: '100%',
               backgroundColor: '#E8F0FE',
+              height: '100%',
+              objectFit: 'cover',
             }}
             src={fourth}
             alt=""

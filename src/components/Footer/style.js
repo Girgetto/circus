@@ -9,6 +9,10 @@ export const A = styled.a`
 
 export const Box = styled.div`
   padding: 0 4rem;
+  @media(max-width:768px){
+    display: flex;
+    flex-wrap: wrap;
+  }
 `;
 
 export const P = styled.p`

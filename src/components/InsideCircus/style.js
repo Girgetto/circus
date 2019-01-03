@@ -3,16 +3,18 @@ import styled from 'styled-components';
 export const Button = styled.button`
   background-color: #2D293C;
   color: white;
-  padding: 2rem 10vw;
+  padding: 1.5rem 10vw;
   border-radius: 20px;
   margin-top: 2vw;
   font-weight: 500;
 `;
 
 export const MainDiv = styled.div`
+  height: 80vh;
   display: flex;
   margin-bottom: -9vh;
   @media (max-width: 768px) {
+    height: 100%;
     flex-direction: column;
   }
 `;
@@ -35,10 +37,13 @@ export const TextDiv = styled.div`
 
 export const TextBox = styled.div`
   padding: 1rem 2rem;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  @media(max-width:768px){
+    font-size: 3vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const MainTitle = styled.h1`
@@ -67,6 +72,8 @@ export const Description = styled.p`
 
 export const Img = styled.img`
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   @media(max-width:768px){
     border-radius: 20px;
   }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import face from '../../assets/img/face.svg';
+import emilioGarcia from '../../assets/img/emilio-garcia.png';
 import { MainDiv } from './style';
 
 export default class Sixth extends Component {
@@ -22,11 +22,10 @@ export default class Sixth extends Component {
 
   render() {
     const { counter } = this.state;
-    const { text, margin } = this.props;
+    const { text } = this.props;
     return (
       <MainDiv
         className="translate shadow"
-        style={{ marginTop: `${margin < 30 ? -4.5 : -margin + 30}rem` }}
       >
         <div
           className="translate-child"
@@ -73,7 +72,7 @@ export default class Sixth extends Component {
           </div>
         </div>
         <div style={{ width: '100%' }}>
-          <img src={face} alt="" style={{ width: '100%' }} />
+          <img src={emilioGarcia} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </div>
       </MainDiv>
     );
@@ -82,12 +81,10 @@ export default class Sixth extends Component {
 
 Sixth.defaultProps = {
   text: {},
-  margin: '',
 };
 
 Sixth.propTypes = {
   text: PropTypes.shape({
     fourthText: PropTypes.array,
   }),
-  margin: PropTypes.string,
 };

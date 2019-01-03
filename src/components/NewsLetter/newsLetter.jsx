@@ -8,7 +8,7 @@ const newsLetter = () => (
       style={{ display: 'flex', flexDirection: 'row' }}
     >
       <h2 style={{ fontWeight: '400' }}>Suscríbete a la newsletter</h2>
-      <Input type="text" defaultValue="Tu correo electronico" />
+      <Input type="text" placeholder="Tu correo electronico" />
       <Button type="submit">
         <p style={{ color: '#FFF' }}>Subscribirse</p>
       </Button>

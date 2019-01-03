@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import first from '../../assets/img/first.svg';
+import first from '../../assets/img/first.jpg';
 import {
-  Button, MainDiv, ButtonText, ImgDiv, TextDiv, TextBox, MainTitle, MainDescription, Description, Img,
+  Button, MainDiv, ButtonText, ImgDiv, TextDiv,
+  TextBox, MainTitle, MainDescription, Description, Img,
 } from './style';
 
 const InsideCircus = ({ text }) => (

@@ -7,9 +7,12 @@ export const CircleDiv = styled.div`
 `;
 
 export const MainDiv = styled.div`
+  height: 80vh;
   background-color: #E8F0FE;
   display: flex;
+  margin-top: -10vh;
   @media(max-width:768px){
     flex-direction: column;
+    margin-top: 10rem
   }
 `;

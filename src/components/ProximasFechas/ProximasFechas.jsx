@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import first from '../../assets/img/icon/first.svg';
-import { RightDiv, Button } from './style';
+import { RightDiv, Button, Ul } from './style';
 
 export default class ProximasFechas extends Component {
   constructor(props) {
@@ -30,10 +30,9 @@ export default class ProximasFechas extends Component {
           onClick={e => this.setColor(e.target.id)}
           role="presentation"
           onKeyDown={this.handleKeyDown}
-
         >
           <h2 style={{ marginBottom: '3rem' }}>Próximas fechas</h2>
-          <ul style={{ width: '100%', marginLeft: '50%' }}>
+          <Ul style={{ width: '100%', marginLeft: '50%' }}>
             {text.proximasFechas.map((x, i) => (
               <li key={x}>
                 <div id={i} style={{ display: 'flex' }}>
@@ -50,7 +49,7 @@ export default class ProximasFechas extends Component {
                 </div>
               </li>
             ))}
-          </ul>
+          </Ul>
         </div>
         <RightDiv className="center">
           <div className="translate-child">

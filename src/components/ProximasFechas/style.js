@@ -19,3 +19,11 @@ export const Button = styled.button`
   width: 100%;
   font-size: 2rem;
 `;
+
+export const Ul = styled.ul`
+  width: 100%;
+  margin-left: 50%;
+  @media(max-width:768px){
+    margin-left: 0% !important;
+  }
+`;
