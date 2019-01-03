@@ -37,6 +37,7 @@ export const LeftDiv = styled.div`
 `;
 
 export const RightDiv = styled.div`
+  width: 100%;
   transform: skewY(5deg);
   @media (max-width:768px) {
     transform: skewY(0deg);

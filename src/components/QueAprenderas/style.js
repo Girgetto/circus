@@ -11,3 +11,14 @@ export const ImgDiv = styled.div`
     display: none !important;
   }
 `;
+
+export const RightDiv = styled.div`
+  padding: 3rem;
+  @media(max-width:768px){
+    padding: 0;
+  }
+`;
+
+export const Img = styled.img`
+  width: 50%;
+`;

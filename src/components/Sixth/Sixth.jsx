@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import emilioGarcia from '../../assets/img/emilio-garcia.png';
-import { MainDiv } from './style';
+import {
+  MainDiv, RightDiv, LeftDiv, Img,
+} from './style';
 
 export default class Sixth extends Component {
   constructor(props) {
@@ -24,13 +26,8 @@ export default class Sixth extends Component {
     const { counter } = this.state;
     const { text } = this.props;
     return (
-      <MainDiv
-        className="translate shadow"
-      >
-        <div
-          className="translate-child"
-          style={{ width: '100%' }}
-        >
+      <MainDiv>
+        <LeftDiv>
           <div style={{
             margin: '10rem 0.5rem',
           }}
@@ -69,10 +66,10 @@ export default class Sixth extends Component {
             </svg>
 
           </div>
-        </div>
-        <div style={{ width: '100%' }}>
-          <img src={emilioGarcia} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
+        </LeftDiv>
+        <RightDiv>
+          <Img src={emilioGarcia} alt="" />
+        </RightDiv>
       </MainDiv>
     );
   }
