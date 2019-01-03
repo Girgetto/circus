@@ -30,10 +30,6 @@ export const Img = styled.img`
 
 export const LeftDiv = styled.div`
   width: 100%;
-  @media(max-width:768px){
-    position: fixed;
-    bottom: 0;
-  }
 `;
 
 export const RightDiv = styled.div`
