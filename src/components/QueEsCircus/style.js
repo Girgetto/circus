@@ -32,3 +32,8 @@ export const Img = styled.img`
 export const RightDiv = styled.div`
   width: 100%;
 `;
+
+export const H2 = styled.h2`
+  margin-top: 9vw;
+  margin-bottom: 5vw;
+`;

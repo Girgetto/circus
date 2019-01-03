@@ -8,6 +8,7 @@ export const ImgDiv = styled.div`
   display: flex; 
   flex-direction: row; 
   margin-top: 3rem;
+  flex-wrap: wrap;
 `;
 
 export const MainDiv = styled.div`
@@ -18,4 +19,8 @@ export const MainDiv = styled.div`
 
 export const H2 = styled.h2`
   margin-top: 5rem;
+`;
+
+export const Img = styled.img`
+  padding: 2vw;
 `;

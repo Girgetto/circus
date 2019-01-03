@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import second from '../../assets/img/second.jpg';
 import {
-  MainDiv, LeftDiv, Img, RightDiv,
+  MainDiv, LeftDiv, Img, RightDiv, H2,
 } from './style';
 
 const QueEsCircus = ({ text }) => (
   <MainDiv id="queEsCircus">
     <LeftDiv style={{ width: '100%' }}>
       <div style={{ margin: '0 3rem' }}>
-        <h2 style={{ marginTop: '10rem', marginBottom: '8rem' }}>
+        <H2>
           {text.queEsCircusTitle}
-        </h2>
+        </H2>
         <p>
           {text.queEsCircusDescription}
         </p>
