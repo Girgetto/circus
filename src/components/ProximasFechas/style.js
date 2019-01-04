@@ -25,7 +25,7 @@ export const Ul = styled.ul`
   margin-left: 50%;
   @media(max-width:768px){
     margin-left: 0% !important;
-    width: 50%;
+    width: 100%;
   }
 `;
 
@@ -39,7 +39,18 @@ export const LeftDiv = styled.div`
 export const SelectorDiv = styled.div`
   flex-direction: column;
   width: 100%;
-  @media(max-width: 768px){
+  ${'' /* @media(max-width: 768px){
     background-color: white !important;
+  } */}
+`;
+
+export const DescriptionDiv = styled.div`
+  text-align: center;
+  display: none;
+  @media(max-width: 768px){
+    transition: 0.2s;
+    height: 0;
+    display: block;
+    overflow: hidden;
   }
 `;

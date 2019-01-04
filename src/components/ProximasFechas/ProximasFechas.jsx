@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import first from '../../assets/img/icon/first.svg';
 import {
-  RightDiv, Button, Ul, SelectorDiv,
+  RightDiv, Button, Ul, SelectorDiv, DescriptionDiv,
 } from './style';
 
 export default class ProximasFechas extends Component {
@@ -15,7 +15,17 @@ export default class ProximasFechas extends Component {
   }
 
   setColor(index) {
-    return index === '' ? '' : this.setState({ index });
+    if (!(index === '') && !(index.includes('description'))) {
+      const { text } = this.props;
+      text.proximasFechas.forEach((_, i) => {
+        // eslint-disable-next-line
+        document.getElementById(`description${i}`).style.height = '0';
+      });
+      // eslint-disable-next-line
+      document.getElementById(`description${index || 0}`).style.height = '10vh';
+      return index === '' ? '' : this.setState({ index });
+    }
+    return '';
   }
 
   render() {
@@ -36,15 +46,35 @@ export default class ProximasFechas extends Component {
           <h2 style={{ marginBottom: '3rem' }}>Próximas fechas</h2>
           <Ul>
             {text.proximasFechas.map((x, i) => (
-              <li key={x}>
+              <li
+                key={x}
+                style={{
+                  backgroundColor: `${index === `${i}` ? '#FFF6C1' : ''}`,
+                }}
+              >
                 <div id={i} style={{ display: 'flex' }}>
-                  <img src={first} alt="1" style={{ marginRight: '2rem' }} />
                   <SelectorDiv style={{
                     backgroundColor: `${index === `${i}` ? '#FFF6C1' : ''}`,
                   }}
                   >
-                    <p id={i}>{x}</p>
-                    <p id={i}>WeCode</p>
+                    <div id={i} style={{ display: 'flex', textAlign: 'center' }}>
+                      <img src={first} alt="1" style={{ marginRight: '2rem' }} />
+                      <div style={{ flexDirection: 'column' }}>
+                        <p id={i}>{x}</p>
+                        <p id={i}>WeCode</p>
+                      </div>
+                    </div>
+                    <DescriptionDiv
+                      id={`description${i}`}
+                      style={{
+                        height: 0,
+                      }}
+                    >
+                      <p>{text.proximasFechas[index]}</p>
+                      <button type="button">
+                          Aplicar
+                      </button>
+                    </DescriptionDiv>
                   </SelectorDiv>
                 </div>
               </li>
