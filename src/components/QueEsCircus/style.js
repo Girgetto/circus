@@ -11,6 +11,7 @@ export const MainDiv = styled.div`
     margin-top: 8rem;
     transform: skewY(0deg);
     justify-content: space-between;
+    text-align: center;
   }
 `;
 

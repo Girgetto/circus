@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const MainDiv = styled.div`
   display: flex;
   padding: 10rem 5rem;
+  text-align: center;
 `;
 
 export const ImgDiv = styled.div`
@@ -21,4 +22,12 @@ export const RightDiv = styled.div`
 
 export const Img = styled.img`
   width: 50%;
+`;
+
+export const DescriptionDiv = styled.div`
+  display: flex;
+  max-width: 10vh;
+  @media(max-width:768px) {
+    max-width:100% !important;
+  }
 `;

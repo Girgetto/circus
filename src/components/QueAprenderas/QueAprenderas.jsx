@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import image from '../../assets/img/Fifth.svg';
 import {
-  MainDiv, ImgDiv, RightDiv, Img,
+  MainDiv, ImgDiv, RightDiv, Img, DescriptionDiv,
 } from './style';
 
 export default class QueAprenderas extends Component {
@@ -27,7 +27,7 @@ export default class QueAprenderas extends Component {
           <Img src={image} alt="" />
         </ImgDiv>
         <div style={{ width: '100%' }}>
-          <div style={{ display: 'flex', maxWidth: '10vh' }}>
+          <DescriptionDiv>
             <RightDiv>
               <ul>
                 {text.fifth.map((x, i) => (
@@ -61,7 +61,7 @@ export default class QueAprenderas extends Component {
               </h1>
               <p>{text.fifth[index].description}</p>
             </div>
-          </div>
+          </DescriptionDiv>
         </div>
       </MainDiv>
     );

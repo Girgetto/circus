@@ -6,7 +6,6 @@ export const MainDiv = styled.div`
   transform: skewY(-5deg);
   @media(max-width:768px){
     flex-direction: column-reverse;
-    margin-top: 35vw;
     transform: skewY(0deg);
   }
 `;

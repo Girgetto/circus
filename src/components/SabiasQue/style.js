@@ -5,6 +5,7 @@ export const MainDiv = styled.div`
   height: 50rem;
   @media(max-width: 768px){
     flex-direction: column;
+    text-align: center;
   }
 `;
 

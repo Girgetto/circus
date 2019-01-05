@@ -112,4 +112,8 @@ button {
 	a {
 		font-size: 3vw;
 	}
+
+	img {
+		max-height: 30vh;
+	}
 }
