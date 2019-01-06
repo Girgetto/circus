@@ -7,6 +7,7 @@ export const MainDiv = styled.div`
   @media(max-width:768px){
     flex-direction: column-reverse;
     transform: skewY(0deg);
+    margin-bottom: 10rem;
   }
 `;
 
@@ -28,5 +29,11 @@ export const Img = styled.img`
   object-fit: cover;
   @media(max-width:768px){
     border-radius: 20px;
+  }
+`;
+
+export const CircleDiv = styled.div`
+  .circle {
+    margin:0.3rem;
   }
 `;

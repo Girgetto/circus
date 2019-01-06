@@ -50,7 +50,7 @@ export const MainTitle = styled.h1`
   padding-top: 1vh;
   font-size: 5vw; 
   @media(max-width:768px){
-    font-size: 9vw;
+    font-size: 8vw;
   }
 `;
 

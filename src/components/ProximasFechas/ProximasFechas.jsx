@@ -16,7 +16,7 @@ export default class ProximasFechas extends Component {
 
   componentDidMount() {
     // eslint-disable-next-line
-    document.getElementById(`description${0}`).style.height = '20vh';
+    document.getElementById(`description${0}`).style.height = '40vh';
   }
 
   setColor(index) {
@@ -27,7 +27,7 @@ export default class ProximasFechas extends Component {
         document.getElementById(`description${i}`).style.height = '0';
       });
       // eslint-disable-next-line
-      document.getElementById(`description${index || 0}`).style.height = '20vh';
+      document.getElementById(`description${index || 0}`).style.height = '40vh';
       return index === '' ? '' : this.setState({ index });
     }
     return '';
@@ -65,7 +65,7 @@ export default class ProximasFechas extends Component {
                     <TitleDiv id={i}>
                       <img src={first} alt="1" style={{ marginRight: '2rem' }} />
                       <div style={{ flexDirection: 'column' }}>
-                        <p id={i}>{x.date}</p>
+                        <p id={i} style={{ color: 'grey' }}>{x.date}</p>
                         <p id={i}>{x.title}</p>
                       </div>
                     </TitleDiv>
@@ -73,12 +73,13 @@ export default class ProximasFechas extends Component {
                       id={`description${i}`}
                       style={{
                         height: 0,
+                        marginTop: '3rem',
                       }}
                     >
                       <p>{text.proximasFechas[index].description}</p>
-                      <button type="button">
+                      <Button type="button">
                           Aplicar
-                      </button>
+                      </Button>
                     </DescriptionDiv>
                   </SelectorDiv>
                 </div>

@@ -15,9 +15,9 @@ export const Button = styled.button`
   color: white;
   padding: 1rem 10rem;
   border-radius: 20px;
-  margin-top: 5rem;
+  margin-top: 2rem;
   width: 100%;
-  font-size: 2rem;
+  font-size: 5vw;
 `;
 
 export const Ul = styled.ul`
@@ -57,7 +57,5 @@ export const DescriptionDiv = styled.div`
 
 export const TitleDiv = styled.div`
   display: flex;
-  @media(max-width:768px) {
-    text-align: center;
-  }
+
 `;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import emilioGarcia from '../../assets/img/emilio-garcia.png';
 import {
-  MainDiv, RightDiv, LeftDiv, Img,
+  MainDiv, RightDiv, LeftDiv, Img, CircleDiv,
 } from './style';
 
 export default class Sixth extends Component {
@@ -29,13 +29,13 @@ export default class Sixth extends Component {
       <MainDiv>
         <LeftDiv>
           <div style={{
-            margin: '10rem 0.5rem',
+            margin: '10vw 0.5vw',
           }}
           >
             <svg width="62" height="41" viewBox="0 0 62 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M47.668 13.6C55.148 13.6 61.2 19.72 61.2 27.2C61.2 34.68 55.08 40.8 47.6 40.8C40.12 40.8 34 34.68 34 27.2C34 12.172 46.172 4.8542e-05 61.2 4.8542e-05C61.2 4.8542e-05 52.292 3.33205 47.668 13.6ZM27.2 27.2C27.2 34.68 21.08 40.8 13.6 40.8C6.12 40.8 0 34.68 0 27.2C0 12.172 12.172 4.8542e-05 27.2 4.8542e-05C27.2 4.8542e-05 18.292 3.33205 13.668 13.6C21.148 13.6 27.2 19.72 27.2 27.2Z" fill="#2D293C" />
             </svg>
-            <div style={{ margin: '0 4rem' }}>
+            <div style={{ margin: '0 4rem', height: '40vh' }}>
               <p>
                 {text.six[counter]}
               </p>
@@ -52,18 +52,22 @@ export default class Sixth extends Component {
             </div>
           </div>
           <div className="center" style={{ flexDirection: 'row' }}>
-            <svg className="circle" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                opacity={counter === 0 ? '' : '0.1'}
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z"
-                fill="#414141"
-              />
-            </svg>
-            <svg className="circle" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity={counter === 1 ? '' : '0.1'} fillRule="evenodd" clipRule="evenodd" d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z" fill="#414141" />
-            </svg>
+            <CircleDiv>
+              <svg className="circle" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  opacity={counter === 0 ? '' : '0.1'}
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z"
+                  fill="#414141"
+                />
+              </svg>
+            </CircleDiv>
+            <CircleDiv>
+              <svg className="circle" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity={counter === 1 ? '' : '0.1'} fillRule="evenodd" clipRule="evenodd" d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z" fill="#414141" />
+              </svg>
+            </CircleDiv>
 
           </div>
         </LeftDiv>
