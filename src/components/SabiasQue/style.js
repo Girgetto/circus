@@ -14,3 +14,10 @@ export const ImgDiv = styled.div`
     display: none !important;
   }
 `;
+
+export const DescriptionDiv = styled.div`
+  margin: 3rem 6rem;
+  @media(max-width:768px) {
+    margin: 3rem 3rem;
+  }
+`;

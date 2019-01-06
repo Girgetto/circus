@@ -46,7 +46,6 @@ table {
 a {
 	font-family: Helvetica Neue;
 	text-decoration: none;
-	padding: 0 2rem;
 	font-weight: 460 !important;
 }
 
@@ -114,6 +113,6 @@ button {
 	}
 
 	img {
-		max-height: 30vh;
+		max-height: 40vw;
 	}
 }

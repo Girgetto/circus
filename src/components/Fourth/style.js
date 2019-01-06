@@ -15,7 +15,6 @@ export const MainDiv = styled.div`
   @media(max-width:768px){
     flex-direction: column;
     transform: skewY(0deg);
-    margin-top: 0;
   }
 `;
 

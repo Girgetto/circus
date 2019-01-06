@@ -15,7 +15,7 @@ export const NavbarDiv = styled.div`
   z-index: 1;
   padding: 1.75rem 0;
   @media (max-width: 768px) {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 `;
 

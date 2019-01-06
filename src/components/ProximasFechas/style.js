@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const RightDiv = styled.div`
-  width: 100%;
+  width: 50%;
   background-color: #FFF6C1;
   z-index: 1;
   position: relative;
@@ -13,11 +13,11 @@ export const RightDiv = styled.div`
 export const Button = styled.button`
   background-color: #2D293C;
   color: white;
-  padding: 1rem 10rem;
+  padding: 1rem 1rem;
   border-radius: 20px;
   margin-top: 2rem;
   width: 100%;
-  font-size: 5vw;
+  font-size: 2vw;
 `;
 
 export const Ul = styled.ul`
@@ -58,4 +58,11 @@ export const DescriptionDiv = styled.div`
 export const TitleDiv = styled.div`
   display: flex;
 
+`;
+
+export const OptionsDiv = styled.div`
+  width: 50%;
+  @media(max-width: 768px) {
+    width: 100%;
+  }
 `;

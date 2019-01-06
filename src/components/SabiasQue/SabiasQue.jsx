@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import red from '../../assets/img/red.svg';
-import { MainDiv, ImgDiv } from './style';
+import { MainDiv, ImgDiv, DescriptionDiv } from './style';
 
 
 const SabiasQue = ({ text }) => (
@@ -16,14 +16,12 @@ const SabiasQue = ({ text }) => (
       width: '100%',
     }}
     >
-      <div
-        style={{ margin: '3rem 6rem' }}
-      >
+      <DescriptionDiv>
         <h2 style={{ marginBottom: '2rem' }}>{text.sabiasQueTitle}</h2>
         <p style={{ marginBottom: '2rem' }}>{text.sabiasQueDescription}</p>
         <h2 style={{ marginBottom: '4rem' }}>{text.esParaTiTitle}</h2>
         <p>{text.esParaTIDescription}</p>
-      </div>
+      </DescriptionDiv>
     </div>
   </MainDiv>
 );

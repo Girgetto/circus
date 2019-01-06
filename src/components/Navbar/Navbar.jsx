@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router';
 import circusLogo from '../../assets/img/circus.svg';
 import LinksAndFlags from './utils/LinksAndFlags';
 import { NavbarDiv, MenuDiv, P } from './style';
@@ -17,10 +18,13 @@ export default class Navbar extends Component {
 
 
   render() {
+    const { location } = this.props;
     return (
       <NavbarDiv>
+        {(location.pathname !== '/pt' && location.pathname !== '/es')
+        && <Redirect to="es" />}
         <Sidenav id="mySidenav" {...this.props} />
-        <img src={circusLogo} alt="" />
+        <img src={circusLogo} alt="" style={{ marginRight: '10vw' }} />
         <LinksAndFlags {...this.props} />
         <MenuDiv>
           <P>Menu</P>
