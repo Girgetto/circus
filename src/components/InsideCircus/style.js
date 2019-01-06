@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const Button = styled.button`
   background-color: #2D293C;
   color: white;
-  padding: 1.5rem 10vw;
+  padding: 1rem 10vw;
   border-radius: 20px;
   margin-top: 2vw;
   font-weight: 500;
+  width: 90%;
 `;
 
 export const MainDiv = styled.div`
@@ -23,7 +24,7 @@ export const ButtonText = styled.a`
   color:white;
   font-size: 1.5vw;
   @media(max-width:768px){
-    font-size: 3vw;
+    font-size: 5vw;
   }
 `;
 
@@ -50,7 +51,8 @@ export const MainTitle = styled.h1`
   padding-top: 1vh;
   font-size: 5vw; 
   @media(max-width:768px){
-    font-size: 8vw;
+    text-align: center;
+    font-size: 17vw;
   }
 `;
 
@@ -59,14 +61,18 @@ export const MainDescription = styled.h3`
   padding-bottom: 2vw;
   font-size: 2vw;
     @media(max-width:768px){
-    font-size: 4vw;
+      text-align: center;
+      font-size: 8vw;
+      font-weight: 450;
+      line-height: 10vw;
   }
 `;
 
 export const Description = styled.p`
   font-size: 1.3vw;
+  color: gray;
   @media(max-width:768px){
-    font-size: 3vw;
+    font-size: 5vw;
   }
 `;
 

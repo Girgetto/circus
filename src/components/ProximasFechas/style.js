@@ -67,6 +67,13 @@ export const OptionsDiv = styled.div`
   width: 50%;
   @media(max-width: 768px) {
     width: 100%;
-    margin-bottom: 10rem;
+  }
+`;
+
+export const MainDiv = styled.div`
+  display: flex;
+  height: 40rem;
+  @media(max-width: 768px) {
+    margin-bottom: 40vw;
   }
 `;

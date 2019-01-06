@@ -16,10 +16,12 @@ const InsideCircus = ({ text }) => (
         <MainTitle>{text.first}</MainTitle>
         <MainDescription>{text.insideDescription}</MainDescription>
         <Description>{text.inside3}</Description>
+      </TextBox>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Button type="button">
           <ButtonText href="/">{text.insideButton}</ButtonText>
         </Button>
-      </TextBox>
+      </div>
     </TextDiv>
   </MainDiv>
 );

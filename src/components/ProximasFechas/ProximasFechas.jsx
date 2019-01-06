@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import first from '../../assets/img/icon/first.svg';
 import {
-  RightDiv, Button, Ul, SelectorDiv, DescriptionDiv, TitleDiv, OptionsDiv,
+  RightDiv, Button, Ul, SelectorDiv, DescriptionDiv, TitleDiv, OptionsDiv, MainDiv,
 } from './style';
 
 export default class ProximasFechas extends Component {
@@ -37,10 +37,7 @@ export default class ProximasFechas extends Component {
     const { index } = this.state;
     const { text } = this.props;
     return (
-      <div
-        className="translate"
-        style={{ display: 'flex', height: '40rem' }}
-      >
+      <MainDiv className="translate">
         <OptionsDiv
           className="translate-child center"
           onClick={e => this.setColor(e.target.id)}
@@ -103,7 +100,7 @@ export default class ProximasFechas extends Component {
             </div>
           </div>
         </RightDiv>
-      </div>
+      </MainDiv>
     );
   }
 }

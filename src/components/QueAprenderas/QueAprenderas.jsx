@@ -44,7 +44,7 @@ export default class QueAprenderas extends Component {
                         cy="10"
                         r="8"
                         stroke={`${text.fifth[i].color}`}
-                        strokeWidth="1"
+                        strokeWidth="3"
                         fill={`${index === i ? text.fifth[i].color : 'white'}`}
                       />
                     </svg>
