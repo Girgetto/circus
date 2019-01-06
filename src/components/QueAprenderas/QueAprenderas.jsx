@@ -52,14 +52,14 @@ export default class QueAprenderas extends Component {
                 ))}
               </ul>
             </RightDiv>
-            <div style={{ maxWidth: '23rem', maxHeight: '10rem' }}>
-              <h2>Que aprendaras</h2>
+            <div>
+              <h2 style={{ marginBottom: '3rem' }}>Que aprendaras</h2>
               <h1
                 style={{ color: `${text.fifth[index].color}` }}
               >
                 {text.fifth[index].title}
               </h1>
-              <p>{text.fifth[index].description}</p>
+              <p style={{ marginTop: '2rem' }}>{text.fifth[index].description}</p>
             </div>
           </DescriptionDiv>
         </div>

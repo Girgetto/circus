@@ -30,9 +30,9 @@
     "lorem ipsum dolor sit amet"
   ],
   "proximasFechas":[
-    "Dia 1- Playtomic",
-    "Dia 2- Playtomic",
-    "Dia 3- Playtomic",
-    "Dia 4- Playtomic"
+    {"date":"16 Noviembre - 14:30 hrs.","title":"Dia 1 - impartido por Playtomic","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "},
+    {"date":"15-16 Diciembre - 10 hrs.","title":"WeCode & WeDesign - WeWork ","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "},
+    {"date":"18 Enero - 14:30 hrs.","title":"Topping croissant cookie","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "},
+    {"date":"26 Enero - 14:30 hrs.","title":"WeCode","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "}
   ]
 }

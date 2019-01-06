@@ -45,12 +45,19 @@ export const SelectorDiv = styled.div`
 `;
 
 export const DescriptionDiv = styled.div`
-  text-align: center;
   display: none;
   @media(max-width: 768px){
+    text-align: center;
     transition: 0.2s;
     height: 0;
     display: block;
     overflow: hidden;
+  }
+`;
+
+export const TitleDiv = styled.div`
+  display: flex;
+  @media(max-width:768px) {
+    text-align: center;
   }
 `;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import first from '../../assets/img/icon/first.svg';
 import {
-  RightDiv, Button, Ul, SelectorDiv, DescriptionDiv,
+  RightDiv, Button, Ul, SelectorDiv, DescriptionDiv, TitleDiv,
 } from './style';
 
 export default class ProximasFechas extends Component {
@@ -14,6 +14,11 @@ export default class ProximasFechas extends Component {
     this.setColor = this.setColor.bind(this);
   }
 
+  componentDidMount() {
+    // eslint-disable-next-line
+    document.getElementById(`description${0}`).style.height = '20vh';
+  }
+
   setColor(index) {
     if (!(index === '') && !(index.includes('description'))) {
       const { text } = this.props;
@@ -22,7 +27,7 @@ export default class ProximasFechas extends Component {
         document.getElementById(`description${i}`).style.height = '0';
       });
       // eslint-disable-next-line
-      document.getElementById(`description${index || 0}`).style.height = '10vh';
+      document.getElementById(`description${index || 0}`).style.height = '20vh';
       return index === '' ? '' : this.setState({ index });
     }
     return '';
@@ -47,7 +52,7 @@ export default class ProximasFechas extends Component {
           <Ul>
             {text.proximasFechas.map((x, i) => (
               <li
-                key={x}
+                key={x.title}
                 style={{
                   backgroundColor: `${index === `${i}` ? '#FFF6C1' : ''}`,
                 }}
@@ -57,20 +62,20 @@ export default class ProximasFechas extends Component {
                     backgroundColor: `${index === `${i}` ? '#FFF6C1' : ''}`,
                   }}
                   >
-                    <div id={i} style={{ display: 'flex', textAlign: 'center' }}>
+                    <TitleDiv id={i}>
                       <img src={first} alt="1" style={{ marginRight: '2rem' }} />
                       <div style={{ flexDirection: 'column' }}>
-                        <p id={i}>{x}</p>
-                        <p id={i}>WeCode</p>
+                        <p id={i}>{x.date}</p>
+                        <p id={i}>{x.title}</p>
                       </div>
-                    </div>
+                    </TitleDiv>
                     <DescriptionDiv
                       id={`description${i}`}
                       style={{
                         height: 0,
                       }}
                     >
-                      <p>{text.proximasFechas[index]}</p>
+                      <p>{text.proximasFechas[index].description}</p>
                       <button type="button">
                           Aplicar
                       </button>
@@ -84,13 +89,12 @@ export default class ProximasFechas extends Component {
         <RightDiv className="center">
           <div className="translate-child">
             <div style={{ margin: '2rem 4rem' }}>
-              <p style={{ color: 'gray' }}>15-16 Diciembre - 10 hrs.</p>
+              <p style={{ color: 'gray' }}>{text.proximasFechas[index].date}</p>
               <h2>
-                {text.proximasFechas[index]}
+                {text.proximasFechas[index].title}
               </h2>
               <p>
-  Workshop impartido por Playtomic donde nos contaran como trabajan sus
-              equipos de diseño, desarollo para evolucionar su startup
+                {text.proximasFechas[index].description}
               </p>
               <Button type="button">
                 Aplicar

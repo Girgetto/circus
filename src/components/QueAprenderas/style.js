@@ -26,7 +26,7 @@ export const Img = styled.img`
 
 export const DescriptionDiv = styled.div`
   display: flex;
-  max-width: 10vh;
+  text-align: left;
   @media(max-width:768px) {
     max-width:100% !important;
   }

@@ -28,16 +28,16 @@ const Footer = () => (
         </Box>
       ))}
     </Row>
-    <Row>
+    <Row style={{ marginTop: '10vmin' }}>
       <div style={{ padding: '0 1rem' }}>
         <img src={circus} alt="" />
       </div>
-      <Row>
+      <div style={{ display: 'flex' }}>
         <img src={ironHackFooter} style={{ padding: '0 1rem' }} alt="" />
         <P>
-Powered by ironhack
+  Powered by ironhack
         </P>
-      </Row>
+      </div>
     </Row>
   </Div>
 );
