@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CircleDiv = styled.div`
   .circle {
-    margin:0.3rem;
+    margin: 2rem 0.3rem;
   }
 `;
 

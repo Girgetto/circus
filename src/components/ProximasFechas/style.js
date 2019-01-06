@@ -18,6 +18,9 @@ export const Button = styled.button`
   margin-top: 2rem;
   width: 100%;
   font-size: 2vw;
+  @media(max-width: 768px) {
+    font-size: 5vw;
+  }
 `;
 
 export const Ul = styled.ul`
@@ -64,5 +67,6 @@ export const OptionsDiv = styled.div`
   width: 50%;
   @media(max-width: 768px) {
     width: 100%;
+    margin-bottom: 10rem;
   }
 `;

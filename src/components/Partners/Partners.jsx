@@ -15,7 +15,7 @@ const Partners = () => (
     className="translate center shadow"
     style={{ marginTop: '5rem' }}
   >
-    <div className="translate-child center">
+    <div className="translate-child center" style={{ width: '100%' }}>
       <H2 style={{ marginTop: '5rem' }}>Partners que apoyan Circus.</H2>
       <ImgDiv>
         <Svg width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -7,7 +7,7 @@ export const MainDiv = styled.div`
   @media(max-width:768px){
     flex-direction: column-reverse;
     transform: skewY(0deg);
-    margin-bottom: 10rem;
+    margin-bottom: 20rem;
   }
 `;
 
@@ -34,6 +34,6 @@ export const Img = styled.img`
 
 export const CircleDiv = styled.div`
   .circle {
-    margin:0.3rem;
+    margin: 2rem 0.3rem;
   }
 `;

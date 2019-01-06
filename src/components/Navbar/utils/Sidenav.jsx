@@ -26,7 +26,16 @@ const Sidenav = ({ location, getLanguage }) => (
       >
         <p style={{ padding: '0 0.5rem', textDecoration: `${location.pathname === '/es' ? 'underline' : ''}` }}>ES</p>
       </Link>
-      <button type="button" href="/" onClick={closeNav} style={{ fontSize: '5vh' }}>
+      <button
+        type="button"
+        href="/"
+        onClick={closeNav}
+        style={{
+          fontSize: '5vh',
+          backgroundColor: 'transparent',
+          border: 'none',
+        }}
+      >
         &times;
       </button>
     </div>

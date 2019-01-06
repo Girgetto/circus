@@ -54,6 +54,7 @@ export default class ProximasFechas extends Component {
                 key={x.title}
                 style={{
                   backgroundColor: `${index === `${i}` ? '#FFF6C1' : ''}`,
+                  padding: '1rem 2rem',
                 }}
               >
                 <div id={i} style={{ display: 'flex' }}>

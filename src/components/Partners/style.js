@@ -5,10 +5,12 @@ export const Svg = styled.svg`
 `;
 
 export const ImgDiv = styled.div`
+  width: 100%;
   display: flex; 
   flex-direction: row; 
   margin-top: 3rem;
   flex-wrap: wrap;
+  justify-content: space-around;
 `;
 
 export const MainDiv = styled.div`
@@ -22,5 +24,6 @@ export const H2 = styled.h2`
 `;
 
 export const Img = styled.img`
-  padding: 2vw;
+  padding: 1vw;
+  max-width: 10vw;
 `;
