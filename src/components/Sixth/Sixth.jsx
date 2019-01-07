@@ -41,7 +41,12 @@ export default class Sixth extends Component {
                   {text.six[counter]}
                 </p>
                 <p
-                  style={{ color: 'grey', fontSize: '1rem', fontWeight: '400' }}
+                  style={{
+                    color: 'grey',
+                    fontSize: '1rem',
+                    fontWeight: '400',
+                    textAlign: 'center',
+                  }}
                 >
                   {text.fourthCit}
                 </p>

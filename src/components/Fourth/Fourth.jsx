@@ -41,7 +41,12 @@ export default class Fourth extends Component {
                   {text.fourthText[counter]}
                 </p>
                 <p
-                  style={{ color: 'grey', fontSize: '1rem', fontWeight: '400' }}
+                  style={{
+                    color: 'grey',
+                    fontSize: '1.5vw',
+                    fontWeight: '400',
+                    textAlign: 'center',
+                  }}
                 >
                   {text.fourthCit}
                 </p>
