@@ -25,6 +25,7 @@ export const RightDiv = styled.div`
 
 export const Img = styled.img`
   width: 50%;
+  float: left;
 `;
 
 export const DescriptionDiv = styled.div`

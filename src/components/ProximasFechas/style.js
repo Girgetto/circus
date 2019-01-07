@@ -25,7 +25,7 @@ export const Button = styled.button`
 
 export const Ul = styled.ul`
   width: 100%;
-  margin-left: 50%;
+  margin-left: 10%;
   @media(max-width:768px){
     margin-left: 0% !important;
     width: 100%;

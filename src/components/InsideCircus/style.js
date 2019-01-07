@@ -7,7 +7,7 @@ export const Button = styled.button`
   border-radius: 20px;
   margin-top: 2vw;
   font-weight: 500;
-  width: 90%;
+  width: 60%;
 `;
 
 export const MainDiv = styled.div`
@@ -70,7 +70,6 @@ export const MainDescription = styled.h3`
 
 export const Description = styled.p`
   font-size: 1.3vw;
-  color: gray;
   @media(max-width:768px){
     font-size: 5vw;
   }
@@ -86,7 +85,5 @@ export const Img = styled.img`
 `;
 
 export const ButtonDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 2rem
 `;

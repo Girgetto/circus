@@ -23,7 +23,7 @@ export default class QueAprenderas extends Component {
     const { text } = this.props;
     return (
       <MainDiv>
-        <ImgDiv className="center">
+        <ImgDiv>
           <Img src={image} alt="" />
         </ImgDiv>
         <div style={{ width: '50%' }}>
