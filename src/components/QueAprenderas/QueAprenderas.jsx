@@ -26,7 +26,7 @@ export default class QueAprenderas extends Component {
         <ImgDiv className="center">
           <Img src={image} alt="" />
         </ImgDiv>
-        <div style={{ width: '100%' }}>
+        <div style={{ width: '50%' }}>
           <DescriptionDiv>
             <RightDiv>
               <ul>
@@ -52,7 +52,7 @@ export default class QueAprenderas extends Component {
                 ))}
               </ul>
             </RightDiv>
-            <div>
+            <div style={{ maxHeight: '20rem' }}>
               <h2 style={{ marginBottom: '3rem' }}>Que aprendaras</h2>
               <H1
                 style={{ color: `${text.fifth[index].color}` }}

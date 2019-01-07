@@ -10,7 +10,7 @@ export const MainDiv = styled.div`
 `;
 
 export const ImgDiv = styled.div`
-  width: 100%;
+  width: 50%;
   @media(max-width:768px){
     display: none !important;
   }
