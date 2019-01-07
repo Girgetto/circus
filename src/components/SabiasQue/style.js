@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const MainDiv = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50rem;
   @media(max-width: 768px){
     flex-direction: column;
