@@ -81,6 +81,7 @@ p {
 
 button {
 	outline: none;
+	border-style: none;
 }
 
 .center {

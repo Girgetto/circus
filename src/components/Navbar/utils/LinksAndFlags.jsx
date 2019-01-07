@@ -13,7 +13,10 @@ const LinksAndFlags = ({ text, location, getLanguage }) => (
     {text.navbar.map(x => <a key={x} href="#queEsCircus"><Item>{x}</Item></a>)}
     <DropDown className="dropdown">
       <img
-        style={{ paddingTop: '0.7rem' }}
+        style={{
+          paddingTop: '0.7rem',
+          marginRight: '10rem',
+        }}
         src={
       location.pathname === '/es' ? spainFlag : portugalFlag}
         alt=""

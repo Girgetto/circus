@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import first from '../../assets/img/first.jpg';
 import {
   Button, MainDiv, ButtonText, ImgDiv, TextDiv,
-  TextBox, MainTitle, MainDescription, Description, Img,
+  TextBox, MainTitle, MainDescription, Description, Img, ButtonDiv,
 } from './style';
 
 const InsideCircus = ({ text }) => (
@@ -17,17 +17,17 @@ const InsideCircus = ({ text }) => (
         <MainDescription>{text.insideDescription}</MainDescription>
         <Description>{text.inside3}</Description>
       </TextBox>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <ButtonDiv>
         <Button type="button">
           <ButtonText href="/">{text.insideButton}</ButtonText>
         </Button>
-      </div>
+      </ButtonDiv>
     </TextDiv>
   </MainDiv>
 );
 
 InsideCircus.defaultProps = {
-  text: 'Loading',
+  text: { first: 'Loading' },
 };
 
 InsideCircus.propTypes = {

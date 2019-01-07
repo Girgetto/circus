@@ -84,3 +84,9 @@ export const Img = styled.img`
     border-radius: 20px;
   }
 `;
+
+export const ButtonDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;

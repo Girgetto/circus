@@ -10,6 +10,8 @@ export const MainDiv = styled.div`
 `;
 
 export const ImgDiv = styled.div`
+background-color: #fdc6cb;
+width: 100%;
   @media(max-width: 768px){
     display: none !important;
   }
@@ -20,4 +22,8 @@ export const DescriptionDiv = styled.div`
   @media(max-width:768px) {
     margin: 3rem 3rem;
   }
+`;
+
+export const FullDiv = styled.div`
+  width: 100%
 `;

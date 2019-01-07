@@ -1,28 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import red from '../../assets/img/red.svg';
-import { MainDiv, ImgDiv, DescriptionDiv } from './style';
+import {
+  MainDiv, ImgDiv, DescriptionDiv, FullDiv,
+} from './style';
 
 
 const SabiasQue = ({ text }) => (
   <MainDiv>
-    <ImgDiv
-      className="center"
-      style={{ backgroundColor: '#fdc6cb', width: '100%' }}
-    >
+    <ImgDiv>
       <img src={red} alt="red" />
     </ImgDiv>
-    <div style={{
-      width: '100%',
-    }}
-    >
+    <FullDiv>
       <DescriptionDiv>
         <h2 style={{ marginBottom: '2rem' }}>{text.sabiasQueTitle}</h2>
         <p style={{ marginBottom: '2rem' }}>{text.sabiasQueDescription}</p>
         <h2 style={{ marginBottom: '4rem' }}>{text.esParaTiTitle}</h2>
         <p>{text.esParaTIDescription}</p>
       </DescriptionDiv>
-    </div>
+    </FullDiv>
   </MainDiv>
 );
 
