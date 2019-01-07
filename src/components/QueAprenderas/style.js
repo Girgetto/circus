@@ -42,3 +42,10 @@ export const H1 = styled.h1`
     font-size: 7vh;
   }
 `;
+
+export const InnerDescription = styled.div`
+  max-height: 20rem;
+  @media(max-width:768px) {
+    max-height: 100%;
+  }
+`;

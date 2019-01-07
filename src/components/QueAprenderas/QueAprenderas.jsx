@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import image from '../../assets/img/Fifth.svg';
 import {
-  MainDiv, ImgDiv, RightDiv, Img, DescriptionDiv, H1,
+  MainDiv, ImgDiv, RightDiv, Img, DescriptionDiv, H1, InnerDescription,
 } from './style';
 
 export default class QueAprenderas extends Component {
@@ -52,7 +52,7 @@ export default class QueAprenderas extends Component {
                 ))}
               </ul>
             </RightDiv>
-            <div style={{ maxHeight: '20rem' }}>
+            <InnerDescription>
               <h2 style={{ marginBottom: '3rem' }}>Que aprendaras</h2>
               <H1
                 style={{ color: `${text.fifth[index].color}` }}
@@ -60,7 +60,7 @@ export default class QueAprenderas extends Component {
                 {text.fifth[index].title}
               </H1>
               <p style={{ marginTop: '2rem' }}>{text.fifth[index].description}</p>
-            </div>
+            </InnerDescription>
           </DescriptionDiv>
         </div>
       </MainDiv>

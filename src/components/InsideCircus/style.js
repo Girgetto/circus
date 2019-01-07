@@ -85,5 +85,9 @@ export const Img = styled.img`
 `;
 
 export const ButtonDiv = styled.div`
-  margin-left: 2rem
+  margin-left: 2rem;
+  @media(max-width:768px){
+    margin-left: 0;
+    text-align: center;
+  }
 `;
