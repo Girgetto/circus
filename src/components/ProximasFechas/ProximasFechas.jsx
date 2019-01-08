@@ -50,13 +50,13 @@ export default class ProximasFechas extends Component {
               <li
                 key={x.title}
                 style={{
-                  backgroundColor: `${index === `${i}` ? '#FFF6C1' : ''}`,
+                  backgroundColor: `${index === `${i}` ? x.color : ''}`,
                   padding: '1rem 2rem',
                 }}
               >
                 <div id={i} style={{ display: 'flex' }}>
                   <SelectorDiv style={{
-                    backgroundColor: `${index === `${i}` ? '#FFF6C1' : ''}`,
+                    backgroundColor: `${index === `${i}` ? x.color : ''}`,
                   }}
                   >
                     <TitleDiv id={i}>
@@ -84,7 +84,10 @@ export default class ProximasFechas extends Component {
             ))}
           </Ul>
         </OptionsDiv>
-        <RightDiv className="center">
+        <RightDiv
+          className="center"
+          style={{ backgroundColor: `${text.proximasFechas[index].color}` }}
+        >
           <div className="translate-child" style={{ width: '100%' }}>
             <div style={{ margin: '2rem 4rem' }}>
               <p style={{ color: 'gray' }}>{text.proximasFechas[index].date}</p>
