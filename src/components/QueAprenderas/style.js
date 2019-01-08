@@ -47,5 +47,13 @@ export const InnerDescription = styled.div`
   max-height: 20rem;
   @media(max-width:768px) {
     max-height: 100%;
+    max-width: 75vw;
+  }
+`;
+
+export const UpperDescriptonDiv = styled.div`
+  width: 50%;
+  @media(max-width:768px) {
+    width: 100%;
   }
 `;

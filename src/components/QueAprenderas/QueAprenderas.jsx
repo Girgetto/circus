@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import image from '../../assets/img/Fifth.svg';
 import {
-  MainDiv, ImgDiv, RightDiv, Img, DescriptionDiv, H1, InnerDescription,
+  MainDiv, ImgDiv, RightDiv, Img, DescriptionDiv, H1, InnerDescription, UpperDescriptonDiv,
 } from './style';
 
 export default class QueAprenderas extends Component {
@@ -35,7 +35,7 @@ export default class QueAprenderas extends Component {
         <ImgDiv>
           <Img src={image} alt="" />
         </ImgDiv>
-        <div style={{ width: '50%' }}>
+        <UpperDescriptonDiv>
           <DescriptionDiv>
             <RightDiv>
               <ul>
@@ -71,7 +71,7 @@ export default class QueAprenderas extends Component {
               <p style={{ marginTop: '2rem' }}>{text.fifth[index].description}</p>
             </InnerDescription>
           </DescriptionDiv>
-        </div>
+        </UpperDescriptonDiv>
       </MainDiv>
     );
   }
