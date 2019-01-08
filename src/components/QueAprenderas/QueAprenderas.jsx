@@ -14,6 +14,15 @@ export default class QueAprenderas extends Component {
     this.changer = this.changer.bind(this);
   }
 
+  componentDidMount() {
+    const { text } = this.props;
+    let i = 0;
+    setInterval(() => {
+      i = i > text.fifth.length - 2 ? 0 : i + 1;
+      this.setState({ index: i });
+    }, 5000);
+  }
+
   changer(index = 0) {
     this.setState({ index });
   }

@@ -12,7 +12,9 @@ export const MainDiv = styled.div`
 `;
 
 export const ImgDiv = styled.div`
-background-color: #fdc6cb;
+background-color: #f5c8cd;
+height: 200vh;
+display: flex;
 width: 100%;
   @media(max-width: 768px){
     display: none !important;
