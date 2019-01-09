@@ -31,3 +31,11 @@ export const DescriptionDiv = styled.div`
 export const FullDiv = styled.div`
   width: 100%
 `;
+
+export const H2 = styled.h2`
+  margin-bottom: 4rem;
+`;
+
+export const P = styled.h2`
+  margin-bottom: 4rem;
+`;

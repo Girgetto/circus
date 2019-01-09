@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import red from '../../assets/img/red.svg';
 import {
-  MainDiv, ImgDiv, DescriptionDiv, FullDiv,
+  MainDiv, ImgDiv, DescriptionDiv, FullDiv, H2, P,
 } from './style';
 
 
@@ -13,10 +13,10 @@ const SabiasQue = ({ text }) => (
     </ImgDiv>
     <FullDiv>
       <DescriptionDiv>
-        <h2 style={{ marginBottom: '4rem' }}>{text.sabiasQueTitle}</h2>
-        <p style={{ marginBottom: '4rem' }}>{text.sabiasQueDescription}</p>
-        <h2 style={{ marginBottom: '4rem' }}>{text.esParaTiTitle}</h2>
-        <p>{text.esParaTIDescription}</p>
+        <H2>{text.sabiasQueTitle}</H2>
+        <P>{text.sabiasQueDescription}</P>
+        <H2>{text.esParaTiTitle}</H2>
+        <P>{text.esParaTIDescription}</P>
       </DescriptionDiv>
     </FullDiv>
   </MainDiv>
