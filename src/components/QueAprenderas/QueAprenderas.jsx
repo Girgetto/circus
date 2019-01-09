@@ -5,7 +5,7 @@ import Descriptions from './utils/Descriptions';
 import {
   MainDiv, ImgDiv, RightDiv, Img,
   DescriptionDiv, H1, InnerDescription,
-  UpperDescriptonDiv,
+  UpperDescriptonDiv, H2, P,
 } from './style';
 
 export default class QueAprenderas extends Component {
@@ -44,13 +44,13 @@ export default class QueAprenderas extends Component {
               <Descriptions text={text} index={index} changer={this.changer} ctx={this} />
             </RightDiv>
             <InnerDescription>
-              <h2 style={{ marginBottom: '3rem' }}>Que aprendaras</h2>
+              <H2>Que aprendaras</H2>
               <H1
                 style={{ color: `${text.fifth[index].color}` }}
               >
                 {text.fifth[index].title}
               </H1>
-              <p style={{ marginTop: '2rem' }}>{text.fifth[index].description}</p>
+              <P>{text.fifth[index].description}</P>
             </InnerDescription>
           </DescriptionDiv>
         </UpperDescriptonDiv>

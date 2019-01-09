@@ -57,3 +57,11 @@ export const UpperDescriptonDiv = styled.div`
     width: 100%;
   }
 `;
+
+export const H2 = styled.h2`
+  margin-bortom: 3rem;
+`;
+
+export const P = styled.p`
+  margin-top: 2rem;
+`;
