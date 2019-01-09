@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import image from '../../assets/img/Fifth.svg';
+import Descriptions from './utils/Descriptions';
 import {
-  MainDiv, ImgDiv, RightDiv, Img, DescriptionDiv, H1, InnerDescription, UpperDescriptonDiv,
+  MainDiv, ImgDiv, RightDiv, Img,
+  DescriptionDiv, H1, InnerDescription,
+  UpperDescriptonDiv,
 } from './style';
 
 export default class QueAprenderas extends Component {
@@ -38,28 +41,7 @@ export default class QueAprenderas extends Component {
         <UpperDescriptonDiv>
           <DescriptionDiv>
             <RightDiv>
-              <ul>
-                {text.fifth.map((x, i) => (
-                  <div
-                    key={x.title}
-                    tabIndex="0"
-                    role="button"
-                    onClick={() => this.changer(i)}
-                    onKeyDown={this.handleKeyDown}
-                  >
-                    <svg height="50" width="50">
-                      <circle
-                        cx="10"
-                        cy="10"
-                        r="8"
-                        stroke={`${text.fifth[i].color}`}
-                        strokeWidth="3"
-                        fill={`${index === i ? text.fifth[i].color : 'white'}`}
-                      />
-                    </svg>
-                  </div>
-                ))}
-              </ul>
+              <Descriptions text={text} index={index} changer={this.changer} ctx={this} />
             </RightDiv>
             <InnerDescription>
               <h2 style={{ marginBottom: '3rem' }}>Que aprendaras</h2>
