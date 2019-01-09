@@ -17,6 +17,7 @@ export const MainDiv = styled.div`
   height: 20rem;
   padding-bottom: 10rem;
   background-color: white;
+  margin-top: 5rem;
 `;
 
 export const H2 = styled.h2`

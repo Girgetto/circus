@@ -31,3 +31,16 @@ export const Button = styled.button`
   outline: none;
 }
 `;
+
+export const InnerDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const H2 = styled.h2`
+  font-weight: 400;
+`;
+
+export const P = styled.p`
+  color: #fff;
+`;

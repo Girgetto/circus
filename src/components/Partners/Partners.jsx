@@ -11,12 +11,9 @@ import {
 const photos = [ironHack, campusMadrid, cabify, opinator];
 
 const Partners = () => (
-  <MainDiv
-    className="translate center shadow"
-    style={{ marginTop: '5rem' }}
-  >
+  <MainDiv className="translate center shadow">
     <div className="translate-child center" style={{ width: '100%' }}>
-      <H2 style={{ marginTop: '5rem' }}>Partners que apoyan Circus.</H2>
+      <H2>Partners que apoyan Circus.</H2>
       <ImgDiv>
         <Svg width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M25 1L1 32.5L25 65.5" stroke="#2D293C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
