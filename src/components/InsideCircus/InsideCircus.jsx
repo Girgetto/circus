@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import first from '../../assets/img/first.jpg';
 import {
-  Button, MainDiv, ButtonText, ImgDiv, TextDiv,
+  Button, MainDiv, ImgDiv, TextDiv,
   TextBox, MainTitle, MainDescription, Description, Img, ButtonDiv,
 } from './style';
 
@@ -19,7 +19,7 @@ const InsideCircus = ({ text }) => (
       </TextBox>
       <ButtonDiv>
         <Button type="button">
-          <ButtonText href="/">{text.insideButton}</ButtonText>
+          {text.insideButton}
         </Button>
       </ButtonDiv>
     </TextDiv>

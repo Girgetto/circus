@@ -12,19 +12,40 @@ const closeNav = () => {
 
 const Sidenav = ({ location, getLanguage }) => (
   <div id="mySidenav" className="sidenav">
-    <div style={{ display: 'flex', borderBottom: '1px solid gray', justifyContent: 'space-around' }}>
+    <div style={{
+      display: 'flex',
+      borderBottom: '1px solid gray',
+      justifyContent: 'space-around',
+    }}
+    >
       <img src={circus} alt="" />
       <Link
         to="/pt"
         onClick={() => getLanguage('pt')}
       >
-        <p style={{ padding: '0 0.5rem', textDecoration: `${location.pathname === '/pt' ? 'underline' : ''}` }}>PT</p>
+        <p
+          style={{
+            padding: '0 0.5rem',
+            textDecoration: `${location.pathname === '/pt' ? 'underline' : ''}`,
+          }}
+        >
+PT
+
+        </p>
       </Link>
       <Link
         to="/es"
         onClick={() => getLanguage('es')}
       >
-        <p style={{ padding: '0 0.5rem', textDecoration: `${location.pathname === '/es' ? 'underline' : ''}` }}>ES</p>
+        <p
+          style={{
+            padding: '0 0.5rem',
+            textDecoration: `${location.pathname === '/es' ? 'underline' : ''}`,
+          }}
+        >
+ES
+
+        </p>
       </Link>
       <button
         type="button"

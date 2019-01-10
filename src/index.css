@@ -59,7 +59,7 @@ h1 {
 
 h2 {
 	font-family: Helvetica Neue;
-	color: #2D293C;
+	color: #000;
 	font-size: 3vw;
 	font-weight: bold;
 }
@@ -82,6 +82,7 @@ p {
 button {
 	outline: none;
 	border-style: none;
+	font-size: 1.2rem;
 }
 
 .center {
@@ -97,6 +98,10 @@ button {
 
 .translate-child {
   transform: skewY(5deg);
+}
+
+.transition {
+	transition: 0.3s;
 }
 
 @media(max-width: 768px){

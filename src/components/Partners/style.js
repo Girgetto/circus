@@ -17,6 +17,11 @@ export const MainDiv = styled.div`
   height: 20rem;
   padding-bottom: 10rem;
   background-color: white;
+  box-shadow: rgba(0,0,0,0.11) 0px 4px 30px;
+  transform: skewY(-5deg);
+  @media(max-width:768px){
+    transform: skewY(0deg);
+  }
 `;
 
 export const H2 = styled.h2`
@@ -26,4 +31,12 @@ export const H2 = styled.h2`
 export const Img = styled.img`
   padding: 1vw;
   max-width: 10vw;
+`;
+
+export const InnerDiv = styled.div`
+  transform: skewY(5deg);
+  width: 100%;
+  @media (max-width:768px) {
+    transform: skewY(0deg);
+  }
 `;

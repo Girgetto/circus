@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 
 export const MainDiv = styled.div`
+  height: 60vh;
   display: flex;
   background-color: #E8F0FE;
   transform: skewY(-5deg);
   box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 30px;
   @media(max-width:768px){
+    height: 100vh;
     flex-direction: column-reverse;
     transform: skewY(0deg);
     margin-bottom: 20rem;
+    justify-content: space-between;
   }
 `;
 
@@ -35,7 +38,7 @@ export const Img = styled.img`
 
 export const CircleDiv = styled.div`
   .circle {
-    margin: 2rem 0.3rem;
+    margin: 0rem 0.3rem;
   }
 `;
 

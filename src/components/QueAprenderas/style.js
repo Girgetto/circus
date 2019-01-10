@@ -38,6 +38,7 @@ export const DescriptionDiv = styled.div`
 `;
 
 export const H1 = styled.h1`
+  font-weight: bold;
   @media(max-width:768px) {
     font-size: 7vh;
   }
@@ -56,4 +57,13 @@ export const UpperDescriptonDiv = styled.div`
   @media(max-width:768px) {
     width: 100%;
   }
+`;
+
+export const H2 = styled.h2`
+  margin-bottom: 3rem;
+  font-weight: bold;
+`;
+
+export const P = styled.p`
+  margin-top: 2rem;
 `;

@@ -11,7 +11,7 @@ export const Input = styled.input`
   margin: 0 3rem;
   outline: none;
   font-size: 1.2rem;
-  padding-bottom: 1rem;
+  margin-top: 28px; /*sistemare*/
 `;
 
 export const MainDiv = styled.div`
@@ -27,7 +27,17 @@ export const Button = styled.button`
   background-color: #2D293C;
   border-radius: 20px;
   padding: 1rem 6rem;
+  color: #fff;
   :focus{
   outline: none;
 }
+`;
+
+export const InnerDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const H2 = styled.h2`
+  font-weight: 400;
 `;

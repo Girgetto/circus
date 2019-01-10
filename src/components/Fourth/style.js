@@ -2,19 +2,22 @@ import styled from 'styled-components';
 
 export const CircleDiv = styled.div`
   .circle {
-    margin: 2rem 0.3rem;
+    margin: 0rem 0.3rem;
   }
 `;
 
 export const MainDiv = styled.div`
+  height: 60vh;
   background-color: #E8F0FE;
   display: flex;
   margin-top: -8vh;
   transform: skewY(-5deg);
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.11);
   @media(max-width:768px){
+    height: 100vh;
     flex-direction: column;
     transform: skewY(0deg);
+    justify-content: space-between;
   }
 `;
 

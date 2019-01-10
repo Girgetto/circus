@@ -7,7 +7,6 @@ export const Button = styled.button`
   border-radius: 20px;
   margin-top: 2vw;
   font-weight: 500;
-  width: 60%;
 `;
 
 export const MainDiv = styled.div`
@@ -17,14 +16,6 @@ export const MainDiv = styled.div`
   @media (max-width: 768px) {
     height: 100%;
     flex-direction: column;
-  }
-`;
-
-export const ButtonText = styled.a`
-  color:white;
-  font-size: 1.5vw;
-  @media(max-width:768px){
-    font-size: 5vw;
   }
 `;
 

@@ -11,7 +11,7 @@ const openNav = () => {
   document.getElementById("mySidenav").style.width = "100%";
 };
 export default class Navbar extends Component {
-  componentWillMount() {
+  componentDidMount() {
     const { getLanguage, location } = this.props;
     getLanguage(location.pathname.replace('/', ''));
   }

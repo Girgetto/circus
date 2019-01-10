@@ -12,11 +12,9 @@ export const RightDiv = styled.div`
 export const Button = styled.button`
   background-color: #2D293C;
   color: white;
-  padding: 1rem 1rem;
   border-radius: 20px;
   margin-top: 2rem;
-  width: 100%;
-  font-size: 2vw;
+  padding: 1rem 6rem;
   @media(max-width: 768px) {
     font-size: 5vw;
   }
@@ -41,9 +39,6 @@ export const LeftDiv = styled.div`
 export const SelectorDiv = styled.div`
   flex-direction: column;
   width: 100%;
-  ${'' /* @media(max-width: 768px){
-    background-color: white !important;
-  } */}
 `;
 
 export const DescriptionDiv = styled.div`
