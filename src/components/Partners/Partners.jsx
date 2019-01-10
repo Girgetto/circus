@@ -10,8 +10,13 @@ import {
 
 const photos = [ironHack, campusMadrid, cabify, opinator];
 
-const Partners = () => (
-  <MainDiv className="center shadow">
+const Partners = ({ margin }) => (
+  <MainDiv
+    className="transition center shadow"
+    style={{
+      marginTop: `${margin < 41 ? -2 : (-margin + 34)}rem`,
+    }}
+  >
     <InnerDiv className="center">
       <H2>Partners que apoyan Circus.</H2>
       <ImgDiv>
@@ -29,12 +34,14 @@ const Partners = () => (
 
 Partners.defaultProps = {
   text: { fourthText: ['Loading', 'Loading'] },
+  margin: '',
 };
 
 Partners.propTypes = {
   text: PropTypes.shape({
     fourthText: PropTypes.array,
   }),
+  margin: PropTypes.string,
 };
 
 
