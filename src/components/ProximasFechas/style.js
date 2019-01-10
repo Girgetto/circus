@@ -68,6 +68,6 @@ export const MainDiv = styled.div`
   display: flex;
   height: 40rem;
   @media(max-width: 768px) {
-    margin-bottom: 40vw;
+    margin-bottom: 90vw;
   }
 `;
