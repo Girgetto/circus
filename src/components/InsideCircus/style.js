@@ -16,6 +16,7 @@ export const MainDiv = styled.div`
   @media (max-width: 768px) {
     height: 100%;
     flex-direction: column;
+    margin-bottom: 10vh;
   }
 `;
 

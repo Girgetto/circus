@@ -26,9 +26,14 @@ export default class Fourth extends Component {
 
   render() {
     const { counter } = this.state;
-    const { text } = this.props;
+    const { text, margin } = this.props;
     return (
-      <MainDiv>
+      <MainDiv
+        className="transition"
+        style={{
+          marginTop: `${margin < 15 ? -5 : (-margin + 11)}rem`,
+        }}
+      >
         <LeftDiv>
           <Img src={fourth} alt="" />
         </LeftDiv>
@@ -57,10 +62,12 @@ export default class Fourth extends Component {
 
 Fourth.defaultProps = {
   text: { fourthText: ['Loading', 'Loading'] },
+  margin: '',
 };
 
 Fourth.propTypes = {
   text: PropTypes.shape({
     fourthText: PropTypes.array,
   }),
+  margin: PropTypes.string,
 };

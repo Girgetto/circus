@@ -18,6 +18,7 @@ export const MainDiv = styled.div`
     flex-direction: column;
     transform: skewY(0deg);
     justify-content: space-between;
+    margin-bottom: 10vh;
   }
 `;
 

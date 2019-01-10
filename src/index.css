@@ -51,7 +51,7 @@ a {
 
 h1 {
 	font-family: Helvetica Neue;
-	color: #2D293C;
+	color: #000;
 	font-weight: 500;
 	font-size: 5vw;
 	letter-spacing: 0.5rem;
@@ -66,7 +66,7 @@ h2 {
 
 h3 {
 	font-family: Helvetica Neue;
-	color: #2D293C;
+	color: #000;
 	font-size: 2vw;
 	font-weight: bold;
 }
@@ -75,7 +75,7 @@ p {
 	font-family: Helvetica Neue;
 	line-height: 2rem;
 	font-size: 1.4vw;
-	color: #2D293C;
+	color: #000;
 	font-weight: 500;
 }
 
@@ -101,7 +101,7 @@ button {
 }
 
 .transition {
-	transition: 0.3s;
+	transition: 0.4s;
 }
 
 @media(max-width: 768px){

@@ -30,7 +30,7 @@ export default class App extends Component {
     window.onscroll = () => {
       // eslint-disable-next-line
       const scrollBarPosition = window.pageYOffset | document.body.scrollTop;
-      this.setState({ margin: (scrollBarPosition / 80).toFixed(2) });
+      this.setState({ margin: (scrollBarPosition / 80).toFixed(1) });
     };
   }
 
@@ -53,9 +53,9 @@ export default class App extends Component {
         <InsideCircus text={this.setLanguage()} />
         <QueEsCircus margin={margin} text={this.setLanguage()} />
         <SabiasQue text={this.setLanguage()} />
-        <Fourth text={this.setLanguage()} />
+        <Fourth margin={margin} text={this.setLanguage()} />
         <QueAprenderas text={this.setLanguage()} />
-        <Sixth text={this.setLanguage()} />
+        <Sixth margin={margin} text={this.setLanguage()} />
         <ProximasFechas text={this.setLanguage()} />
         <Partners text={this.setLanguage()} />
         <NewsLetter text={this.setLanguage()} />

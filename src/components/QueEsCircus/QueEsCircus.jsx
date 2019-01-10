@@ -10,9 +10,7 @@ const QueEsCircus = ({ text, margin }) => (
     id="queEsCircus"
     className="transition"
     style={{
-      display: 'flex',
-      backgroundColor: '#E8F0FE',
-      marginTop: `${(margin < 0 || margin > 15) ? 0 : -margin * 2}rem`,
+      marginTop: `${(margin < 0 || margin > 15) ? 0 : -margin * 1.5}rem`,
     }}
   >
     <LeftDiv>
