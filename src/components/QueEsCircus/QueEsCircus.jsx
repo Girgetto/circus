@@ -6,7 +6,7 @@ import {
 } from './style';
 
 const QueEsCircus = ({ text }) => (
-  <MainDiv id="queEsCircus">
+  <MainDiv id="queEsCircus" className="transition">
     <LeftDiv>
       <TextDiv>
         <H2>

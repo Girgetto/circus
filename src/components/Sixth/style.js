@@ -11,6 +11,7 @@ export const MainDiv = styled.div`
     flex-direction: column-reverse;
     transform: skewY(0deg);
     margin-bottom: 20rem;
+    justify-content: space-between;
   }
 `;
 

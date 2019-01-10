@@ -17,6 +17,7 @@ export const MainDiv = styled.div`
     height: 100vh;
     flex-direction: column;
     transform: skewY(0deg);
+    justify-content: space-between;
   }
 `;
 
