@@ -41,7 +41,7 @@ Descriptions.propTypes = {
   }),
   index: PropTypes.number,
   changer: PropTypes.func,
-  ctx: PropTypes.func,
+  ctx: PropTypes.shape({}),
 };
 
 export default Descriptions;

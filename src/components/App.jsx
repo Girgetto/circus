@@ -25,7 +25,7 @@ export default class App extends Component {
   }
 
   getLanguage(lang) {
-    this.setState({ language: lang });
+    this.setState({ language: `${lang === '' ? 'es' : lang}` });
   }
 
   setLanguage() {
