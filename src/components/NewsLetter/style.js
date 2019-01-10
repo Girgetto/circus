@@ -11,7 +11,7 @@ export const Input = styled.input`
   margin: 0 3rem;
   outline: none;
   font-size: 1.2rem;
-  padding-bottom: 1rem;
+  margin-top: 28px; /*sistemare*/
 `;
 
 export const MainDiv = styled.div`

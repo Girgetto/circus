@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MainDiv = styled.div`
-  margin: 10vw 0.5vw;
+  margin: 4vw 0.5vw;
 `;
 
 export const InnerDiv = styled.div`

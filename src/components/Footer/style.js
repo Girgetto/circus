@@ -26,6 +26,7 @@ export const Div = styled.div`
     background-color: #2D293C;
     color: white;
     margin-top: -5rem;
+    padding: 10vmin 0;
     height: 20rem;
     justify-content: space-around;
 `;

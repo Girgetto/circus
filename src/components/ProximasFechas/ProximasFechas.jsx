@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import first from '../../assets/img/icon/first.svg';
+import first from '../../assets/img/icon/first.svg'; // sistemare
 import {
   RightDiv, Button, Ul, SelectorDiv, DescriptionDiv, TitleDiv, OptionsDiv, MainDiv,
 } from './style';

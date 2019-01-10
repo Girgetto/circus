@@ -6,7 +6,14 @@ import {
 const newsLetter = () => (
   <MainDiv className="translate center">
     <InnerDiv className="translate-child">
-      <H2>Suscríbete a la newsletter</H2>
+      <H2 style={{
+        display: 'flex',
+        flexDirection: 'column-reverse',
+      }}
+      >
+Suscríbete a la newsletter
+
+      </H2>
       <Input type="text" placeholder="Tu correo electronico" />
       <Button type="submit">
         <P>Subscribirse</P>

@@ -16,6 +16,7 @@ const LinksAndFlags = ({ text, location, getLanguage }) => (
         style={{
           paddingTop: '0.7rem',
           marginRight: '10rem',
+          padding: '1rem',
         }}
         src={
       location.pathname === '/es' ? spainFlag : portugalFlag}
