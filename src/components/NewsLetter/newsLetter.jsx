@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Input, MainDiv, Button, InnerDiv, H2, P,
+  Input, MainDiv, Button, InnerDiv, H2,
 } from './style';
 
 const newsLetter = () => (
@@ -15,9 +15,7 @@ Suscríbete a la newsletter
 
       </H2>
       <Input type="text" placeholder="Tu correo electronico" />
-      <Button type="submit">
-        <P>Subscribirse</P>
-      </Button>
+      <Button type="submit">Subscribirse</Button>
     </InnerDiv>
   </MainDiv>
 );

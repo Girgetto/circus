@@ -26,6 +26,7 @@ export const DropDown = styled.div`
     .dropdown-content {
       display: block;
       border-radius: 5px;
+      margin: 0rem 1rem;
     }
   }
 `;

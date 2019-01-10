@@ -80,11 +80,10 @@ p {
 }
 
 button {
-	padding: 1rem 6rem !important; /*sistemare*/
 	outline: none;
 	border-style: none;
 	padding: 1rem 6rem;
-	font-size: 19px !important; /*sistemare*/
+	font-size: 1.2rem;
 }
 
 .center {

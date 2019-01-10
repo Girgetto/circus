@@ -5,14 +5,14 @@ import campusMadrid from '../../assets/img/logos/campusMadrid.svg';
 import cabify from '../../assets/img/logos/cabify.svg';
 import opinator from '../../assets/img/logos/opinator.svg';
 import {
-  Svg, ImgDiv, MainDiv, H2, Img,
+  Svg, ImgDiv, MainDiv, H2, Img, InnerDiv,
 } from './style';
 
 const photos = [ironHack, campusMadrid, cabify, opinator];
 
 const Partners = () => (
-  <MainDiv className="translate center shadow">
-    <div className="translate-child center" style={{ width: '100%' }}>
+  <MainDiv className="center shadow">
+    <InnerDiv className="center">
       <H2>Partners que apoyan Circus.</H2>
       <ImgDiv>
         <Svg width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,7 +23,7 @@ const Partners = () => (
           <path d="M1 1.49219L25 32.9922L1 65.9922" stroke="#2D293C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </Svg>
       </ImgDiv>
-    </div>
+    </InnerDiv>
   </MainDiv>
 );
 
