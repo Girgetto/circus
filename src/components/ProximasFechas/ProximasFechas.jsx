@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import first from '../../assets/img/icon/first.svg'; // sistemare
+import first from '../../assets/img/icon/first.svg';
+import second from '../../assets/img/icon/second.svg';
+import third from '../../assets/img/icon/third.svg';
+import fourth from '../../assets/img/icon/fourth.svg';
 import {
   RightDiv, Button, Ul, SelectorDiv, DescriptionDiv, TitleDiv, OptionsDiv, MainDiv,
 } from './style';
+
+const imgArr = [first, second, third, fourth];
 
 export default class ProximasFechas extends Component {
   constructor(props) {
@@ -60,7 +65,7 @@ export default class ProximasFechas extends Component {
                   }}
                   >
                     <TitleDiv id={i}>
-                      <img src={first} alt="1" style={{ marginRight: '2rem' }} />
+                      <img src={imgArr[i]} alt="1" style={{ marginRight: '2rem' }} />
                       <div style={{ flexDirection: 'column' }}>
                         <p id={i} style={{ color: 'grey' }}>{x.date}</p>
                         <p id={i}>{x.title}</p>
@@ -90,8 +95,15 @@ export default class ProximasFechas extends Component {
         >
           <div className="translate-child" style={{ width: '100%' }}>
             <div style={{ margin: '2rem 4rem' }}>
-              <p style={{ color: 'gray' }}>{text.proximasFechas[index].date}</p>
-              <h2>
+              <p style={{
+                color: 'gray',
+                marginBottom: '2rem',
+              }}
+              >
+                {text.proximasFechas[index].date}
+
+              </p>
+              <h2 style={{ marginBottom: '2rem' }}>
                 {text.proximasFechas[index].title}
               </h2>
               <p>

@@ -68,7 +68,6 @@ h3 {
 	font-family: Helvetica Neue;
 	color: #000;
 	font-size: 2vw;
-	font-weight: bold;
 }
 
 p {
@@ -76,7 +75,6 @@ p {
 	line-height: 2rem;
 	font-size: 1.4vw;
 	color: #000;
-	font-weight: 500;
 }
 
 button {
