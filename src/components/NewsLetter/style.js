@@ -36,6 +36,7 @@ export const Button = styled.button`
 export const InnerDiv = styled.div`
   display: flex;
   flex-direction: row;
+  margin-bottom: 3rem;
 `;
 
 export const H2 = styled.h2`

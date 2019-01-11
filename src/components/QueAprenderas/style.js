@@ -4,6 +4,7 @@ export const MainDiv = styled.div`
   display: flex;
   padding: 10rem 5rem;
   text-align: center;
+  padding-top: 6rem;
   @media(max-width: 768px){
     padding: 10rem 1rem;
   }
@@ -11,6 +12,7 @@ export const MainDiv = styled.div`
 
 export const ImgDiv = styled.div`
   width: 50%;
+  margin-top: 3rem;
   @media(max-width:768px){
     display: none !important;
   }
@@ -61,7 +63,7 @@ export const UpperDescriptonDiv = styled.div`
 
 export const H2 = styled.h2`
   margin-bottom: 3rem;
-  font-weight: bold;
+  font-weight: 400;
 `;
 
 export const P = styled.p`

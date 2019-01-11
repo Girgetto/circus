@@ -18,6 +18,7 @@ export const MainDiv = styled.div`
 export const LeftDiv = styled.div`
   transform: skewY(5deg);
   width: 100%;
+  margin-top: 3rem;
   @media (max-width:768px) {
     transform: skewY(0deg);
   }
