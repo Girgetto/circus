@@ -7,7 +7,7 @@ import {
   DropDown, DropdownContent, MainDiv, Item,
 } from '../style';
 
-
+const scrolls = [500, 1100, 2300, 3300];
 class LinksAndFlags extends React.Component {
   constructor() {
     super();
@@ -19,18 +19,18 @@ class LinksAndFlags extends React.Component {
     this.scrollToTop = this.scrollToTop.bind(this);
   }
 
-  scrollStep() {
+  scrollStep(scroll) {
+    const { intervalId } = this.state;
     // eslint-disable-next-line
     if (window.pageYOffset === 0) {
-      // eslint-disable-next-line
-      clearInterval(this.state.intervalId);
+      clearInterval(intervalId);
     }
     // eslint-disable-next-line
-    window.scroll(0, 500);
+    window.scroll(0, scroll);
   }
 
-  scrollToTop() {
-    const intervalId = setInterval(this.scrollStep, 1);
+  scrollToTop(scroll) {
+    const intervalId = setInterval(this.scrollStep(scroll), 1);
     this.setState({ intervalId });
   }
 
@@ -39,7 +39,7 @@ class LinksAndFlags extends React.Component {
     return (
       <MainDiv>
         {/* eslint-disable-next-line */}
-        {text.navbar.map(x => (<a key={x} onClick={this.scrollToTop}><Item>{x}</Item></a>))}
+        {text.navbar.map((x,i) => (<a key={x} onClick={()=>this.scrollToTop(scrolls[i])}><Item>{x}</Item></a>))}
         <DropDown className="dropdown">
           <img
             style={{
