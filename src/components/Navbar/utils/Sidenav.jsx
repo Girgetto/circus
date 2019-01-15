@@ -3,14 +3,14 @@ import './Sidenav.css';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import circus from '../../../assets/img/circus.svg';
-
+import { Item } from '../style';
 
 const closeNav = () => {
   // eslint-disable-next-line
   document.getElementById('mySidenav').style.width = '0';
 };
 
-const Sidenav = ({ location, getLanguage }) => (
+const Sidenav = ({ location, getLanguage, text }) => (
   <div id="mySidenav" className="sidenav">
     <div style={{
       display: 'flex',
@@ -60,10 +60,7 @@ ES
         &times;
       </button>
     </div>
-    <a href="/">Que es Circus</a>
-    <a href="/">Services</a>
-    <a href="/">Clients</a>
-    <a href="/">Contact</a>
+    {text.navbar.map(x => <a key={x} href="#queEsCircus"><Item>{x}</Item></a>)}
   </div>
 );
 
@@ -75,11 +72,13 @@ Sidenav.defaultProps = {
     navbar4: 'Loading',
   },
   getLanguage: PropTypes.func,
+  text: {},
 };
 
 Sidenav.propTypes = {
   location: PropTypes.shape({}),
   getLanguage: PropTypes.func,
+  text: PropTypes.shape({}),
 };
 
 export default Sidenav;
