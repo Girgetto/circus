@@ -1,19 +1,26 @@
 import styled from 'styled-components';
 
 export const MainDiv = styled.div`
-  display:flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 768px) {
     display: none;
   }
 `;
 
 export const NavbarDiv = styled.div`
-  display: flex;
   justify-content: center;
-  position: relative;
   display: flex;
   z-index: 1;
-  padding: 1.75rem 0;
+  padding: 1vh 0;
+  position: fixed;
+  background-color: white;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 10vh;
+  box-shadow: 0px 4px 30px rgba(0,0,0,0.11);
   @media (max-width: 768px) {
     justify-content: space-evenly;
   }
@@ -62,7 +69,7 @@ export const MenuDiv = styled.div`
 export const Item = styled.div`
   display:flex;
   color:black;
-  padding: 1rem ;
+  padding: 0 1rem;
   font-size: 1.2rem !important;
   font-weight: bold !important;
 `;
