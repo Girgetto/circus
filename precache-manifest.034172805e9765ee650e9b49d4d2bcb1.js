@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "0f70c902826f228e4947769c1f4ba3fb",
-    "url": "/circus/static/media/fourth.0f70c902.jpg"
+    "revision": "ebe7082948f3d820ecd52d915e3979e3",
+    "url": "/circus/static/media/Fifth.ebe70829.svg"
   },
   {
-    "revision": "be5b392ec701f136c004",
-    "url": "/circus/static/css/main.9f34012a.chunk.css"
+    "revision": "b74d8a1dae3b7a4f25f8",
+    "url": "/circus/static/css/main.b582bbc2.chunk.css"
   },
   {
-    "revision": "7209417566c7896c50b7",
-    "url": "/circus/static/js/1.72094175.chunk.js"
+    "revision": "eb4865ee61272590d698",
+    "url": "/circus/static/js/1.eb4865ee.chunk.js"
   },
   {
     "revision": "a1afa860422454396a5d",
@@ -44,20 +44,32 @@ self.__precacheManifest = [
     "url": "/circus/static/media/red.0d975f3d.svg"
   },
   {
-    "revision": "be5b392ec701f136c004",
-    "url": "/circus/static/js/main.be5b392e.chunk.js"
+    "revision": "0f70c902826f228e4947769c1f4ba3fb",
+    "url": "/circus/static/media/fourth.0f70c902.jpg"
   },
   {
-    "revision": "ebe7082948f3d820ecd52d915e3979e3",
-    "url": "/circus/static/media/Fifth.ebe70829.svg"
+    "revision": "b74d8a1dae3b7a4f25f8",
+    "url": "/circus/static/js/main.b74d8a1d.chunk.js"
   },
   {
     "revision": "b7b86c8e1f825eb236f202858b5ae90b",
     "url": "/circus/static/media/emilio-garcia.b7b86c8e.png"
   },
   {
-    "revision": "1f85c8c27ea1361852173fb791b1213a",
-    "url": "/circus/static/media/first.1f85c8c2.svg"
+    "revision": "b3857492688f6f32822a56058578b166",
+    "url": "/circus/static/media/first.b3857492.svg"
+  },
+  {
+    "revision": "3a9d522b21306d6482fcfa84898a04fd",
+    "url": "/circus/static/media/second.3a9d522b.svg"
+  },
+  {
+    "revision": "f1078f88956a212912de75878de17b3f",
+    "url": "/circus/static/media/third.f1078f88.svg"
+  },
+  {
+    "revision": "593668df9202864b6277b80652846a9b",
+    "url": "/circus/static/media/fourth.593668df.svg"
   },
   {
     "revision": "0ca739f7e4f13f038af8e31a0209642b",
@@ -84,7 +96,7 @@ self.__precacheManifest = [
     "url": "/circus/static/media/ironHackFooter.56213e61.svg"
   },
   {
-    "revision": "87189a2dcff98a8628c90635ebff8c8c",
+    "revision": "f7cfe9fbc2572be327b193508b7612cd",
     "url": "/circus/index.html"
   }
 ];
