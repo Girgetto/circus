@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import spainFlag from '../../../assets/img/flags/spain.svg';
@@ -8,7 +8,7 @@ import {
 } from '../style';
 
 const scrolls = [500, 1100, 2300, 3300];
-class LinksAndFlags extends React.Component {
+class LinksAndFlags extends Component {
   constructor() {
     super();
 
