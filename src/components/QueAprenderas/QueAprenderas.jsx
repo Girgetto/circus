@@ -44,7 +44,7 @@ export default class QueAprenderas extends Component {
               <Descriptions text={text} index={index} changer={this.changer} ctx={this} />
             </RightDiv>
             <InnerDescription>
-              <H2>Que aprendaras</H2>
+              <H2>{text.titleFifth}</H2>
               <H1
                 style={{ color: `${text.fifth[index].color}` }}
               >
