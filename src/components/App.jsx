@@ -20,9 +20,12 @@ export default class App extends Component {
     this.state = {
       language: 'es',
       margin: '',
+      intervalId: 0,
     };
     this.getLanguage = this.getLanguage.bind(this);
     this.setLanguage = this.setLanguage.bind(this);
+    this.scrollStep = this.scrollStep.bind(this);
+    this.scrollToTop = this.scrollToTop.bind(this);
   }
 
   componentWillMount() {
@@ -43,6 +46,21 @@ export default class App extends Component {
     return language === 'es' ? spainTexts : portugueseTexts;
   }
 
+  scrollStep(scroll) {
+    const { intervalId } = this.state;
+    // eslint-disable-next-line
+    if (window.pageYOffset === 0) {
+      clearInterval(intervalId);
+    }
+    // eslint-disable-next-line
+    window.scroll(0, scroll);
+  }
+
+  scrollToTop(scroll) {
+    const intervalId = setInterval(this.scrollStep(scroll), 1);
+    this.setState({ intervalId });
+  }
+
   render() {
     const { margin } = this.state;
     return (
@@ -50,7 +68,7 @@ export default class App extends Component {
         <Switch>
           <Navbar getLanguage={this.getLanguage} text={this.setLanguage()} />
         </Switch>
-        <InsideCircus text={this.setLanguage()} />
+        <InsideCircus text={this.setLanguage()} scrollToTop={this.scrollToTop} />
         <QueEsCircus margin={margin} text={this.setLanguage()} />
         <SabiasQue text={this.setLanguage()} />
         <Fourth margin={margin} text={this.setLanguage()} />

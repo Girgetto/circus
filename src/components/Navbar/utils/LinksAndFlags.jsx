@@ -7,7 +7,7 @@ import {
   DropDown, DropdownContent, MainDiv, Item,
 } from '../style';
 
-const scrolls = [500, 1100, 2300, 3300];
+const scrolls = [450, 1000, 2200, 3100];
 class LinksAndFlags extends Component {
   constructor() {
     super();

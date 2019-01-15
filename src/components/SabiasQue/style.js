@@ -14,7 +14,7 @@ export const MainDiv = styled.div`
 
 export const ImgDiv = styled.div`
 background-color: #f5c8cd;
-height: 120vh;
+height: 150vh;
 display: flex;
 width: 100%;
   @media(max-width: 768px){

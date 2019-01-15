@@ -6,7 +6,7 @@ import {
   TextBox, MainTitle, MainDescription, Description, Img, ButtonDiv,
 } from './style';
 
-const InsideCircus = ({ text }) => (
+const InsideCircus = ({ text, scrollToTop }) => (
   <MainDiv>
     <ImgDiv>
       <Img src={first} alt="" />
@@ -18,7 +18,7 @@ const InsideCircus = ({ text }) => (
         <Description>{text.inside3}</Description>
       </TextBox>
       <ButtonDiv>
-        <Button type="button">
+        <Button type="button" onClick={() => scrollToTop(3100)}>
           {text.insideButton}
         </Button>
       </ButtonDiv>
@@ -28,12 +28,14 @@ const InsideCircus = ({ text }) => (
 
 InsideCircus.defaultProps = {
   text: { first: 'Loading' },
+  scrollToTop: '',
 };
 
 InsideCircus.propTypes = {
   text: PropTypes.shape({
     first: PropTypes.string,
   }),
+  scrollToTop: PropTypes.func,
 };
 
 export default InsideCircus;
