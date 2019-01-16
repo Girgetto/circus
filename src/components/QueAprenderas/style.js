@@ -19,7 +19,7 @@ export const ImgDiv = styled.div`
 `;
 
 export const RightDiv = styled.div`
-  padding: 3rem;
+  padding-right: 3rem;
   @media(max-width:768px){
     padding: 0;
   }
