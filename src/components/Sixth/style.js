@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MainDiv = styled.div`
-  height: 60vh;
+  height: 30rem;
   display: flex;
   background-color: #E8F0FE;
   transform: skewY(-5deg);

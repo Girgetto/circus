@@ -11,7 +11,7 @@ export const Button = styled.button`
 
 export const MainDiv = styled.div`
   margin-top: 12vh;
-  height: 80vh;
+  height: 40rem;
   display: flex;
   margin-bottom: -9vh;
   @media (max-width: 768px) {
