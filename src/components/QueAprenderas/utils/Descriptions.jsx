@@ -12,6 +12,7 @@ const Descriptions = ({
         role="button"
         onClick={() => changer(i)}
         onKeyDown={ctx.handleKeyDown}
+        style={{ cursor: 'pointer' }}
       >
         <svg height="50" width="50">
           <circle
