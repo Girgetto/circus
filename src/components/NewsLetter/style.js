@@ -26,7 +26,6 @@ export const MainDiv = styled.div`
 export const Button = styled.button`
   background-color: #2D293C;
   border-radius: 20px;
-  padding: 1rem 6rem;
   color: #fff;
   :focus{
   outline: none;

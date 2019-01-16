@@ -81,6 +81,7 @@ button {
 	outline: none;
 	border-style: none;
 	font-size: 1.2rem;
+	padding: 1rem 10vw;
 }
 
 .center {
