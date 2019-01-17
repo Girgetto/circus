@@ -5,6 +5,7 @@ export const Svg = styled.svg`
 `;
 
 export const ImgDiv = styled.div`
+  height: 10rem;
   width: 100%;
   display: flex; 
   flex-direction: row; 

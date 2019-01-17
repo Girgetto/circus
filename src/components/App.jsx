@@ -40,7 +40,7 @@ export default class App extends Component {
         <Switch>
           <Navbar getLanguage={this.getLanguage} text={this.setLanguage()} />
         </Switch>
-        <InsideCircus text={this.setLanguage()} scrollToTop={this.scrollToTop} />
+        <InsideCircus text={this.setLanguage()} />
         <QueEsCircus text={this.setLanguage()} />
         <SabiasQue text={this.setLanguage()} />
         <Fourth text={this.setLanguage()} />

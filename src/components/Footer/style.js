@@ -22,7 +22,6 @@ export const P = styled.p`
 
 export const Div = styled.div`
     position: relative;
-    z-index: 2;
     background-color: #2D293C;
     color: white;
     margin-top: -5rem;
