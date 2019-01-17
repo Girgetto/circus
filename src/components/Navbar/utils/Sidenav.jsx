@@ -46,6 +46,7 @@ class Sidenav extends Component {
           display: 'flex',
           borderBottom: '1px solid gray',
           justifyContent: 'space-around',
+          alignItems: 'center',
         }}
         >
           <img src={circus} alt="" />

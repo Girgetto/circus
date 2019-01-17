@@ -42,7 +42,7 @@ export const DescriptionDiv = styled.div`
 export const H1 = styled.h1`
   font-weight: bold;
   @media(max-width:768px) {
-    font-size: 7vh;
+    font-size: 12vw;
   }
 `;
 

@@ -4,29 +4,34 @@ import ironHack from '../../assets/img/logos/ironHack.svg';
 import campusMadrid from '../../assets/img/logos/campusMadrid.svg';
 import cabify from '../../assets/img/logos/cabify.svg';
 import opinator from '../../assets/img/logos/opinator.svg';
+import deliveroo from '../../assets/img/logos/deliverooLogo.png';
 import {
   Svg, ImgDiv, MainDiv, H2, Img, InnerDiv,
 } from './style';
 
-const photos = [ironHack, campusMadrid, cabify, opinator];
+const photos = [ironHack, campusMadrid, cabify, opinator, deliveroo];
 
 const Partners = ({ margin }) => (
   <MainDiv
     className="transition center shadow"
     style={{
-      marginTop: `${margin < 41 ? -2 : (-margin + 34)}rem`,
+      marginTop: `${margin < 41 ? -2 : (-margin + 30)}rem`,
     }}
   >
     <InnerDiv className="center">
       <H2>Partners que apoyan Circus.</H2>
       <ImgDiv>
-        <Svg width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M25 1L1 32.5L25 65.5" stroke="#2D293C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        </Svg>
-        {photos.map(image => <Img key={image} src={image} alt="" />)}
-        <Svg width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1.49219L25 32.9922L1 65.9922" stroke="#2D293C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        </Svg>
+        <button style={{ padding: 0 }} type="button" onClick={() => console.log('entra')}>
+          <Svg width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 1L1 32.5L25 65.5" stroke="#2D293C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </Svg>
+        </button>
+        {photos.map((image, i) => (i < 4 ? <Img key={image} src={image} alt="" /> : ''))}
+        <button style={{ padding: 0 }} type="button" onClick={() => console.log('entra')}>
+          <Svg width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1.49219L25 32.9922L1 65.9922" stroke="#2D293C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </Svg>
+        </button>
       </ImgDiv>
     </InnerDiv>
   </MainDiv>

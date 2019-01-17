@@ -55,19 +55,22 @@ export default class ProximasFechas extends Component {
               <li
                 key={x.title}
                 style={{
-                  backgroundColor: `${index === `${i}` ? x.color : ''}`,
                   padding: '1rem 2rem',
                   cursor: 'pointer',
+                  width: '100%',
                 }}
               >
-                <div id={i} style={{ display: 'flex' }}>
-                  <SelectorDiv style={{
-                    backgroundColor: `${index === `${i}` ? x.color : ''}`,
-                  }}
-                  >
+                <div id={i} style={{ display: 'flex', width: '100%' }}>
+                  <SelectorDiv style={{ width: '100%' }}>
                     <TitleDiv id={i}>
                       <img src={imgArr[i]} alt="1" style={{ marginRight: '2rem' }} />
-                      <div style={{ flexDirection: 'column' }}>
+                      <div
+                        style={{
+                          flexDirection: 'column',
+                          backgroundColor: `${index === `${i}` ? x.color : ''}`,
+                          width: '100%',
+                        }}
+                      >
                         <p id={i} style={{ color: 'grey' }}>{x.date}</p>
                         <p id={i}>{x.title}</p>
                       </div>
