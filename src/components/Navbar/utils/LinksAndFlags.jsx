@@ -9,6 +9,15 @@ import {
 } from '../style';
 
 const scrolls = [450, 1000, 2200, 3100];
+
+const imgStyle = {
+  paddingTop: '0.7rem',
+  marginRight: '10rem',
+  padding: '1rem',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
 class LinksAndFlags extends Component {
   constructor() {
     super();
@@ -41,11 +50,7 @@ class LinksAndFlags extends Component {
         {text.navbar.map((x,i) => (<a key={x} onClick={()=>this.scrollToTop(scrolls[i])}><Item>{x}</Item></a>))}
         <DropDown className="dropdown">
           <img
-            style={{
-              paddingTop: '0.7rem',
-              marginRight: '10rem',
-              padding: '1rem',
-            }}
+            style={imgStyle}
             src={
       location.pathname === '/es' ? spainFlag : portugalFlag}
             alt=""
