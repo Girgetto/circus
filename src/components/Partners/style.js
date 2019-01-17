@@ -47,3 +47,10 @@ export const InnerDiv = styled.div`
     transform: skewY(0deg);
   }
 `;
+
+export const ImgContainer = styled.div`
+  width: 40rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+`;

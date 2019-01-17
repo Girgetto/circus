@@ -6,7 +6,7 @@ import cabify from '../../assets/img/logos/cabify.svg';
 import opinator from '../../assets/img/logos/opinator.svg';
 import deliveroo from '../../assets/img/logos/deliverooLogo.png';
 import {
-  Svg, ImgDiv, MainDiv, H2, Img, InnerDiv,
+  Svg, ImgDiv, MainDiv, H2, Img, InnerDiv, ImgContainer,
 } from './style';
 
 export default class Partners extends Component {
@@ -43,7 +43,9 @@ export default class Partners extends Component {
                 <path d="M25 1L1 32.5L25 65.5" stroke="#2D293C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </Svg>
             </button>
-            {photos.map((image, i) => (i < 4 ? <Img key={image} src={image} alt="" /> : ''))}
+            <ImgContainer>
+              {photos.map((image, i) => (i < 4 ? <Img key={image} src={image} alt="" /> : ''))}
+            </ImgContainer>
             <button style={{ padding: 0, cursor: 'pointer' }} type="button" onClick={() => this.moveToHead()}>
               <Svg width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 1.49219L25 32.9922L1 65.9922" stroke="#2D293C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

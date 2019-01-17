@@ -1,5 +1,5 @@
 /* eslint-env browser */
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import spainFlag from '../../../assets/img/flags/spain.svg';
@@ -8,7 +8,6 @@ import {
   DropDown, DropdownContent, MainDiv, Item,
 } from '../style';
 
-const scrolls = [450, 1000, 2200, 3100];
 
 const imgStyle = {
   paddingTop: '0.7rem',
@@ -18,67 +17,40 @@ const imgStyle = {
   justifyContent: 'center',
   alignItems: 'center',
 };
-class LinksAndFlags extends Component {
-  constructor() {
-    super();
 
-    this.state = {
-      intervalId: 0,
-    };
-    this.scrollStep = this.scrollStep.bind(this);
-    this.scrollToTop = this.scrollToTop.bind(this);
-  }
-
-  scrollStep(scroll) {
-    const { intervalId } = this.state;
-    if (window.pageYOffset === 0) {
-      clearInterval(intervalId);
-    }
-    window.scroll(0, scroll);
-  }
-
-  scrollToTop(scroll) {
-    const intervalId = setInterval(this.scrollStep(scroll), 1);
-    this.setState({ intervalId });
-  }
-
-  render() {
-    const { location, text, getLanguage } = this.props;
-    return (
-      <MainDiv>
-        {/* eslint-disable-next-line */}
-        {text.navbar.map((x,i) => (<a key={x} onClick={()=>this.scrollToTop(scrolls[i])}><Item>{x}</Item></a>))}
-        <DropDown className="dropdown">
-          <img
-            style={imgStyle}
-            src={
+const LinksAndFlags = ({ location, text, getLanguage }) => (
+  <MainDiv>
+    {text.navbar.map(x => (<Item key={x}><a href="#queEsCircus">{x}</a></Item>))}
+    <DropDown className="dropdown">
+      <img
+        style={imgStyle}
+        src={
       location.pathname === '/es' ? spainFlag : portugalFlag}
-            alt=""
-          />
-          <DropdownContent className="dropdown-content">
-            <Link
-              to={`${location.pathname === '/es' ? '/pt' : '/es'}`}
-              onClick={
+        alt=""
+      />
+      <DropdownContent className="dropdown-content">
+        <Link
+          to={`${location.pathname === '/es' ? '/pt' : '/es'}`}
+          onClick={
             () => getLanguage(
               location.pathname.replace('/', '') === 'es' ? 'pt' : 'es',
             )}
-            >
-              <div style={{ display: 'flex' }}>
-                <p style={{ padding: '0 0.5rem' }}>
-                  {location.pathname === '/es' ? 'Portugal' : 'Spain'}
-                </p>
-                <img
-                  src={location.pathname === '/es' ? portugalFlag : spainFlag}
-                  alt=""
-                />
-              </div>
-            </Link>
-          </DropdownContent>
-        </DropDown>
-      </MainDiv>
-    );
-  }
-}
+        >
+          <div style={{ display: 'flex' }}>
+            <p style={{ padding: '0 0.5rem' }}>
+              {location.pathname === '/es' ? 'Portugal' : 'Spain'}
+            </p>
+            <img
+              src={location.pathname === '/es' ? portugalFlag : spainFlag}
+              alt=""
+            />
+          </div>
+        </Link>
+      </DropdownContent>
+    </DropDown>
+  </MainDiv>
+);
+
 
 LinksAndFlags.defaultProps = {
   text: 'Loading',
