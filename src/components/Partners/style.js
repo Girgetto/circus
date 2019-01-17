@@ -11,6 +11,11 @@ export const ImgDiv = styled.div`
   margin-top: 3rem;
   flex-wrap: wrap;
   justify-content: space-around;
+  @media(max-width:768px){
+    >button{
+      display: none;
+    }
+  }
 `;
 
 export const MainDiv = styled.div`
