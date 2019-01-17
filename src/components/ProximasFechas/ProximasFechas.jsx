@@ -5,7 +5,7 @@ import second from '../../assets/img/icon/second.svg';
 import third from '../../assets/img/icon/third.svg';
 import fourth from '../../assets/img/icon/fourth.svg';
 import {
-  RightDiv, Button, Ul, SelectorDiv, DescriptionDiv, TitleDiv, OptionsDiv, MainDiv,
+  RightDiv, Button, Ul, SelectorDiv, DescriptionDiv, TitleDiv, OptionsDiv, MainDiv, Li,
 } from './style';
 
 const imgArr = [first, second, third, fourth];
@@ -52,16 +52,14 @@ export default class ProximasFechas extends Component {
           <h2 style={{ marginBottom: '3rem' }}>Próximas fechas</h2>
           <Ul>
             {text.proximasFechas.map((x, i) => (
-              <li
+              <Li
+                {...this.state}
+                color={x.color}
+                i={i}
                 key={x.title}
-                style={{
-                  padding: '1rem 2rem',
-                  cursor: 'pointer',
-                  width: '100%',
-                }}
               >
                 <div id={i} style={{ display: 'flex', width: '100%' }}>
-                  <SelectorDiv style={{ width: '100%' }}>
+                  <SelectorDiv>
                     <TitleDiv id={i}>
                       <img src={imgArr[i]} alt="1" style={{ marginRight: '2rem' }} />
                       <div
@@ -89,7 +87,7 @@ export default class ProximasFechas extends Component {
                     </DescriptionDiv>
                   </SelectorDiv>
                 </div>
-              </li>
+              </Li>
             ))}
           </Ul>
         </OptionsDiv>

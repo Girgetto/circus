@@ -38,6 +38,7 @@ export const LeftDiv = styled.div`
 export const SelectorDiv = styled.div`
   flex-direction: column;
   width: 100%;
+  padding: 1rem 2rem;
 `;
 
 export const DescriptionDiv = styled.div`
@@ -68,5 +69,13 @@ export const MainDiv = styled.div`
   height: 40rem;
   @media(max-width: 768px) {
     margin-bottom: 90vw;
+  }
+`;
+
+export const Li = styled.li`
+  width: 100%;
+  cursor: pointer;
+  @media(max-width: 768px){
+    background-color: ${props => (props.index === `${props.i}` ? props.color : '')};
   }
 `;

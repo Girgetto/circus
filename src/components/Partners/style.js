@@ -30,7 +30,8 @@ export const H2 = styled.h2`
 
 export const Img = styled.img`
   padding: 1vw;
-  max-width: 10vw;
+  max-width: 15vw;
+  object-fit: contain;
 `;
 
 export const InnerDiv = styled.div`
