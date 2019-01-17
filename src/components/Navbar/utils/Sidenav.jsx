@@ -47,7 +47,7 @@ ES
         &times;
       </button>
     </div>
-    {text.navbar.map(x => <Item key={x}><a href="#queEsCircus">{x}</a></Item>)}
+    {text.navbar.map(x => <Item key={x}><a href="#queEsCircus" onClick={() => closeNav()}>{x}</a></Item>)}
   </div>
 );
 

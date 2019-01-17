@@ -36,6 +36,9 @@ export const DescriptionDiv = styled.div`
   @media(max-width:768px) {
     max-width:100% !important;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -68,4 +71,13 @@ export const H2 = styled.h2`
 
 export const P = styled.p`
   margin-top: 2rem;
+`;
+
+export const Ul = styled.ul`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @media(max-width: 768px) {
+    flex-direction: row;
+  }
 `;

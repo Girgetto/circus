@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Ul } from '../style';
 
 const Descriptions = ({
   text, index, changer, ctx,
 }) => (
-  <ul>
+  <Ul>
     {text.fifth.map((x, i) => (
       <div
         key={x.title}
@@ -14,10 +15,10 @@ const Descriptions = ({
         onKeyDown={ctx.handleKeyDown}
         style={{ cursor: 'pointer' }}
       >
-        <svg height="50" width="50">
+        <svg width="75" height="75">
           <circle
-            cx="10"
-            cy="10"
+            cx="50%"
+            cy="50%"
             r="8"
             stroke={`${text.fifth[i].color}`}
             strokeWidth="3"
@@ -26,7 +27,7 @@ const Descriptions = ({
         </svg>
       </div>
     ))}
-  </ul>
+  </Ul>
 );
 
 Descriptions.defaultProps = {

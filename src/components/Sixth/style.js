@@ -10,7 +10,7 @@ export const MainDiv = styled.div`
     height: 100vh;
     flex-direction: column-reverse;
     transform: skewY(0deg);
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
     justify-content: space-between;
   }
 `;

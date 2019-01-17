@@ -16,6 +16,9 @@ export const InnerDiv = styled.div`
 export const P = styled.p`
   font-size: 1.7vw;
   margin-bottom: 5rem;
+  @media(max-width: 768px) {
+    margin-bottom: 0rem;
+  }
 `;
 
 export const GrayP = styled.p`

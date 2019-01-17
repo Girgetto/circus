@@ -10,14 +10,14 @@ export const Button = styled.button`
 `;
 
 export const MainDiv = styled.div`
-  margin-top: 12vh;
+  margin-top: 5rem;
   height: 40rem;
   display: flex;
-  margin-bottom: -9vh;
+  margin-bottom: -9rem;
   @media (max-width: 768px) {
     height: 100%;
     flex-direction: column;
-    margin-bottom: 10vh;
+    margin-bottom: 5rem;
   }
 `;
 
@@ -41,7 +41,7 @@ export const TextBox = styled.div`
 `;
 
 export const MainTitle = styled.h1`
-  padding-top: 1vh;
+  padding-top: 3rem;
   font-size: 5vw; 
   @media(max-width:768px){
     text-align: center;
