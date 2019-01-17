@@ -14,8 +14,8 @@ const newsLetter = () => (
 Suscríbete a la newsletter
 
       </H2>
-      <Input type="text" placeholder="Tu correo electronico" />
-      <Button type="submit">Subscribirse</Button>
+      <Input type="text" placeholder="Tu correo electrónico" />
+      <Button type="submit">Suscribirse</Button>
     </InnerDiv>
   </MainDiv>
 );

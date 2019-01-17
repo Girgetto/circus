@@ -1,11 +1,11 @@
 {
   "navbar": 
-  ["Qué es Circus","Porqué Circus","Qué impartimos","Próximas fechas"],
+  ["Qué es Circus","Por qué Circus","Qué aprenderás","Próximas fechas"],
   "first": "Inside Circus",
-  "insideDescription":"Donde comienza tu transormacion digital",
-  "inside3": "Da el primer paso",
+  "insideDescription":"Donde comienza tu transformación digital",
+  "inside3": "Da el primer paso, reserva tu plaza.",
   "insideButton": "Ver Fechas",
-  "queEsCircusTitle": "Pero ¿qué es Circus?",
+  "queEsCircusTitle": "Pero, ¿qué es Circus?",
   "queEsCircusDescription": "Queremos ayudarte a entrar en el mundo digital, Circus es un proyecto apoyado por empresas del sector tecnológico que quieren acercar el mundo digital a más personas mediante formaciones gratuitas.",
   "sabiasQueTitle":"¿Sabías que?",  
   "sabiasQueDescription":"9/10 trabajos en el futuro requerirán habilidades digitales. No sólo nuevos puestos de trabajo, sino el que ocupas ahora mismo necesitará que estés al día en cuanto a conocimiento tecnológico.",  
@@ -31,7 +31,7 @@
     "lorem ipsum dolor sit amet"
   ],
   "proximasFechas":[
-    { "color": "rgb(245, 200, 205)", "date":"16 Noviembre - 14:30 hrs.","title":"Dia 1 - impartido por Playtomic","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "},
+    { "color": "rgb(245, 200, 205)", "date":"16 Noviembre - 14:30 hrs.","title":"Día 1 - Impartido por Playtomic","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "},
     { "color": "rgb(202, 223, 255)", "date":"15-16 Diciembre - 10 hrs.","title":"WeCode & WeDesign - WeWork ","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "},
     { "color": "#FFF6C1", "date":"18 Enero - 14:30 hrs.","title":"Topping croissant cookie","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "},
     { "color": "rgb(185, 233, 228)", "date":"26 Enero - 14:30 hrs.","title":"WeCode","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "}
