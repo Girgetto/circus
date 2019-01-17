@@ -5,7 +5,7 @@ import Descriptions from './utils/Descriptions';
 import {
   MainDiv, ImgDiv, RightDiv, Img,
   DescriptionDiv, H1, InnerDescription,
-  UpperDescriptonDiv, H2, P,
+  UpperDescriptonDiv, H2,
 } from './style';
 
 export default class QueAprenderas extends Component {
@@ -50,7 +50,7 @@ export default class QueAprenderas extends Component {
               >
                 {text.fifth[index].title}
               </H1>
-              <P>{text.fifth[index].description}</P>
+              <p>{text.fifth[index].description}</p>
             </InnerDescription>
           </DescriptionDiv>
         </UpperDescriptonDiv>

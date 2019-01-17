@@ -7,6 +7,7 @@ export const MainDiv = styled.div`
   padding-top: 6rem;
   @media(max-width: 768px){
     padding: 10rem 1rem;
+    min-height: 25rem;
   }
 `;
 
@@ -67,10 +68,6 @@ export const UpperDescriptonDiv = styled.div`
 export const H2 = styled.h2`
   margin-bottom: 3rem;
   font-weight: 400;
-`;
-
-export const P = styled.p`
-  margin-top: 2rem;
 `;
 
 export const Ul = styled.ul`

@@ -13,15 +13,16 @@ export const NavbarDiv = styled.div`
   justify-content: center;
   display: flex;
   z-index: 1;
-  padding: 1vh 0;
+  padding: 1rem 0;
   position: fixed;
   background-color: white;
   right: 0;
   left: 0;
   top: 0;
-  height: 10vh;
+  height: 5rem;
   box-shadow: 0px 4px 30px rgba(0,0,0,0.11);
   @media (max-width: 768px) {
+    height: 2rem;
     justify-content: space-evenly;
   }
 `;

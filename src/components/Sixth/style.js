@@ -7,7 +7,7 @@ export const MainDiv = styled.div`
   transform: skewY(-5deg);
   box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 30px;
   @media(max-width:768px){
-    height: 100vh;
+    height: 40rem;
     flex-direction: column-reverse;
     transform: skewY(0deg);
     margin-bottom: 10rem;

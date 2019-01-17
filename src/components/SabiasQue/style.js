@@ -4,11 +4,12 @@ export const MainDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50rem;
+  height: 40rem;
   margin-bottom: 6rem;
   @media(max-width: 768px){
     flex-direction: column;
     text-align: center;
+    margin-bottom: 0rem;
   }
 `;
 

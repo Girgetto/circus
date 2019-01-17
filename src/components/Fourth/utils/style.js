@@ -7,9 +7,9 @@ export const MainDiv = styled.div`
 
 export const InnerDiv = styled.div`
   margin: 1rem;
-  height: 40vh;
+  height: 20rem;
   @media(max-width: 768px) {
-    height: 50vh;
+    height: 20rem;
   }
 `;
 
