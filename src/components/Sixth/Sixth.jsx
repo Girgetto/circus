@@ -25,11 +25,10 @@ export default class Sixth extends Component {
 
   render() {
     const { counter } = this.state;
-    const { text, margin } = this.props;
+    const { text } = this.props;
     return (
       <MainDiv
         className="transition"
-        style={{ marginTop: `${margin < 30 ? -1.5 : (-margin + 30)}rem` }}
       >
         <LeftDiv>
           <Texts text={text} counter={counter} />
@@ -59,12 +58,10 @@ export default class Sixth extends Component {
 
 Sixth.defaultProps = {
   text: {},
-  margin: '',
 };
 
 Sixth.propTypes = {
   text: PropTypes.shape({
     fourthText: PropTypes.array,
   }),
-  margin: PropTypes.string,
 };

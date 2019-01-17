@@ -20,20 +20,9 @@ export default class App extends Component {
     super(props);
     this.state = {
       language: 'es',
-      margin: '',
-      intervalId: 0,
     };
     this.getLanguage = this.getLanguage.bind(this);
     this.setLanguage = this.setLanguage.bind(this);
-    this.scrollStep = this.scrollStep.bind(this);
-    this.scrollToTop = this.scrollToTop.bind(this);
-  }
-
-  componentWillMount() {
-    window.onscroll = () => {
-      const scrollBarPosition = window.pageYOffset;
-      this.setState({ margin: (scrollBarPosition / 80).toFixed(10) });
-    };
   }
 
   getLanguage(lang) {
@@ -45,34 +34,20 @@ export default class App extends Component {
     return language === 'es' ? spainTexts : portugueseTexts;
   }
 
-  scrollStep(scroll) {
-    const { intervalId } = this.state;
-    if (window.pageYOffset === 0) {
-      clearInterval(intervalId);
-    }
-    window.scroll(0, scroll);
-  }
-
-  scrollToTop(scroll) {
-    const intervalId = setInterval(this.scrollStep(scroll), 1);
-    this.setState({ intervalId });
-  }
-
   render() {
-    const { margin } = this.state;
     return (
       <React.Fragment>
         <Switch>
           <Navbar getLanguage={this.getLanguage} text={this.setLanguage()} />
         </Switch>
         <InsideCircus text={this.setLanguage()} scrollToTop={this.scrollToTop} />
-        <QueEsCircus margin={margin} text={this.setLanguage()} />
+        <QueEsCircus text={this.setLanguage()} />
         <SabiasQue text={this.setLanguage()} />
-        <Fourth margin={margin} text={this.setLanguage()} />
+        <Fourth text={this.setLanguage()} />
         <QueAprenderas text={this.setLanguage()} />
-        <Sixth margin={margin} text={this.setLanguage()} />
+        <Sixth text={this.setLanguage()} />
         <ProximasFechas text={this.setLanguage()} />
-        <Partners margin={margin} text={this.setLanguage()} />
+        <Partners text={this.setLanguage()} />
         <NewsLetter text={this.setLanguage()} />
         <Footer text={this.setLanguage()} />
       </React.Fragment>

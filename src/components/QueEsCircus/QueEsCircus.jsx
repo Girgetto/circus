@@ -5,13 +5,10 @@ import {
   MainDiv, LeftDiv, Img, RightDiv, H2, TextDiv,
 } from './style';
 
-const QueEsCircus = ({ text, margin }) => (
+const QueEsCircus = ({ text }) => (
   <MainDiv
     id="queEsCircus"
     className="transition"
-    style={{
-      marginTop: `${(margin < 0 || margin > 15) ? 0 : -margin * 1.5}rem`,
-    }}
   >
     <LeftDiv>
       <TextDiv>
@@ -31,14 +28,12 @@ const QueEsCircus = ({ text, margin }) => (
 
 QueEsCircus.defaultProps = {
   text: 'Loading',
-  margin: '',
 };
 
 QueEsCircus.propTypes = {
   text: PropTypes.shape({
     first: PropTypes.string,
   }),
-  margin: PropTypes.string,
 };
 
 export default QueEsCircus;

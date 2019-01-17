@@ -30,14 +30,10 @@ export default class Partners extends Component {
   }
 
   render() {
-    const { margin } = this.props;
     const { photos } = this.state;
     return (
       <MainDiv
         className="transition center shadow"
-        style={{
-          marginTop: `${margin < 41 ? -2 : (-margin + 30)}rem`,
-        }}
       >
         <InnerDiv className="center">
           <H2>Partners que apoyan Circus.</H2>
@@ -62,12 +58,10 @@ export default class Partners extends Component {
 
 Partners.defaultProps = {
   text: { fourthText: ['Loading', 'Loading'] },
-  margin: '',
 };
 
 Partners.propTypes = {
   text: PropTypes.shape({
     fourthText: PropTypes.array,
   }),
-  margin: PropTypes.string,
 };
