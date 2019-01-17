@@ -1,3 +1,4 @@
+/* eslint-env browser */
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
 import circusLogo from '../../assets/img/circus.svg';
@@ -7,8 +8,7 @@ import menu from '../../assets/img/menu.svg';
 import Sidenav from './utils/Sidenav';
 
 const openNav = () => {
-  // eslint-disable-next-line
-  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById('mySidenav').style.width = '100%';
 };
 export default class Navbar extends Component {
   componentDidMount() {

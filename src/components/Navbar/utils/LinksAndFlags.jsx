@@ -1,3 +1,4 @@
+/* eslint-env browser */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -21,11 +22,9 @@ class LinksAndFlags extends Component {
 
   scrollStep(scroll) {
     const { intervalId } = this.state;
-    // eslint-disable-next-line
     if (window.pageYOffset === 0) {
       clearInterval(intervalId);
     }
-    // eslint-disable-next-line
     window.scroll(0, scroll);
   }
 

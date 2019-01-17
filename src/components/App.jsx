@@ -1,3 +1,4 @@
+/* eslint-env browser */
 import React, { Component } from 'react';
 import { Switch } from 'react-router-dom';
 import Navbar from './Navbar';
@@ -29,10 +30,8 @@ export default class App extends Component {
   }
 
   componentWillMount() {
-    // eslint-disable-next-line
     window.onscroll = () => {
-      // eslint-disable-next-line
-      const scrollBarPosition = window.pageYOffset | document.body.scrollTop;
+      const scrollBarPosition = window.pageYOffset;
       this.setState({ margin: (scrollBarPosition / 80).toFixed(10) });
     };
   }
@@ -48,11 +47,9 @@ export default class App extends Component {
 
   scrollStep(scroll) {
     const { intervalId } = this.state;
-    // eslint-disable-next-line
     if (window.pageYOffset === 0) {
       clearInterval(intervalId);
     }
-    // eslint-disable-next-line
     window.scroll(0, scroll);
   }
 

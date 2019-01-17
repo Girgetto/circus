@@ -4,6 +4,7 @@ export const RightDiv = styled.div`
   width: 50%;
   z-index: 1;
   position: relative;
+  background-color: ${props => (props.text.proximasFechas[props.index].color)};
   @media(max-width:768px){
     display: none !important;
   }
@@ -43,6 +44,8 @@ export const SelectorDiv = styled.div`
 
 export const DescriptionDiv = styled.div`
   display: none;
+  height: 0;
+  margin-top: 3rem;
   @media(max-width: 768px){
     text-align: center;
     transition: 0.2s;
@@ -78,4 +81,19 @@ export const Li = styled.li`
   @media(max-width: 768px){
     background-color: ${props => (props.index === `${props.i}` ? props.color : '')};
   }
+`;
+
+export const H2 = styled.h2`
+  margin-bottom: 3rem;
+`;
+
+export const InnerLiDiv = styled.div`
+  display: flex;
+  width: 100%;
+`;
+
+export const InnerTitleDiv = styled.div`
+  flex-direction: column;
+  width: 100%;
+  background-color: ${props => (props.index === `${props.i}` ? props.color : '')};
 `;

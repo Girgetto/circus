@@ -1,3 +1,4 @@
+/* eslint-env browser */
 import React, { Component } from 'react';
 import './Sidenav.css';
 import { Link } from 'react-router-dom';
@@ -6,7 +7,6 @@ import circus from '../../../assets/img/circus.svg';
 import { Item } from '../style';
 
 const closeNav = () => {
-  // eslint-disable-next-line
   document.getElementById('mySidenav').style.width = '0';
 };
 
@@ -24,11 +24,9 @@ class Sidenav extends Component {
 
   scrollStep(scroll) {
     const { intervalId } = this.state;
-    // eslint-disable-next-line
     if (window.pageYOffset === 0) {
       clearInterval(intervalId);
     }
-    // eslint-disable-next-line
     window.scroll(0, scroll);
   }
 

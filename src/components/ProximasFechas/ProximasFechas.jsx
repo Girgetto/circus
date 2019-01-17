@@ -1,3 +1,4 @@
+/* eslint-env browser */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import first from '../../assets/img/icon/first.svg';
@@ -5,7 +6,9 @@ import second from '../../assets/img/icon/second.svg';
 import third from '../../assets/img/icon/third.svg';
 import fourth from '../../assets/img/icon/fourth.svg';
 import {
-  RightDiv, Button, Ul, SelectorDiv, DescriptionDiv, TitleDiv, OptionsDiv, MainDiv, Li,
+  RightDiv, Button, Ul, SelectorDiv, DescriptionDiv,
+  TitleDiv, OptionsDiv, MainDiv, Li, H2, InnerLiDiv,
+  InnerTitleDiv,
 } from './style';
 
 const imgArr = [first, second, third, fourth];
@@ -20,7 +23,6 @@ export default class ProximasFechas extends Component {
   }
 
   componentDidMount() {
-    // eslint-disable-next-line
     document.getElementById(`description${0}`).style.height = '40vh';
   }
 
@@ -28,11 +30,10 @@ export default class ProximasFechas extends Component {
     if (!(index === '') && !(index.includes('description'))) {
       const { text } = this.props;
       text.proximasFechas.forEach((_, i) => {
-        // eslint-disable-next-line
         document.getElementById(`description${i}`).style.height = '0';
       });
-      // eslint-disable-next-line
-      document.getElementById(`description${index || 0}`).style.height = '40vh';
+
+      document.getElementById(`description${index || 0}`).style.height = '40vh';
       return index === '' ? '' : this.setState({ index });
     }
     return '';
@@ -49,52 +50,32 @@ export default class ProximasFechas extends Component {
           role="presentation"
           onKeyDown={this.handleKeyDown}
         >
-          <h2 style={{ marginBottom: '3rem' }}>Próximas fechas</h2>
+          <H2>Próximas fechas</H2>
           <Ul>
             {text.proximasFechas.map((x, i) => (
-              <Li
-                {...this.state}
-                color={x.color}
-                i={i}
-                key={x.title}
-              >
-                <div id={i} style={{ display: 'flex', width: '100%' }}>
+              <Li {...this.state} color={x.color} i={i} key={x.title}>
+                <InnerLiDiv id={i}>
                   <SelectorDiv>
                     <TitleDiv id={i}>
                       <img src={imgArr[i]} alt="1" style={{ marginRight: '2rem' }} />
-                      <div
-                        style={{
-                          flexDirection: 'column',
-                          backgroundColor: `${index === `${i}` ? x.color : ''}`,
-                          width: '100%',
-                        }}
-                      >
+                      <InnerTitleDiv {...this.state} color={x.color} i={i}>
                         <p id={i} style={{ color: 'grey' }}>{x.date}</p>
                         <p id={i}>{x.title}</p>
-                      </div>
+                      </InnerTitleDiv>
                     </TitleDiv>
-                    <DescriptionDiv
-                      id={`description${i}`}
-                      style={{
-                        height: 0,
-                        marginTop: '3rem',
-                      }}
-                    >
+                    <DescriptionDiv id={`description${i}`}>
                       <p>{text.proximasFechas[index].description}</p>
                       <Button type="button">
                           Aplicar
                       </Button>
                     </DescriptionDiv>
                   </SelectorDiv>
-                </div>
+                </InnerLiDiv>
               </Li>
             ))}
           </Ul>
         </OptionsDiv>
-        <RightDiv
-          className="center"
-          style={{ backgroundColor: `${text.proximasFechas[index].color}` }}
-        >
+        <RightDiv className="center" text={text} index={index}>
           <div className="translate-child" style={{ width: '100%' }}>
             <div style={{ margin: '2rem 4rem' }}>
               <p style={{
