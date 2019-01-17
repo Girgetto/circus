@@ -53,9 +53,9 @@ export default class ProximasFechas extends Component {
           <H2>Próximas fechas</H2>
           <Ul>
             {text.proximasFechas.map((x, i) => (
-              <Li {...this.state} color={x.color} i={i} key={x.title}>
+              <Li key={x.title}>
                 <InnerLiDiv id={i}>
-                  <SelectorDiv>
+                  <SelectorDiv {...this.state} color={x.color} i={i} key={x.title}>
                     <TitleDiv id={i}>
                       <img src={imgArr[i]} alt="1" style={{ marginRight: '2rem' }} />
                       <InnerTitleDiv {...this.state} color={x.color} i={i}>

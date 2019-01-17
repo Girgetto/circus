@@ -40,6 +40,7 @@ export const SelectorDiv = styled.div`
   flex-direction: column;
   width: 100%;
   padding: 1rem 2rem;
+  background-color: ${props => (props.index === `${props.i}` ? props.color : '')};
 `;
 
 export const DescriptionDiv = styled.div`
