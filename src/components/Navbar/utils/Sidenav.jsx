@@ -3,6 +3,7 @@ import React from 'react';
 import './Sidenav.css';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import circus from '../../../assets/img/circus.svg';
 import { Item } from '../style';
 
@@ -47,7 +48,18 @@ ES
         &times;
       </button>
     </div>
-    {text.navbar.map(x => <Item key={x}><a href="#queEsCircus" onClick={() => closeNav()}>{x}</a></Item>)}
+    {text.navbar.map(x => (
+      <Item key={x.text}>
+        <AnchorLink
+          href={x.href}
+          onClick={() => closeNav()}
+        >
+          {x.text}
+
+        </AnchorLink>
+
+      </Item>
+    ))}
   </div>
 );
 

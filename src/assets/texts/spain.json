@@ -1,6 +1,11 @@
 {
   "navbar": 
-  ["Qué es Circus","Por qué Circus","Qué aprenderás","Próximas fechas"],
+  [
+    {"text":"Qué es Circus", "href":"#queEsCircus", "offset":"100"},
+    {"text":"Por qué Circus", "href":"#porQueCircus", "offset":"100"},
+    {"text":"Qué aprenderás","href":"#queAprendaras", "offset":"100"},
+    {"text":"Próximas fechas","href":"#proximasFechas", "offset":"100"}
+  ],
   "first": "Inside Circus",
   "insideDescription":"Donde comienza tu transformación digital",
   "inside3": "Da el primer paso, reserva tu plaza.",

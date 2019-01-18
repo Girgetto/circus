@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import spainFlag from '../../../assets/img/flags/spain.svg';
 import portugalFlag from '../../../assets/img/flags/portugal.svg';
 import {
@@ -20,7 +21,11 @@ const imgStyle = {
 
 const LinksAndFlags = ({ location, text, getLanguage }) => (
   <MainDiv>
-    {text.navbar.map(x => (<Item key={x}><a href="#queEsCircus">{x}</a></Item>))}
+    {text.navbar.map(x => (
+      <Item key={x.text}>
+        <AnchorLink offset={() => x.offset} href={x.href}>{x.text}</AnchorLink>
+      </Item>
+    ))}
     <DropDown className="dropdown">
       <img
         style={imgStyle}

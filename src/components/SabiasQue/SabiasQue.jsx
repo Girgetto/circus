@@ -7,7 +7,7 @@ import {
 
 
 const SabiasQue = ({ text }) => (
-  <MainDiv>
+  <MainDiv id="porQueCircus">
     <ImgDiv>
       <img src={red} alt="red" />
     </ImgDiv>

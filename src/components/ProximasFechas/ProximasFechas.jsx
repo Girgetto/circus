@@ -43,7 +43,7 @@ export default class ProximasFechas extends Component {
     const { index } = this.state;
     const { text } = this.props;
     return (
-      <MainDiv className="translate">
+      <MainDiv id="proximasFechas" className="translate">
         <OptionsDiv
           className="translate-child center"
           onClick={e => this.setColor(e.target.id)}

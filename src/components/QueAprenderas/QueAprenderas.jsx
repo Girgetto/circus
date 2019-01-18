@@ -34,7 +34,7 @@ export default class QueAprenderas extends Component {
     const { index } = this.state;
     const { text } = this.props;
     return (
-      <MainDiv>
+      <MainDiv id="queAprendaras">
         <ImgDiv>
           <Img src={image} alt="" />
         </ImgDiv>
