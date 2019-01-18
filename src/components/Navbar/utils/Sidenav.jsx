@@ -24,21 +24,30 @@ const upperDiv = {
   alignItems: 'center',
 };
 
+const lenguages = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignContent: 'center',
+  marginTop: '0.5rem',
+};
+
 const Sidenav = ({ location, text, getLanguage }) => (
   <div id="mySidenav" className="sidenav">
     <div style={upperDiv}>
       <img src={circus} alt="" style={{ marginLeft: '2rem' }} />
-      <Link to="/pt" onClick={() => getLanguage('pt')}>
-        <p style={{ padding: '0 0.5rem', textDecoration: `${location.pathname === '/pt' ? 'underline' : ''}` }}>
-PT
+      <div style={lenguages}>
+        <Link to="/pt" onClick={() => getLanguage('pt')}>
+          <p style={{ padding: '0 0.5rem', textDecoration: `${location.pathname === '/pt' ? 'underline' : ''}` }}>
+  PT
 
-        </p>
-      </Link>
-      <Link to="/es" onClick={() => getLanguage('es')}>
-        <p style={{ padding: '0 0.5rem', textDecoration: `${location.pathname === '/es' ? 'underline' : ''}` }}>
-ES
-        </p>
-      </Link>
+          </p>
+        </Link>
+        <Link to="/es" onClick={() => getLanguage('es')}>
+          <p style={{ padding: '0 0.5rem', textDecoration: `${location.pathname === '/es' ? 'underline' : ''}` }}>
+  ES
+          </p>
+        </Link>
+      </div>
       <button
         type="button"
         href="/"
