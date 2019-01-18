@@ -52,6 +52,7 @@ ES
       <Item key={x.text}>
         <AnchorLink
           href={x.href}
+          offset={() => x.offsetM}
           onClick={() => closeNav()}
         >
           {x.text}
