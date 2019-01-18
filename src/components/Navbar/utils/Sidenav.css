@@ -19,7 +19,6 @@
   font-size: 25px;
   color: #818181;
   display: block;
-  animation: fadeIn 4;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -44,11 +43,6 @@
 
 a {
   color: black;
-}
-
-@keyframes fadeIn {
-  0%   { opacity: 0; color:red }
-  100% { opacity: 1; }
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

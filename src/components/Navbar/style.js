@@ -4,6 +4,7 @@ export const MainDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 70vw;
   @media (max-width: 768px) {
     display: none;
   }
@@ -69,11 +70,12 @@ export const MenuDiv = styled.div`
 `;
 
 export const Item = styled.div`
-  display:flex;
-  color:black;
+  display: flex;
+  color: black;
   padding: 0 1rem;
   font-size: 1.2rem !important;
   font-weight: bold !important;
+  width: 15rem;
 `;
 
 export const P = styled.p`
