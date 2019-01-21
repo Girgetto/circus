@@ -15,7 +15,3 @@ export const InnerDiv = styled.div`
 export const TextDiv = styled.div`
   margin: 0 4rem;
 `;
-
-export const RightSemiCol = styled.div`
-  float: right;
-`;

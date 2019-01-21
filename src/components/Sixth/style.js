@@ -47,6 +47,7 @@ export const GrayP = styled.p`
   fontSize: 1rem;
   fontWeight: 400;
   textAlign: center;
+  margin-top: 4rem;
 `;
 
 export const CitP = styled.p`

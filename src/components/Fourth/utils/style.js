@@ -15,7 +15,6 @@ export const InnerDiv = styled.div`
 
 export const P = styled.p`
   font-size: 1.7vw;
-  margin-bottom: 5rem;
   @media(max-width: 768px) {
     margin-bottom: 0rem;
   }
@@ -26,10 +25,7 @@ export const GrayP = styled.p`
   font-size: 1.5vw;
   font-weight: 400;
   text-align: center;
-`;
-
-export const DotsDiv = styled.div`
-  float: right;
+  margin-top: 4rem;
 `;
 
 export const TextDiv = styled.div`
