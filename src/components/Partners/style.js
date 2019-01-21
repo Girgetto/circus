@@ -39,6 +39,7 @@ export const Img = styled.img`
   padding: 1vw;
   max-width: 15vw;
   object-fit: contain;
+  max-width: 10rem;
 `;
 
 export const InnerDiv = styled.div`
