@@ -107,6 +107,11 @@ button > a {
 	color: white;
 }
 
+.slide {
+  transition: 1s;
+  transform: translateX(-9rem);
+};
+
 @media(max-width: 768px){
 	h2 {
 		font-size: 6vw;

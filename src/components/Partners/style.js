@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Svg = styled.svg`
   padding: 2rem;
+}
 `;
 
 export const ImgDiv = styled.div`
@@ -49,8 +50,14 @@ export const InnerDiv = styled.div`
 `;
 
 export const ImgContainer = styled.div`
-  width: 40rem;
+  width: 35rem;
   justify-content: center;
   align-items: center;
   display: flex;
+  overflow: hidden;
+`;
+
+export const Button = styled.button`
+  padding: 0px;
+  cursor: pointer;
 `;

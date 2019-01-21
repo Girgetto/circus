@@ -6,7 +6,7 @@ import cabify from '../../assets/img/logos/cabify.svg';
 import opinator from '../../assets/img/logos/opinator.svg';
 import deliveroo from '../../assets/img/logos/deliverooLogo.png';
 import {
-  Svg, ImgDiv, MainDiv, H2, Img, InnerDiv, ImgContainer,
+  Svg, ImgDiv, MainDiv, H2, Img, InnerDiv, ImgContainer, Button,
 } from './style';
 
 export default class Partners extends Component {
@@ -14,23 +14,31 @@ export default class Partners extends Component {
     super();
     this.state = {
       photos: [ironHack, campusMadrid, cabify, opinator, deliveroo],
+      animate: false,
     };
   }
 
   moveToEnd() {
     const { photos } = this.state;
-    photos.push(photos.shift());
-    this.setState({ photos });
+    this.setState({ animate: true });
+    setTimeout(() => {
+      photos.push(photos.shift());
+      this.setState({ photos, animate: false });
+    }, 1000);
   }
 
   moveToHead() {
     const { photos } = this.state;
-    photos.unshift(photos.pop());
-    this.setState({ photos });
+    this.setState({ animate: true });
+    setTimeout(() => {
+      photos.unshift(photos.pop());
+      this.setState({ photos });
+    }, 1000);
   }
 
   render() {
-    const { photos } = this.state;
+    const { photos, animate } = this.state;
+    const animationClasses = (animate ? 'slide' : '');
     return (
       <MainDiv
         className="transition center shadow"
@@ -38,19 +46,19 @@ export default class Partners extends Component {
         <InnerDiv className="center">
           <H2>Partners que apoyan Circus.</H2>
           <ImgDiv>
-            <button style={{ padding: 0, cursor: 'pointer' }} type="button" onClick={() => this.moveToEnd()}>
+            <Button type="button" onClick={() => this.moveToEnd()}>
               <Svg width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M25 1L1 32.5L25 65.5" stroke="#2D293C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </Svg>
-            </button>
+            </Button>
             <ImgContainer>
-              {photos.map((image, i) => (i < 4 ? <Img key={image} src={image} alt="" /> : ''))}
+              {photos.map((image, i) => (i < 5 ? <Img className={`${animationClasses}`} key={image} src={image} alt="" /> : ''))}
             </ImgContainer>
-            <button style={{ padding: 0, cursor: 'pointer' }} type="button" onClick={() => this.moveToHead()}>
+            <Button type="button" onClick={() => this.moveToHead()}>
               <Svg width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 1.49219L25 32.9922L1 65.9922" stroke="#2D293C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </Svg>
-            </button>
+            </Button>
           </ImgDiv>
         </InnerDiv>
       </MainDiv>
