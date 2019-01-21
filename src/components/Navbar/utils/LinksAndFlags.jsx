@@ -19,7 +19,7 @@ const imgStyle = {
   alignItems: 'center',
 };
 
-const LinksAndFlags = ({ location, text, getLanguage }) => (
+const LinksAndFlags = ({ location, text, setLanguage }) => (
   <MainDiv>
     {text.navbar.map(x => (
       <Item key={x.text}>
@@ -37,7 +37,7 @@ const LinksAndFlags = ({ location, text, getLanguage }) => (
         <Link
           to={`${location.pathname === '/es' ? '/pt' : '/es'}`}
           onClick={
-            () => getLanguage(
+            () => setLanguage(
               location.pathname.replace('/', '') === 'es' ? 'pt' : 'es',
             )}
         >
@@ -65,7 +65,7 @@ LinksAndFlags.defaultProps = {
     navbar3: 'Loading',
     navbar4: 'Loading',
   },
-  getLanguage: PropTypes.func,
+  setLanguage: PropTypes.func,
 };
 
 LinksAndFlags.propTypes = {
@@ -76,7 +76,7 @@ LinksAndFlags.propTypes = {
     navbar4: PropTypes.string,
   }),
   location: PropTypes.shape({}),
-  getLanguage: PropTypes.func,
+  setLanguage: PropTypes.func,
 };
 
 export default LinksAndFlags;

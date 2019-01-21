@@ -25,11 +25,11 @@ export default class App extends Component {
     this.setLanguage = this.setLanguage.bind(this);
   }
 
-  getLanguage(lang) {
+  setLanguage(lang) {
     this.setState({ language: `${lang === '' ? 'es' : lang}` });
   }
 
-  setLanguage() {
+  getLanguage() {
     const { language } = this.state;
     return language === 'es' ? spainTexts : portugueseTexts;
   }
@@ -38,18 +38,18 @@ export default class App extends Component {
     return (
       <React.Fragment>
         <Switch>
-          <Navbar getLanguage={this.getLanguage} text={this.setLanguage()} />
+          <Navbar setLanguage={this.setLanguage} text={this.getLanguage()} />
         </Switch>
-        <InsideCircus text={this.setLanguage()} />
-        <QueEsCircus text={this.setLanguage()} />
-        <SabiasQue text={this.setLanguage()} />
-        <Fourth text={this.setLanguage()} />
-        <QueAprenderas text={this.setLanguage()} />
-        <Sixth text={this.setLanguage()} />
-        <ProximasFechas text={this.setLanguage()} />
-        <Partners text={this.setLanguage()} />
-        <NewsLetter text={this.setLanguage()} />
-        <Footer text={this.setLanguage()} />
+        <InsideCircus text={this.getLanguage()} />
+        <QueEsCircus text={this.getLanguage()} />
+        <SabiasQue text={this.getLanguage()} />
+        <Fourth text={this.getLanguage()} />
+        <QueAprenderas text={this.getLanguage()} />
+        <Sixth text={this.getLanguage()} />
+        <ProximasFechas text={this.getLanguage()} />
+        <Partners text={this.getLanguage()} />
+        <NewsLetter text={this.getLanguage()} />
+        <Footer text={this.getLanguage()} />
       </React.Fragment>
     );
   }

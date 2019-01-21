@@ -28,6 +28,13 @@ export const Div = styled.div`
     padding: 10vmin 0;
     height: 20rem;
     justify-content: space-around;
+    @media(max-width:768px){
+    a {
+      font-size: 6vmin;
+      line-height: 2;
+    }
+    height: 45rem;
+  }
 `;
 
 export const Row = styled.div`
@@ -36,4 +43,9 @@ export const Row = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  @media(max-width:768px){
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 `;

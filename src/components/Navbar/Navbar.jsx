@@ -12,8 +12,8 @@ const openNav = () => {
 };
 export default class Navbar extends Component {
   componentDidMount() {
-    const { getLanguage, location } = this.props;
-    getLanguage(location.pathname.replace('/', ''));
+    const { setLanguage, location } = this.props;
+    setLanguage(location.pathname.replace('/', ''));
   }
 
 

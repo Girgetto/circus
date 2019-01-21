@@ -32,7 +32,7 @@ const Footer = () => (
       <div style={{ padding: '0 1rem' }}>
         <img src={circus} alt="" />
       </div>
-      <div style={{ display: 'flex' }}>
+      <div style={{ display: 'flex', margin: '2rem' }}>
         <img src={ironHackFooter} style={{ padding: '0 1rem' }} alt="" />
         <P>
   Powered by ironhack
