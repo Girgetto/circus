@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Slider from 'react-slick';
 import ironHack from '../../assets/img/logos/ironHack.svg';
 import campusMadrid from '../../assets/img/logos/campusMadrid.svg';
 import cabify from '../../assets/img/logos/cabify.svg';
@@ -40,14 +39,6 @@ export default class Partners extends Component {
   render() {
     const { photos, animate } = this.state;
     const animationClasses = (animate ? 'slide' : '');
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      centerMode: true,
-      variableWidth: true,
-    };
     return (
       <MainDiv
         className="transition center shadow"
@@ -69,26 +60,6 @@ export default class Partners extends Component {
               </Svg>
             </Button>
           </ImgDiv>
-          <Slider {...settings}>
-            <div>
-              <h3>1</h3>
-            </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
-          </Slider>
         </InnerDiv>
       </MainDiv>
     );
