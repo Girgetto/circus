@@ -6,6 +6,7 @@ export const MainDiv = styled.div`
   display: flex;
   background-color: #E8F0FE;
   transform: skewY(-5deg);
+  margin-bottom: 7rem;
   @media (max-width:768px) {
     flex-direction: column;
     margin-top: 8rem;

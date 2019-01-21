@@ -5,6 +5,7 @@ import {
   MainDiv, ImgDiv, DescriptionDiv, FullDiv,
 } from './style';
 
+const margin = { marginBottom: '4rem' };
 
 const SabiasQue = ({ text }) => (
   <MainDiv id="porQueCircus">
@@ -13,9 +14,9 @@ const SabiasQue = ({ text }) => (
     </ImgDiv>
     <FullDiv>
       <DescriptionDiv>
-        <h2 style={{ marginBottom: '4rem' }}>{text.sabiasQueTitle}</h2>
-        <p style={{ marginBottom: '4rem' }}>{text.sabiasQueDescription}</p>
-        <h2 style={{ marginBottom: '4rem' }}>{text.esParaTiTitle}</h2>
+        <h2 style={margin}>{text.sabiasQueTitle}</h2>
+        <p style={margin}>{text.sabiasQueDescription}</p>
+        <h2 style={margin}>{text.esParaTiTitle}</h2>
         <p>{text.esParaTIDescription}</p>
       </DescriptionDiv>
     </FullDiv>

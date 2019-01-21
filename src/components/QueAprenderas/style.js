@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const MainDiv = styled.div`
   display: flex;
-  padding: 10rem 5rem;
+  padding: 10rem 0rem;
   text-align: center;
   padding-top: 6rem;
   @media(max-width: 768px){
@@ -14,6 +14,9 @@ export const MainDiv = styled.div`
 export const ImgDiv = styled.div`
   width: 50%;
   margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media(max-width:768px){
     display: none !important;
   }
@@ -34,6 +37,7 @@ export const Img = styled.img`
 export const DescriptionDiv = styled.div`
   display: flex;
   text-align: left;
+  padding: 0 5rem;
   @media(max-width:768px) {
     max-width:100% !important;
     text-align: center;
@@ -45,6 +49,7 @@ export const DescriptionDiv = styled.div`
 
 export const H1 = styled.h1`
   font-weight: bold;
+  font-size: 4vw;
   @media(max-width:768px) {
     font-size: 8vw;
   }
@@ -52,8 +57,9 @@ export const H1 = styled.h1`
 
 export const InnerDescription = styled.div`
   max-height: 20rem;
+  max-width: 20rem;
   @media(max-width:768px) {
-    max-height: 100%;
+    min-height: 30rem;
     max-width: 75vw;
   }
 `;

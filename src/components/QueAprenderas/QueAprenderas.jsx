@@ -48,9 +48,14 @@ export default class QueAprenderas extends Component {
               <H1
                 style={{ color: `${text.fifth[index].color}` }}
               >
-                {text.fifth[index].title}
+                {text.fifth[index].title.slice(0, 2)}
               </H1>
-              <p>{text.fifth[index].description}</p>
+              <H1
+                style={{ color: `${text.fifth[index].color}` }}
+              >
+                {text.fifth[index].title.slice(2, text.fifth[index].title.length)}
+              </H1>
+              <p style={{ marginTop: '2rem' }}>{text.fifth[index].description}</p>
             </InnerDescription>
           </DescriptionDiv>
         </UpperDescriptonDiv>
