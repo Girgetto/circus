@@ -19,14 +19,14 @@ export default class QueAprenderas extends Component {
 
   componentDidMount() {
     const { text } = this.props;
-    let i = 0;
+    let { index } = this.state;
     setInterval(() => {
-      i = i > text.fifth.length - 2 ? 0 : i + 1;
-      this.setState({ index: i });
+      index = index > text.fifth.length - 2 ? 0 : index + 1;
+      this.setState({ index });
     }, 5000);
   }
 
-  changer(index = 0) {
+  changer(index) {
     this.setState({ index });
   }
 
