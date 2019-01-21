@@ -110,7 +110,7 @@ button > a {
 .slide {
   transition: 1s;
   transform: translateX(-9rem);
-};
+}
 
 @media(max-width: 768px){
 	h2 {
