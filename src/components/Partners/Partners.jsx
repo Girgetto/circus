@@ -19,26 +19,16 @@ export default class Partners extends Component {
   }
 
   moveToEnd() {
-    const { photos } = this.state;
-    this.setState({ animate: true });
-    setTimeout(() => {
-      photos.push(photos.shift());
-      this.setState({ photos, animate: false });
-    }, 1000);
+    this.setState({ animate: false });
   }
 
   moveToHead() {
-    const { photos } = this.state;
     this.setState({ animate: true });
-    setTimeout(() => {
-      photos.unshift(photos.pop());
-      this.setState({ photos });
-    }, 1000);
   }
 
   render() {
     const { photos, animate } = this.state;
-    const animationClasses = (animate ? 'slide' : '');
+    const animationClasses = (animate ? 'slideLeft' : 'slideRight');
     return (
       <MainDiv
         className="transition center shadow"
@@ -52,7 +42,14 @@ export default class Partners extends Component {
               </Svg>
             </Button>
             <ImgContainer>
-              {photos.map((image, i) => (i < 5 ? <Img className={`${animationClasses}`} key={image} src={image} alt="" /> : ''))}
+              {photos.map(image => (
+                <Img
+                  className={`${animationClasses}`}
+                  key={image}
+                  src={image}
+                  alt=""
+                />
+              ))}
             </ImgContainer>
             <Button type="button" onClick={() => this.moveToHead()}>
               <Svg width="26" height="67" viewBox="0 0 26 67" fill="none" xmlns="http://www.w3.org/2000/svg">

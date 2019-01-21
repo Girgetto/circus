@@ -107,9 +107,14 @@ button > a {
 	color: white;
 }
 
-.slide {
+.slideLeft {
   transition: 1s;
   transform: translateX(-10rem);
+}
+
+.slideRight {
+  transition: 1s;
+  transform: translateX(10rem);
 }
 
 @media(max-width: 768px){
