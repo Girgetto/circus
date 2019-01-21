@@ -15,15 +15,20 @@ export default class QueAprenderas extends Component {
       index: 0,
     };
     this.changer = this.changer.bind(this);
+    this.timer = this.timer.bind(this);
   }
 
   componentDidMount() {
+    this.timer();
+  }
+
+  timer() {
     const { text } = this.props;
     let { index } = this.state;
     setInterval(() => {
       index = index > text.fifth.length - 2 ? 0 : index + 1;
       this.setState({ index });
-    }, 5000);
+    }, 1000);
   }
 
   changer(index) {
