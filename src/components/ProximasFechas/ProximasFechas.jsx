@@ -13,6 +13,8 @@ import {
 
 const imgArr = [first, second, third, fourth];
 
+const greyP = { color: 'gray', marginBottom: '2rem' };
+
 export default class ProximasFechas extends Component {
   constructor(props) {
     super(props);
@@ -82,25 +84,14 @@ export default class ProximasFechas extends Component {
             <div style={{ margin: '2rem 4rem' }}>
               {text.proximasFechas[index].descriptions.map(x => (
                 <div key={x.title}>
-                  <p style={{
-                    color: 'gray',
-                    marginBottom: '2rem',
-                  }}
-                  >
-                    {x.grey}
-                  </p>
-                  <h2 style={{ marginBottom: '2rem' }}>
-                    {x.title}
-                  </h2>
-                  <p>
-                    {x.description}
-                  </p>
+                  <p style={greyP}>{x.grey}</p>
+                  <h2 style={{ marginBottom: '2rem' }}>{x.title}</h2>
+                  <p>{x.description}</p>
                   {x.hours && x.hours.map(hour => (
                     <ul key={hour}>
                       <li><p>{hour}</p></li>
                     </ul>
                   ))}
-
                 </div>
               ))}
               <Button type="button">
