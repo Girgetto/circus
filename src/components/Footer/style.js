@@ -49,3 +49,12 @@ export const Row = styled.div`
     align-items: center;
   }
 `;
+
+export const imgCircusDiv = styled.div`
+  padding: 0 1rem;
+`;
+
+export const powerIronhackDiv = styled.div`
+  display: flex;
+  margin: 2rem;
+`;

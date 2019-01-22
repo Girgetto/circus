@@ -2,7 +2,7 @@ import React from 'react';
 import circus from '../../assets/img/footerImg/circus.svg';
 import ironHackFooter from '../../assets/img/footerImg/ironHackFooter.svg';
 import {
-  A, Box, P, Div, Row,
+  A, Box, P, Div, Row, imgCircusDiv, powerIronhackDiv,
 } from './style';
 
 const footer = [
@@ -10,6 +10,10 @@ const footer = [
   ['FAQ', 'Contact', 'Privacy Policy'],
   ['Twitter', 'Facebook', 'Instagram', 'YouTube'],
 ];
+
+const lowerRow = { marginTop: '10vmin', alignItems: 'center' };
+
+const imgStyle = { padding: '0 1rem' };
 
 const Footer = () => (
   <Div className="center">
@@ -28,16 +32,14 @@ const Footer = () => (
         </Box>
       ))}
     </Row>
-    <Row style={{ marginTop: '10vmin' }}>
-      <div style={{ padding: '0 1rem' }}>
+    <Row style={lowerRow}>
+      <imgCircusDiv>
         <img src={circus} alt="" />
-      </div>
-      <div style={{ display: 'flex', margin: '2rem' }}>
-        <img src={ironHackFooter} style={{ padding: '0 1rem' }} alt="" />
-        <P>
-  Powered by ironhack
-        </P>
-      </div>
+      </imgCircusDiv>
+      <powerIronhackDiv>
+        <img src={ironHackFooter} style={imgStyle} alt="" />
+        <P>Powered by ironhack</P>
+      </powerIronhackDiv>
     </Row>
   </Div>
 );
