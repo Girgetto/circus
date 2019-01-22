@@ -24,10 +24,9 @@ export default class QueAprenderas extends Component {
 
   timer() {
     const { text } = this.props;
-    let { index } = this.state;
     setInterval(() => {
-      index = index > text.fifth.length - 2 ? 0 : index + 1;
-      this.setState({ index });
+      const { index } = this.state;
+      this.setState({ index: index > text.fifth.length - 2 ? 0 : index + 1 });
     }, 5000);
   }
 

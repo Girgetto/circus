@@ -15,7 +15,7 @@ const Descriptions = ({
         onKeyDown={ctx.handleKeyDown}
         style={{ cursor: 'pointer' }}
       >
-        <svg width="75" height="75">
+        <svg width="60" height="60">
           <circle
             cx="50%"
             cy="50%"
