@@ -86,7 +86,7 @@ export const Li = styled.li`
 `;
 
 export const H2 = styled.h2`
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 `;
 
 export const InnerLiDiv = styled.div`

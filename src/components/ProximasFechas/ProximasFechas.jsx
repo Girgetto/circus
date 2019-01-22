@@ -50,7 +50,10 @@ export default class ProximasFechas extends Component {
           role="presentation"
           onKeyDown={this.handleKeyDown}
         >
-          <H2>Próximas fechas</H2>
+          <div style={{ marginBottom: '2rem' }}>
+            <H2>{text.proximasFechasTitle}</H2>
+            <p>{text.proximasFechas[0].date}</p>
+          </div>
           <Ul>
             {text.proximasFechas.map((x, i) => (
               <Li key={x.title}>
@@ -59,7 +62,6 @@ export default class ProximasFechas extends Component {
                     <TitleDiv id={i}>
                       <img src={imgArr[i]} alt="1" style={{ marginRight: '2rem' }} />
                       <InnerTitleDiv {...this.state} color={x.color} i={i}>
-                        <p id={i} style={{ color: 'grey' }}>{x.date}</p>
                         <p id={i}>{x.title}</p>
                       </InnerTitleDiv>
                     </TitleDiv>
@@ -78,20 +80,29 @@ export default class ProximasFechas extends Component {
         <RightDiv className="center" text={text} index={index}>
           <div className="translate-child" style={{ width: '100%' }}>
             <div style={{ margin: '2rem 4rem' }}>
-              <p style={{
-                color: 'gray',
-                marginBottom: '2rem',
-              }}
-              >
-                {text.proximasFechas[index].date}
+              {text.proximasFechas[index].descriptions.map(x => (
+                <div key={x.title}>
+                  <p style={{
+                    color: 'gray',
+                    marginBottom: '2rem',
+                  }}
+                  >
+                    {x.grey}
+                  </p>
+                  <h2 style={{ marginBottom: '2rem' }}>
+                    {x.title}
+                  </h2>
+                  <p>
+                    {x.description}
+                  </p>
+                  {x.hours && x.hours.map(hour => (
+                    <ul key={hour}>
+                      <li><p>{hour}</p></li>
+                    </ul>
+                  ))}
 
-              </p>
-              <h2 style={{ marginBottom: '2rem' }}>
-                {text.proximasFechas[index].title}
-              </h2>
-              <p>
-                {text.proximasFechas[index].description}
-              </p>
+                </div>
+              ))}
               <Button type="button">
                 Aplicar
               </Button>

@@ -34,6 +34,7 @@
     "Circus was for me the beginning of a life changing experience. I didn’t know all these opportunities where waiting for me",
     "lorem ipsum dolor sit amet"
   ],
+  "proximasFechasTitle": "Próximo evento",
   "proximasFechas":[
     { "color": "rgb(245, 200, 205)", "date":"16 Noviembre - 14:30 hrs.","title":"Dia 1 - impartido por Playtomic","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "},
     { "color": "rgb(202, 223, 255)", "date":"15-16 Diciembre - 10 hrs.","title":"WeCode & WeDesign - WeWork ","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "},
