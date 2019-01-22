@@ -26,6 +26,11 @@ export default class Partners extends Component {
     this.setState({ animate: true });
   }
 
+  clickMoveTogle() {
+    const { animate } = this.state;
+    this.setState({ animate: !animate });
+  }
+
   render() {
     const { photos, animate } = this.state;
     const animationClasses = (animate ? 'slideLeft' : 'slideRight');
@@ -41,7 +46,7 @@ export default class Partners extends Component {
                 <path d="M25 1L1 32.5L25 65.5" stroke="#2D293C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </Svg>
             </Button>
-            <ImgContainer>
+            <ImgContainer onClick={() => { this.clickMoveTogle(); }}>
               {photos.map(image => (
                 <Img
                   className={`${animationClasses}`}
