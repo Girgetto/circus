@@ -28,7 +28,7 @@ export default class QueAprenderas extends Component {
     setInterval(() => {
       index = index > text.fifth.length - 2 ? 0 : index + 1;
       this.setState({ index });
-    }, 1000);
+    }, 5000);
   }
 
   changer(index) {

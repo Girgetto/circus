@@ -31,18 +31,18 @@ const lenguages = {
   marginTop: '0.5rem',
 };
 
-const Sidenav = ({ location, text, getLanguage }) => (
+const Sidenav = ({ location, text, setLanguage }) => (
   <div id="mySidenav" className="sidenav">
     <div style={upperDiv}>
       <img src={circus} alt="" style={{ marginLeft: '2rem' }} />
       <div style={lenguages}>
-        <Link to="/pt" onClick={() => getLanguage('pt')}>
+        <Link to="/pt" onClick={() => setLanguage('pt')}>
           <p style={{ padding: '0 0.5rem', textDecoration: `${location.pathname === '/pt' ? 'underline' : ''}` }}>
   PT
 
           </p>
         </Link>
-        <Link to="/es" onClick={() => getLanguage('es')}>
+        <Link to="/es" onClick={() => setLanguage('es')}>
           <p style={{ padding: '0 0.5rem', textDecoration: `${location.pathname === '/es' ? 'underline' : ''}` }}>
   ES
           </p>
@@ -81,13 +81,13 @@ Sidenav.defaultProps = {
     navbar3: 'Loading',
     navbar4: 'Loading',
   },
-  getLanguage: PropTypes.func,
+  setLanguage: PropTypes.func,
   text: {},
 };
 
 Sidenav.propTypes = {
   location: PropTypes.shape({}),
-  getLanguage: PropTypes.func,
+  setLanguage: PropTypes.func,
   text: PropTypes.shape({}),
 };
 
