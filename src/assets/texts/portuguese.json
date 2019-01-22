@@ -36,9 +36,32 @@
   ],
   "proximasFechasTitle": "Próximo evento",
   "proximasFechas":[
-    { "color": "rgb(245, 200, 205)", "date":"16 Noviembre - 14:30 hrs.","title":"Dia 1 - impartido por Playtomic","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "},
-    { "color": "rgb(202, 223, 255)", "date":"15-16 Diciembre - 10 hrs.","title":"WeCode & WeDesign - WeWork ","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "},
-    { "color": "rgb(255, 234, 107)", "date":"18 Enero - 14:30 hrs.","title":"Topping croissant cookie","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "},
-    { "color": "rgb(185, 233, 228)", "date":"26 Enero - 14:30 hrs.","title":"WeCode","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup "}
+    { "color": "rgb(245, 200, 205)", "date":"16 - 17 Marzo", "title":"Playtomic",
+      "descriptions": 
+      [
+        {"grey":"¿Quien lo imparte?","title":"Impartido por Playtomic","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup"}
+      ]
+    },
+    { "color": "rgb(202, 223, 255)", "date":"16 - 17 Marzo","title":"Charlas",
+      "descriptions": 
+      [
+        {"grey":"16 Marzo","title":"Marcos Garcia","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup"},
+        {"grey":"17 Marzo","title":"Paco Martín","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup"}
+      ]
+    },
+    { "color": "#FFF6C1", "date":"16 - 17 Marzo","title":"Workshops",
+      "descriptions": 
+      [
+        {"grey":"16 Marzo","title":"Hyper Island","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup"},
+        {"grey":"17 Marzo","title":"Html","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup"}
+      ]
+    },
+    { "color": "rgb(185, 233, 228)", "date":"16 - 17 Marzo","title":"Horarios",
+      "descriptions": 
+      [
+        {"title":"16 Marzo","hours": ["10.00 Presentación","11.00 Charla Marcos","13.00 Comida","17.00 Workshop - HyperIsland"]},
+        {"title":"17 Marzo","hours": ["10.00 Presentación","11.00 Charla Marcos","13.00 Comida","17.00 Workshop - HyperIsland"]}
+      ]
+    }
   ]
 }

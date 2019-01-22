@@ -14,7 +14,6 @@ export const Button = styled.button`
   background-color: #2D293C;
   color: white;
   border-radius: 20px;
-  margin-top: 2rem;
   @media(max-width: 768px) {
     font-size: 5vw;
   }

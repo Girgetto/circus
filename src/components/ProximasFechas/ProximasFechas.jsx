@@ -13,7 +13,7 @@ import {
 
 const imgArr = [first, second, third, fourth];
 
-const greyP = { color: 'gray', marginBottom: '2rem' };
+const greyP = { color: 'gray', marginBottom: '0.5rem' };
 
 export default class ProximasFechas extends Component {
   constructor(props) {
@@ -83,7 +83,7 @@ export default class ProximasFechas extends Component {
           <div className="translate-child" style={{ width: '100%' }}>
             <div style={{ margin: '2rem 4rem' }}>
               {text.proximasFechas[index].descriptions.map(x => (
-                <div key={x.title}>
+                <div key={x.title} style={{ marginBottom: '2rem' }}>
                   <p style={greyP}>{x.grey}</p>
                   <h2 style={{ marginBottom: '2rem' }}>{x.title}</h2>
                   <p>{x.description}</p>
