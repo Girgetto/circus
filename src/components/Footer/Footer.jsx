@@ -2,7 +2,7 @@ import React from 'react';
 import circus from '../../assets/img/footerImg/circus.svg';
 import ironHackFooter from '../../assets/img/footerImg/ironHackFooter.svg';
 import {
-  A, Box, P, Div, Row, imgCircusDiv, powerIronhackDiv,
+  A, Box, P, Div, Row, ImgCircusDiv, PowerIronhackDiv,
 } from './style';
 
 const footer = [
@@ -33,13 +33,13 @@ const Footer = () => (
       ))}
     </Row>
     <Row style={lowerRow}>
-      <imgCircusDiv>
+      <ImgCircusDiv>
         <img src={circus} alt="" />
-      </imgCircusDiv>
-      <powerIronhackDiv>
+      </ImgCircusDiv>
+      <PowerIronhackDiv>
         <img src={ironHackFooter} style={imgStyle} alt="" />
         <P>Powered by ironhack</P>
-      </powerIronhackDiv>
+      </PowerIronhackDiv>
     </Row>
   </Div>
 );

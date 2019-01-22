@@ -50,11 +50,11 @@ export const Row = styled.div`
   }
 `;
 
-export const imgCircusDiv = styled.div`
+export const ImgCircusDiv = styled.div`
   padding: 0 1rem;
 `;
 
-export const powerIronhackDiv = styled.div`
+export const PowerIronhackDiv = styled.div`
   display: flex;
   margin: 2rem;
 `;
