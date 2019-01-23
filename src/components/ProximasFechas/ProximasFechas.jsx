@@ -13,6 +13,8 @@ import {
 
 const imgArr = [first, second, third, fourth];
 
+const divHeight = ['50vh', '90vh', '90vh', '90vh', '90vh'];
+
 const greyP = { color: 'gray', marginBottom: '0.5rem' };
 
 export default class ProximasFechas extends Component {
@@ -25,7 +27,7 @@ export default class ProximasFechas extends Component {
   }
 
   componentDidMount() {
-    document.getElementById(`description${0}`).style.height = '40vh';
+    document.getElementById(`description${0}`).style.height = '50vh';
   }
 
   setColor(index) {
@@ -35,7 +37,7 @@ export default class ProximasFechas extends Component {
         document.getElementById(`description${i}`).style.height = '0';
       });
 
-      document.getElementById(`description${index || 0}`).style.height = '40vh';
+      document.getElementById(`description${index || 0}`).style.height = divHeight[index];
       return index === '' ? '' : this.setState({ index });
     }
     return '';
@@ -68,7 +70,18 @@ export default class ProximasFechas extends Component {
                       </InnerTitleDiv>
                     </TitleDiv>
                     <DescriptionDiv id={`description${i}`}>
-                      <p>{text.proximasFechas[index].description}</p>
+                      {text.proximasFechas[index].descriptions.map(content => (
+                        <div key={content.title} style={{ marginBottom: '2rem' }}>
+                          <p style={greyP}>{content.grey}</p>
+                          <h2 style={{ marginBottom: '2rem' }}>{content.title}</h2>
+                          <p>{content.description}</p>
+                          {content.hours && content.hours.map(hour => (
+                            <ul key={hour}>
+                              <li><p>{hour}</p></li>
+                            </ul>
+                          ))}
+                        </div>
+                      ))}
                       <Button type="button">
                           Aplicar
                       </Button>

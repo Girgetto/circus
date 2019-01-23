@@ -69,7 +69,7 @@ export const OptionsDiv = styled.div`
 
 export const MainDiv = styled.div`
   display: flex;
-  height: 40rem;
+  height: 55rem;
   @media(max-width: 768px) {
     margin-top: 15rem;
     margin-bottom: 15rem;
