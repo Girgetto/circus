@@ -13,7 +13,7 @@ import {
 
 const imgArr = [first, second, third, fourth];
 
-const divHeight = ['50vh', '90vh', '90vh', '90vh', '90vh'];
+const divHeight = ['25rem', '40rem', '40rem', '40rem', '20rem'];
 
 const greyP = { color: 'gray', marginBottom: '0.5rem' };
 
@@ -27,7 +27,8 @@ export default class ProximasFechas extends Component {
   }
 
   componentDidMount() {
-    document.getElementById(`description${0}`).style.height = '50vh';
+    const height = divHeight[0];
+    document.getElementById(`description${0}`).style.height = height;
   }
 
   setColor(index) {

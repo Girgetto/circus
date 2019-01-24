@@ -20,7 +20,9 @@ const InsideCircus = ({ text }) => (
       </TextBox>
       <ButtonDiv>
         <Button type="button">
-          <AnchorLink offset={() => 100} href="#proximasFechas">{text.insideButton}</AnchorLink>
+          <AnchorLink offset={() => 100} href="#proximasFechas">
+            {text.insideButton}
+          </AnchorLink>
         </Button>
       </ButtonDiv>
     </TextDiv>
