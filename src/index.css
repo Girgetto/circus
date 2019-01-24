@@ -119,7 +119,8 @@ button > a {
 
 @media(max-width: 768px){
 	h2 {
-		font-size: 6vw;
+		font-size: 9vw;
+		line-height: 3rem;
 	}
 
 	p {
