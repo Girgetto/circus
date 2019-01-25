@@ -50,12 +50,12 @@ export default class ProximasFechas extends Component {
     return (
       <MainDiv id="proximasFechas" className="translate">
         <OptionsDiv
-          className="translate-child center"
+          className="translate-child"
           onClick={e => this.setColor(e.target.id)}
           role="presentation"
           onKeyDown={this.handleKeyDown}
         >
-          <div style={{ marginBottom: '2rem' }}>
+          <div style={{ margin: '4rem 10%' }}>
             <H2>{text.proximasFechasTitle}</H2>
             <p>{text.proximasFechas[0].date}</p>
           </div>
@@ -93,9 +93,9 @@ export default class ProximasFechas extends Component {
             ))}
           </Ul>
         </OptionsDiv>
-        <RightDiv className="center" text={text} index={index}>
+        <RightDiv text={text} index={index}>
           <div className="translate-child" style={{ width: '100%' }}>
-            <div style={{ margin: '2rem 4rem' }}>
+            <div style={{ margin: '9rem 4rem' }}>
               {text.proximasFechas[index].descriptions.map(x => (
                 <div key={x.title} style={{ marginBottom: '2rem' }}>
                   <p style={greyP}>{x.grey}</p>
