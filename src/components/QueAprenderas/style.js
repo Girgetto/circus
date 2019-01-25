@@ -37,7 +37,7 @@ export const Img = styled.img`
 export const DescriptionDiv = styled.div`
   display: flex;
   text-align: left;
-  padding: 0 5rem;
+  padding: 0 2rem;
   @media(max-width:768px) {
     max-width:100% !important;
     text-align: center;

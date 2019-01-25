@@ -26,7 +26,7 @@ align-items: center;
 `;
 
 export const DescriptionDiv = styled.div`
-  margin: 3rem 6rem;
+  margin: 3rem 2rem;
   @media(max-width:768px) {
     margin: 3rem 3rem;
   }
