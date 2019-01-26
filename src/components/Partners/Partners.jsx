@@ -5,6 +5,8 @@ import campusMadrid from '../../assets/img/logos/campusMadrid.svg';
 import cabify from '../../assets/img/logos/cabify.svg';
 import opinator from '../../assets/img/logos/opinator.svg';
 import deliveroo from '../../assets/img/logos/deliverooLogo.png';
+import carto from '../../assets/img/logos/CARTO-logo-positive.svg';
+import playmotic from '../../assets/img/logos/playtomic_imagotipo_RGB.png';
 import {
   Svg, ImgDiv, MainDiv, H2, Img, InnerDiv, ImgContainer, Button,
 } from './style';
@@ -13,7 +15,7 @@ export default class Partners extends Component {
   constructor() {
     super();
     this.state = {
-      photos: [ironHack, campusMadrid, cabify, opinator, deliveroo],
+      photos: [ironHack, campusMadrid, cabify, opinator, deliveroo, carto, playmotic],
       animate: false,
     };
   }

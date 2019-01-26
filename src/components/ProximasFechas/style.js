@@ -64,6 +64,10 @@ export const OptionsDiv = styled.div`
   width: 50%;
   @media(max-width: 768px) {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 `;
 

@@ -44,18 +44,20 @@ export const Img = styled.img`
 
 export const InnerDiv = styled.div`
   transform: skewY(5deg);
-  width: 100%;
   @media (max-width:768px) {
     transform: skewY(0deg);
   }
 `;
 
 export const ImgContainer = styled.div`
-  width: 35rem;
+  width: 19rem;
   justify-content: center;
   align-items: center;
   display: flex;
   overflow: hidden;
+  @media (max-width:768px) {
+    width: 19rem;
+  }
 `;
 
 export const Button = styled.button`
