@@ -1,7 +1,7 @@
 {
-  "main.css": "/circus/static/css/main.3094d545.chunk.css",
-  "main.js": "/circus/static/js/main.819a315a.chunk.js",
-  "main.js.map": "/circus/static/js/main.819a315a.chunk.js.map",
+  "main.css": "/circus/static/css/main.fa489d85.chunk.css",
+  "main.js": "/circus/static/js/main.5334e1f3.chunk.js",
+  "main.js.map": "/circus/static/js/main.5334e1f3.chunk.js.map",
   "static/js/1.31323bc2.chunk.js": "/circus/static/js/1.31323bc2.chunk.js",
   "static/js/1.31323bc2.chunk.js.map": "/circus/static/js/1.31323bc2.chunk.js.map",
   "runtime~main.js": "/circus/static/js/runtime~main.a1afa860.js",
@@ -27,8 +27,8 @@
   "static/media/CARTO-logo-positive.svg": "/circus/static/media/CARTO-logo-positive.884ce204.svg",
   "static/media/playtomic_imagotipo_RGB.png": "/circus/static/media/playtomic_imagotipo_RGB.27e54cff.png",
   "static/media/ironHackFooter.svg": "/circus/static/media/ironHackFooter.56213e61.svg",
-  "static/css/main.3094d545.chunk.css.map": "/circus/static/css/main.3094d545.chunk.css.map",
+  "static/css/main.fa489d85.chunk.css.map": "/circus/static/css/main.fa489d85.chunk.css.map",
   "index.html": "/circus/index.html",
-  "precache-manifest.156ecccaf9c24b9d0029d5b508d21688.js": "/circus/precache-manifest.156ecccaf9c24b9d0029d5b508d21688.js",
+  "precache-manifest.f247ee38058b22b0b584c28715cc30ee.js": "/circus/precache-manifest.f247ee38058b22b0b584c28715cc30ee.js",
   "service-worker.js": "/circus/service-worker.js"
 }
