@@ -50,7 +50,7 @@ export const InnerDiv = styled.div`
 `;
 
 export const ImgContainer = styled.div`
-  width: 19rem;
+  width: 54rem;
   justify-content: center;
   align-items: center;
   display: flex;
