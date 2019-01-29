@@ -7,6 +7,10 @@ export const MainDiv = styled.div`
 
 export const InnerDiv = styled.div`
   margin: 1rem;
+  height: 25rem;
+  @media(max-width: 768px) {
+    height: 38rem;
+  }
 `;
 
 export const P = styled.p`

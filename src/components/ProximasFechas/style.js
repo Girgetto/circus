@@ -37,7 +37,7 @@ export const LeftDiv = styled.div`
 export const SelectorDiv = styled.div`
   flex-direction: column;
   width: 100%;
-  padding: 1rem 3rem;
+  padding: 1.3rem 3rem;
   background-color: ${props => (props.index === `${props.i}` ? props.color : '')};
 `;
 
@@ -72,8 +72,9 @@ export const OptionsDiv = styled.div`
 
 export const MainDiv = styled.div`
   display: flex;
-  height: 45rem;
+  height: 40rem;
   @media(max-width: 768px) {
+    height: 75rem;
     margin-top: 15rem;
     margin-bottom: 15rem;
   }
@@ -102,4 +103,9 @@ export const InnerTitleDiv = styled.div`
   flex-direction: column;
   width: 100%;
   background-color: ${props => (props.index === `${props.i}` ? props.color : '')};
+`;
+
+export const TitleDivProximoEvento = styled.div`
+  margin: 4rem 3rem;
+  margin-bottom: 2.5rem;
 `;

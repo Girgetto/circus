@@ -8,12 +8,12 @@ import fourth from '../../assets/img/icon/fourth.svg';
 import {
   RightDiv, Button, Ul, SelectorDiv, DescriptionDiv,
   TitleDiv, OptionsDiv, MainDiv, Li, H2, InnerLiDiv,
-  InnerTitleDiv,
+  InnerTitleDiv, TitleDivProximoEvento,
 } from './style';
 
 const imgArr = [first, second, third, fourth];
 
-const divHeight = ['25rem', '40rem', '40rem', '40rem', '20rem'];
+const divHeight = ['30rem', '45rem', '45rem', '45rem', '60rem'];
 
 const greyP = { color: 'gray', marginBottom: '0.5rem' };
 
@@ -55,10 +55,10 @@ export default class ProximasFechas extends Component {
           role="presentation"
           onKeyDown={this.handleKeyDown}
         >
-          <div style={{ margin: '4rem 3rem' }}>
+          <TitleDivProximoEvento>
             <H2>{text.proximasFechasTitle}</H2>
             <p>{text.proximasFechas[0].date}</p>
-          </div>
+          </TitleDivProximoEvento>
           <Ul>
             {text.proximasFechas.map((x, i) => (
               <Li key={x.title}>
@@ -70,7 +70,7 @@ export default class ProximasFechas extends Component {
                         <p id={i}>{x.title}</p>
                       </InnerTitleDiv>
                     </TitleDiv>
-                    <DescriptionDiv id={`description${i}`}>
+                    <DescriptionDiv id={`description${i}`} style={{ overflowY: 'scroll' }}>
                       {text.proximasFechas[index].descriptions.map(content => (
                         <div key={content.title} style={{ marginBottom: '2rem' }}>
                           <p style={greyP}>{content.grey}</p>
@@ -94,8 +94,13 @@ export default class ProximasFechas extends Component {
           </Ul>
         </OptionsDiv>
         <RightDiv text={text} index={index}>
-          <div className="translate-child" style={{ width: '100%' }}>
-            <div style={{ margin: '7rem 4rem' }}>
+          <div
+            className="translate-child"
+            style={{
+              width: '100%', height: '30rem', overflowY: 'scroll', margin: '7.2rem 4rem',
+            }}
+          >
+            <div>
               {text.proximasFechas[index].descriptions.map(x => (
                 <div key={x.title} style={{ marginBottom: '2rem' }}>
                   <p style={greyP}>{x.grey}</p>

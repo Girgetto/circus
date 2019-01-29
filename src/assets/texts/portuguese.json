@@ -4,7 +4,7 @@
     {"text":"Qué es Circus pt", "href":"#queEsCircus", "offset":"100", "offsetM":"50"},
     {"text":"Por qué Circus pt", "href":"#porQueCircus", "offset":"160", "offsetM":"200"},
     {"text":"Qué aprenderás pt","href":"#queAprendaras", "offset":"100", "offsetM":"-50"},
-    {"text":"Próximas fechas pt","href":"#proximasFechas", "offset":"40", "offsetM":"200"}
+    {"text":"Próximas fechas pt","href":"#proximasFechas", "offset":"100", "offsetM":"200"}
   ],
   "first": "Inside Circus",
   "insideDescription":"Onde sua transformação digital começa",
