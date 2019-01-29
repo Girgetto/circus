@@ -33,6 +33,7 @@ export const MainDiv = styled.div`
 
 export const H2 = styled.h2`
   margin-top: 5rem;
+  text-align: center;
 `;
 
 export const Img = styled.img`
@@ -57,6 +58,7 @@ export const ImgContainer = styled.div`
   overflow: hidden;
   @media (max-width:768px) {
     width: 19rem;
+    height: 7rem;
   }
 `;
 

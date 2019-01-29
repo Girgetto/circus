@@ -20,6 +20,11 @@ export default class Partners extends Component {
     };
   }
 
+  componentDidMount() {
+    const seconds = 10;
+    setInterval(() => { this.startSlider(); }, seconds * 1000);
+  }
+
   moveToEnd() {
     this.setState({ animate: false });
   }
@@ -29,6 +34,11 @@ export default class Partners extends Component {
   }
 
   clickMoveTogle() {
+    const { animate } = this.state;
+    this.setState({ animate: !animate });
+  }
+
+  startSlider() {
     const { animate } = this.state;
     this.setState({ animate: !animate });
   }

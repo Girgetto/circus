@@ -134,4 +134,14 @@ button > a {
 	img {
 		max-height: 50vw;
 	}
+
+	.slideLeft {
+		transition: 10s;
+		transform: translateX(-25rem);
+	}
+	
+	.slideRight {
+		transition: 10s;
+		transform: translateX(25rem);
+	}
 }
