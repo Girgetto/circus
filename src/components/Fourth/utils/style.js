@@ -10,9 +10,7 @@ export const InnerDiv = styled.div`
 `;
 
 export const P = styled.p`
-  font-size: 1.7vw;
-  line-height: 3vmin;
-  font-weight: 300;
+  ${''}
   @media(max-width: 768px) {
     line-height: 8vmin;
     margin-bottom: 0rem;

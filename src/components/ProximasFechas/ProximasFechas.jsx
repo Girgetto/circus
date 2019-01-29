@@ -55,7 +55,7 @@ export default class ProximasFechas extends Component {
           role="presentation"
           onKeyDown={this.handleKeyDown}
         >
-          <div style={{ margin: '4rem 10%' }}>
+          <div style={{ margin: '4rem 3rem' }}>
             <H2>{text.proximasFechasTitle}</H2>
             <p>{text.proximasFechas[0].date}</p>
           </div>
@@ -95,7 +95,7 @@ export default class ProximasFechas extends Component {
         </OptionsDiv>
         <RightDiv text={text} index={index}>
           <div className="translate-child" style={{ width: '100%' }}>
-            <div style={{ margin: '9rem 4rem' }}>
+            <div style={{ margin: '7rem 4rem' }}>
               {text.proximasFechas[index].descriptions.map(x => (
                 <div key={x.title} style={{ marginBottom: '2rem' }}>
                   <p style={greyP}>{x.grey}</p>

@@ -7,7 +7,7 @@ export const CircleDiv = styled.div`
 `;
 
 export const MainDiv = styled.div`
-  height: 30rem;
+  height: 32rem;
   background-color: #E8F0FE;
   display: flex;
   transform: skewY(-5deg);

@@ -21,7 +21,6 @@ export const Button = styled.button`
 
 export const Ul = styled.ul`
   width: 100%;
-  margin-left: 10%;
   @media(max-width:768px){
     margin-left: 0% !important;
     width: 100%;
@@ -38,7 +37,7 @@ export const LeftDiv = styled.div`
 export const SelectorDiv = styled.div`
   flex-direction: column;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   background-color: ${props => (props.index === `${props.i}` ? props.color : '')};
 `;
 
@@ -73,7 +72,7 @@ export const OptionsDiv = styled.div`
 
 export const MainDiv = styled.div`
   display: flex;
-  height: 55rem;
+  height: 45rem;
   @media(max-width: 768px) {
     margin-top: 15rem;
     margin-bottom: 15rem;

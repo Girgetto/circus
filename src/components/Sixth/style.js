@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MainDiv = styled.div`
-  height: 30rem;
+  height: 32rem;
   display: flex;
   background-color: #E8F0FE;
   transform: skewY(-5deg);
@@ -50,8 +50,6 @@ export const GrayP = styled.p`
 
 export const CitP = styled.p`
   font-size: 1.7vw;
-  line-height: 3vmin;
-  font-weight: 300;
   @media(max-width: 768px) {
     line-height: 8vmin;
     margin-bottom: 0rem;
