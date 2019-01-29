@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "ebe7082948f3d820ecd52d915e3979e3",
-    "url": "/circus/static/media/Fifth.ebe70829.svg"
+    "revision": "b7b86c8e1f825eb236f202858b5ae90b",
+    "url": "/circus/static/media/emilio-garcia.b7b86c8e.png"
   },
   {
-    "revision": "c7d6ca2e843f51ecd857",
-    "url": "/circus/static/css/main.729ee212.chunk.css"
+    "revision": "819a315a190cf3c6b2cb",
+    "url": "/circus/static/css/main.3094d545.chunk.css"
   },
   {
-    "revision": "0b5746ee220155a2ec7e",
-    "url": "/circus/static/js/1.0b5746ee.chunk.js"
+    "revision": "31323bc28a464659f702",
+    "url": "/circus/static/js/1.31323bc2.chunk.js"
   },
   {
     "revision": "a1afa860422454396a5d",
@@ -48,12 +48,12 @@ self.__precacheManifest = [
     "url": "/circus/static/media/fourth.0f70c902.jpg"
   },
   {
-    "revision": "c7d6ca2e843f51ecd857",
-    "url": "/circus/static/js/main.c7d6ca2e.chunk.js"
+    "revision": "ebe7082948f3d820ecd52d915e3979e3",
+    "url": "/circus/static/media/Fifth.ebe70829.svg"
   },
   {
-    "revision": "b7b86c8e1f825eb236f202858b5ae90b",
-    "url": "/circus/static/media/emilio-garcia.b7b86c8e.png"
+    "revision": "819a315a190cf3c6b2cb",
+    "url": "/circus/static/js/main.819a315a.chunk.js"
   },
   {
     "revision": "b3857492688f6f32822a56058578b166",
@@ -88,6 +88,14 @@ self.__precacheManifest = [
     "url": "/circus/static/media/opinator.233babf1.svg"
   },
   {
+    "revision": "884ce20492c3f3d2cf76566394c1ca31",
+    "url": "/circus/static/media/CARTO-logo-positive.884ce204.svg"
+  },
+  {
+    "revision": "27e54cff4a50abcbdc8390334d413d56",
+    "url": "/circus/static/media/playtomic_imagotipo_RGB.27e54cff.png"
+  },
+  {
     "revision": "41b164e2a1405b8774119675ff8c6a10",
     "url": "/circus/static/media/circus.41b164e2.svg"
   },
@@ -96,7 +104,7 @@ self.__precacheManifest = [
     "url": "/circus/static/media/ironHackFooter.56213e61.svg"
   },
   {
-    "revision": "a0ba4e1b9d44d8cbba2533ee1a7ad806",
+    "revision": "1d3d077a5831b90a08c690198cc6d156",
     "url": "/circus/index.html"
   }
 ];
