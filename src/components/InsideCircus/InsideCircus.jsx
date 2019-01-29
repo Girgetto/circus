@@ -8,7 +8,7 @@ import {
 } from './style';
 
 const InsideCircus = ({ text }) => (
-  <MainDiv>
+  <MainDiv id="insideCircus">
     <ImgDiv>
       <Img src={first} alt="" />
     </ImgDiv>

@@ -36,6 +36,7 @@ export const InnerDiv = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 3rem;
+  margin: 2rem;
 `;
 
 export const H2 = styled.h2`

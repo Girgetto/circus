@@ -22,6 +22,7 @@
     "lorem ipsum dolor sit amet"
   ],
   "fourthCit":"Chris Cornell - Circus I attendant",
+  "titleFifth": "Qué aprenderás",
   "fifth": [
     {"title": "01 Como funciona Internet","description":"VPN, IP, HTTP, cuantas siglas más pueden tener? Ya hay tanta terminología alrededor de Internet que creemos que es importante empezar desde lo más básico explicándote cómo funciona..", "color": "#F5C8CD"},
     {"title": "02 Perfiles tech","description":"No todos los programadores son genios de matemática ni todos los diseñadores Picassos frustrados, entérate de qué habilidades se necesitan para cada perfil dentro de un equipo tech.", "color": "#CADFFF"},

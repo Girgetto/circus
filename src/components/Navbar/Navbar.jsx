@@ -1,6 +1,7 @@
 /* eslint-env browser */
 import React, { Component } from 'react';
 import { Redirect } from 'react-router';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import circusLogo from '../../assets/img/circus.svg';
 import LinksAndFlags from './utils/LinksAndFlags';
 import { NavbarDiv, MenuDiv, P } from './style';
@@ -24,7 +25,14 @@ export default class Navbar extends Component {
         {(location.pathname !== '/pt' && location.pathname !== '/es')
         && <Redirect to="es" />}
         <Sidenav id="mySidenav" {...this.props} />
-        <img src={circusLogo} alt="" style={{ marginRight: '10vw' }} />
+        <div style={{
+          display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '0 3rem',
+        }}
+        >
+          <AnchorLink offset={() => 70} href="#insideCircus">
+            <img src={circusLogo} alt="" />
+          </AnchorLink>
+        </div>
         <LinksAndFlags {...this.props} />
         <MenuDiv>
           <P>Menu</P>
