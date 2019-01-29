@@ -30,7 +30,7 @@ export default class Sixth extends Component {
       <MainDiv
         className="transition"
       >
-        <LeftDiv>
+        <LeftDiv className="order">
           <Texts text={text} counter={counter} />
           <div className="center" style={{ flexDirection: 'row', marginTop: '4rem' }}>
             {text.fourthText.map((x, i) => (
@@ -48,7 +48,7 @@ export default class Sixth extends Component {
             ))}
           </div>
         </LeftDiv>
-        <RightDiv>
+        <RightDiv className="order">
           <Img src={emilioGarcia} alt="" />
         </RightDiv>
       </MainDiv>

@@ -7,11 +7,12 @@ export const MainDiv = styled.div`
   transform: skewY(-5deg);
   box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 30px;
   @media(max-width:768px){
-    height: 40rem;
-    flex-direction: column-reverse;
+    height: 57rem;
+    flex-direction: column;
     transform: skewY(0deg);
     margin-bottom: 10rem;
-    justify-content: space-between;
+    .order:nth-child(1) { order: 1; }
+    .order:nth-child(2) { order: 0; }
   }
 `;
 
@@ -48,6 +49,11 @@ export const GrayP = styled.p`
 `;
 
 export const CitP = styled.p`
-  fontSize: 1.7vw;
-  marginBottom: 5rem;
+  font-size: 1.7vw;
+  line-height: 3vmin;
+  font-weight: 300;
+  @media(max-width: 768px) {
+    line-height: 8vmin;
+    margin-bottom: 0rem;
+  }
 `;

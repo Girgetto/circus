@@ -7,15 +7,14 @@ export const MainDiv = styled.div`
 
 export const InnerDiv = styled.div`
   margin: 1rem;
-  height: 20rem;
-  @media(max-width: 768px) {
-    height: 20rem;
-  }
 `;
 
 export const P = styled.p`
   font-size: 1.7vw;
+  line-height: 3vmin;
+  font-weight: 300;
   @media(max-width: 768px) {
+    line-height: 8vmin;
     margin-bottom: 0rem;
   }
 `;

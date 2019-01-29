@@ -14,10 +14,9 @@ export const MainDiv = styled.div`
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.11);
   margin-top: 7rem;
   @media(max-width:768px){
-    height: 40rem;
+    height: 57rem;
     flex-direction: column;
     transform: skewY(0deg);
-    justify-content: space-between;
   }
 `;
 

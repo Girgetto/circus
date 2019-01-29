@@ -8,7 +8,7 @@ export const InnerDiv = styled.div`
   margin: 1rem;
   height: 20rem;
   @media(max-width: 768px) {
-    height: 20rem;
+    height: 35rem;
   }
 `;
 

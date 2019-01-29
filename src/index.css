@@ -108,12 +108,12 @@ button > a {
 }
 
 .slideLeft {
-  transition: 1s;
+  transition: 2s;
   transform: translateX(-10rem);
 }
 
 .slideRight {
-  transition: 1s;
+  transition: 2s;
   transform: translateX(10rem);
 }
 
