@@ -8,6 +8,7 @@ export const MainDiv = styled.div`
   transform: skewY(-5deg);
   margin-bottom: 7rem;
   @media (max-width:768px) {
+    height: 55rem;
     flex-direction: column;
     margin-top: 8rem;
     transform: skewY(0deg);
@@ -22,6 +23,7 @@ export const LeftDiv = styled.div`
   margin-top: 3rem;
   @media (max-width:768px) {
     transform: skewY(0deg);
+    margin-top: 0rem;
   }
 `;
 

@@ -51,7 +51,7 @@ a {
   .sidenav a {font-size: 18px;}
 }
 
-@media(min-width: 768px) {
+@media(min-width: 769px) {
   .sidenav {
     display: none;
   }

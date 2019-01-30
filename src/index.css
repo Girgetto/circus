@@ -117,16 +117,7 @@ button > a {
   transform: translateX(10rem);
 }
 
-@media(max-width: 768px){
-	h2 {
-		font-size: 9vw;
-		line-height: 3rem;
-	}
-
-	p {
-		font-size: 5vw !important;
-	}
-
+@media(max-width: 768px) {
 	a {
 		font-size: 4.5vw;
 	}
@@ -143,5 +134,29 @@ button > a {
 	.slideRight {
 		transition: 10s;
 		transform: translateX(25rem);
+	}
+}
+
+@media(max-width: 425px) {
+	p {
+		font-size: 5vw !important;
+	}
+
+	h2 {
+		font-size: 9vw;
+		line-height: 3rem;
+	}
+}
+
+@media(max-width: 768px) and (min-width: 425px) {
+	p {
+		font-size: 3.4vmin !important;
+	}
+
+	h2 {
+		font-size: 7vmin;
+	}
+	a {
+		line-height: 3.3rem !important;
 	}
 }

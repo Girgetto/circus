@@ -72,7 +72,7 @@ export const OptionsDiv = styled.div`
 
 export const MainDiv = styled.div`
   display: flex;
-  height: 40rem;
+  height: 50rem;
   @media(max-width: 768px) {
     height: 75rem;
     margin-top: 15rem;
@@ -108,4 +108,11 @@ export const InnerTitleDiv = styled.div`
 export const TitleDivProximoEvento = styled.div`
   margin: 4rem 3rem;
   margin-bottom: 2.5rem;
+`;
+
+export const InnerRightDiv = styled.div`
+  width: 85%; 
+  height: 40rem;
+  overflow-y: scroll;
+  margin: 7.2rem 4rem;
 `;

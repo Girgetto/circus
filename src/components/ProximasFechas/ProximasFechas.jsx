@@ -8,7 +8,7 @@ import fourth from '../../assets/img/icon/fourth.svg';
 import {
   RightDiv, Button, Ul, SelectorDiv, DescriptionDiv,
   TitleDiv, OptionsDiv, MainDiv, Li, H2, InnerLiDiv,
-  InnerTitleDiv, TitleDivProximoEvento,
+  InnerTitleDiv, TitleDivProximoEvento, InnerRightDiv,
 } from './style';
 
 const imgArr = [first, second, third, fourth];
@@ -94,12 +94,7 @@ export default class ProximasFechas extends Component {
           </Ul>
         </OptionsDiv>
         <RightDiv text={text} index={index}>
-          <div
-            className="translate-child"
-            style={{
-              width: '85%', height: '30rem', overflowY: 'scroll', margin: '7.2rem 4rem',
-            }}
-          >
+          <InnerRightDiv className="translate-child">
             <div>
               {text.proximasFechas[index].descriptions.map(x => (
                 <div key={x.title} style={{ marginBottom: '2rem' }}>
@@ -117,7 +112,7 @@ export default class ProximasFechas extends Component {
                 Aplicar
               </Button>
             </div>
-          </div>
+          </InnerRightDiv>
         </RightDiv>
       </MainDiv>
     );

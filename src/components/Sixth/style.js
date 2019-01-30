@@ -7,12 +7,17 @@ export const MainDiv = styled.div`
   transform: skewY(-5deg);
   box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 30px;
   @media(max-width:768px){
-    height: 57rem;
     flex-direction: column;
     transform: skewY(0deg);
     margin-bottom: 10rem;
     .order:nth-child(1) { order: 1; }
     .order:nth-child(2) { order: 0; }
+  }
+  @media(max-width: 425px) {
+    height: 60rem
+  }
+  @media(max-width: 768px) and (min-width: 426px) {
+    height: 80rem
   }
 `;
 
