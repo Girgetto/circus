@@ -13,7 +13,7 @@ export const ImgDiv = styled.div`
   margin-top: 3rem;
   flex-wrap: wrap;
   justify-content: space-around;
-  @media(max-width:768px){
+  @media(max-width:1024px){
     >button{
       display: none;
     }
