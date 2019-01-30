@@ -65,4 +65,5 @@ export const ImgContainer = styled.div`
 export const Button = styled.button`
   padding: 0px;
   cursor: pointer;
+  background-color: white;
 `;
