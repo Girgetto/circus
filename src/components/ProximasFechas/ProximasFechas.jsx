@@ -97,7 +97,7 @@ export default class ProximasFechas extends Component {
           <div
             className="translate-child"
             style={{
-              width: '100%', height: '30rem', overflowY: 'scroll', margin: '7.2rem 4rem',
+              width: '85%', height: '30rem', overflowY: 'scroll', margin: '7.2rem 4rem',
             }}
           >
             <div>
