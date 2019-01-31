@@ -60,3 +60,9 @@ a {
 a {
   cursor: pointer;
 }
+
+@media(min-width: 320px) {
+  .sidenav a {
+    padding: 8px;
+  }
+}

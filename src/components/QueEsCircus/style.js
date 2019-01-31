@@ -15,6 +15,9 @@ export const MainDiv = styled.div`
     justify-content: space-between;
     text-align: center;
   }
+  @media (max-width: 425px) {
+    height: 35rem;
+  }
 `;
 
 export const LeftDiv = styled.div`

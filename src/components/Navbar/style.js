@@ -80,4 +80,14 @@ export const Item = styled.div`
 
 export const P = styled.p`
   margin-right: 1rem;
+  @media(max-width: 320px) {
+    display: none;
+  }
+`;
+
+export const ImgContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3rem;
 `;

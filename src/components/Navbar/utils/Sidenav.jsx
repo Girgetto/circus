@@ -65,7 +65,6 @@ const Sidenav = ({ location, text, setLanguage }) => (
           onClick={() => closeNav()}
         >
           {x.text}
-
         </AnchorLink>
 
       </Item>

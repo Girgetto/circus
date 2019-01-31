@@ -4,7 +4,9 @@ import { Redirect } from 'react-router';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import circusLogo from '../../assets/img/circus.svg';
 import LinksAndFlags from './utils/LinksAndFlags';
-import { NavbarDiv, MenuDiv, P } from './style';
+import {
+  NavbarDiv, MenuDiv, P, ImgContainer,
+} from './style';
 import menu from '../../assets/img/menu.svg';
 import Sidenav from './utils/Sidenav';
 
@@ -25,14 +27,11 @@ export default class Navbar extends Component {
         {(location.pathname !== '/pt' && location.pathname !== '/es')
         && <Redirect to="es" />}
         <Sidenav id="mySidenav" {...this.props} />
-        <div style={{
-          display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '0 3rem',
-        }}
-        >
-          <AnchorLink offset={() => 70} href="#insideCircus">
+        <ImgContainer>
+          <AnchorLink offset={() => 70} style={{ display: 'flex' }} href="#insideCircus">
             <img src={circusLogo} alt="" />
           </AnchorLink>
-        </div>
+        </ImgContainer>
         <LinksAndFlags {...this.props} />
         <MenuDiv>
           <P>Menu</P>
