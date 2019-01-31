@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import emilioGarcia from '../../assets/img/emilio-garcia.png';
 import Texts from './utils/Texts';
 import {
-  MainDiv, RightDiv, LeftDiv, Img, CircleDiv,
+  MainDiv, LeftDiv, CircleDiv,
 } from './style';
 
 export default class Sixth extends Component {
@@ -32,7 +31,7 @@ export default class Sixth extends Component {
       >
         <LeftDiv className="order">
           <Texts text={text} counter={counter} />
-          <div className="center" style={{ flexDirection: 'row', marginTop: '4rem' }}>
+          <div className="center" style={{ flexDirection: 'row' }}>
             {text.fourthText.map((x, i) => (
               <CircleDiv key={x}>
                 <svg className="circle" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,9 +47,6 @@ export default class Sixth extends Component {
             ))}
           </div>
         </LeftDiv>
-        <RightDiv className="order">
-          <Img src={emilioGarcia} alt="" />
-        </RightDiv>
       </MainDiv>
     );
   }

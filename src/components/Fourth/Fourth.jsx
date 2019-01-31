@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import fourth from '../../assets/img/fourth.jpg';
 import Texts from './utils/Texts';
 import {
   CircleDiv, MainDiv, Img, LeftDiv, RightDiv,
 } from './style';
+import francisco from '../../assets/img/testimonials/Francisco.png';
+import xue from '../../assets/img/testimonials/Xue.png';
+import javier from '../../assets/img/testimonials/Javier.png';
 
+const partners = [javier, xue, francisco];
 export default class Fourth extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +35,7 @@ export default class Fourth extends Component {
         className="transition"
       >
         <LeftDiv>
-          <Img src={fourth} alt="" />
+          <Img src={partners[counter]} alt="" />
         </LeftDiv>
         <RightDiv>
           <Texts text={text} counter={counter} />
