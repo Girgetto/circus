@@ -50,30 +50,27 @@
   ],
   "proximasFechasTitle": "Próximo evento",
   "proximasFechas":[
-    { "color": "rgb(245, 200, 205)", "date":"16 - 17 Marzo", "title":"Playtomic",
+    { "color": "rgb(245, 200, 205)", "date":"16 - 17 Marzo", "title":"Información general",
       "descriptions": 
       [
-        {"grey":"¿Quien lo imparte?","title":"Impartido por Playtomic","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup"}
+        {"grey":"16 - 17 de Marzo || Madrid","title":"Información general","hours":["Fecha: 16 y 17 de Marzo","Lugar: La Nave, Calle Cifuentes, 5", "28021 Madrid", "Transporte Disponible", "Cercanías, C4 / C5 / Regional","Bus", "Puente Alcocer-Carretera de Andalucía-Alcocer:", "líneas 59/79/N13", "Intercambiador:", "líneas 411 / 412 / 415 / 422 / 423 /424 /426 / 427 / 432 / 447 / 448", "Villaverde Cruce:", "líneas 22/79/130/18/116/130", "Metro", "Línea 3","Villaverde Bajo-Cruce"]}
       ]
     },
-    { "color": "rgb(202, 223, 255)", "date":"16 - 17 Marzo","title":"Charlas",
+    { "color": "rgb(202, 223, 255)", "date":"16 - 17 Marzo","title":"Partners",
       "descriptions": 
       [
-        {"grey":"16 Marzo","title":"Marcos Garcia","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup"},
-        {"grey":"17 Marzo","title":"Paco Martín","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup"}
+        {"title":"Partners", "description":"BBVA, Eventbrite, Spotahome, Ironhack y más empresas a ser confirmadas"}
       ]
     },
-    { "color": "#FFF6C1", "date":"16 - 17 Marzo","title":"Workshops",
+    { "color": "#FFF6C1", "date":"16 - 17 Marzo","title":"Día 1",
       "descriptions": 
       [
-        {"grey":"16 Marzo","title":"Hyper Island","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup"},
-        {"grey":"17 Marzo","title":"HTML","description":"Workshop impartido por Playtomic donde nos contaran como trabajan sus equipos de diseño, desarollo para evolucionar su startup"}
+        {"title":"Día 1","hours": ["10:00 - 10:15 Introducción y Bienvenida","10:15 - 11:00 Innovación y Disrupción Digital - Ignacio Villoch BBVA","11:15 - 12:00 Internet 101: Todo lo que necesitas saber - Emilio García Eventbrite","12:10 - 13:00 Tech Team: Perfiles que se necesitan y día a día - Tech Team Spotahome", "13:00 - 14:30 Comida", "Tarde", "Elige tu track", "14:30 - 15:30 Case Studies de transformación digital por Industria", "15:30 - 16:00 Q&A", "16:00 Finalización y Networking"]}
       ]
     },
-    { "color": "rgb(185, 233, 228)", "date":"16 - 17 Marzo","title":"Horarios",
+    { "color": "rgb(185, 233, 228)", "date":"16 - 17 Marzo","title":"Día 2",
       "descriptions": 
       [
-        {"title":"Día 1","hours": ["10:00 - 10:15 Introducción y Bienvenida","10:15 - 11:00 Innovación y Disrupción Digital - Ignacio Villoch BBVA","11:15 - 12:00 Internet 101: Todo lo que necesitas saber - Emilio García Eventbrite","12:10 - 13:00 Tech Team: Perfiles que se necesitan y día a día - Tech Team Spotahome", "13:00 - 14:30 Comida", "Tarde", "Elige tu track", "14:30 - 15:30 Case Studies de transformación digital por Industria", "15:30 - 16:00 Q&A", "16:00 Finalización y Networking"]},
         {"title":"Día 2","hours": ["Elige tu track: Programa una Landing page o Diseña un prototipo de app","10:00 - 10:15 Introducción","10:15 - 11:40 Workshop Parte 1","11:40 - 13:30 Ejercicio Individual", "13:30 - 14:30 Comida", "14:30 - 15:30 Workshop Parte 2", "15:30 - 17:30 Proyecto Individual"]}
       ]
     }
