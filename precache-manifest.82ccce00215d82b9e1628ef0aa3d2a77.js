@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "b7b86c8e1f825eb236f202858b5ae90b",
-    "url": "/circus/static/media/emilio-garcia.b7b86c8e.png"
+    "revision": "ebe7082948f3d820ecd52d915e3979e3",
+    "url": "/circus/static/media/Fifth.ebe70829.svg"
   },
   {
-    "revision": "a44fb5d7d2aef0ebcc87",
-    "url": "/circus/static/css/main.c8e47166.chunk.css"
+    "revision": "b5f646ae2713ce2b9784",
+    "url": "/circus/static/css/main.df2ceaa8.chunk.css"
   },
   {
-    "revision": "0a19cb241e1bd9f0614c",
-    "url": "/circus/static/js/1.0a19cb24.chunk.js"
+    "revision": "5812fbe02a74b6fa5fa7",
+    "url": "/circus/static/js/1.5812fbe0.chunk.js"
   },
   {
     "revision": "a1afa860422454396a5d",
@@ -44,16 +44,20 @@ self.__precacheManifest = [
     "url": "/circus/static/media/red.0d975f3d.svg"
   },
   {
-    "revision": "0f70c902826f228e4947769c1f4ba3fb",
-    "url": "/circus/static/media/fourth.0f70c902.jpg"
+    "revision": "6bae38ad3f54e26e7a9ffd23c9ac024b",
+    "url": "/circus/static/media/Francisco.6bae38ad.png"
   },
   {
-    "revision": "ebe7082948f3d820ecd52d915e3979e3",
-    "url": "/circus/static/media/Fifth.ebe70829.svg"
+    "revision": "ee337146fb6c4238daab92ccdf46a497",
+    "url": "/circus/static/media/Xue.ee337146.png"
   },
   {
-    "revision": "a44fb5d7d2aef0ebcc87",
-    "url": "/circus/static/js/main.a44fb5d7.chunk.js"
+    "revision": "c953d33025c06ca16c4173e7bb5e4bc9",
+    "url": "/circus/static/media/Javier.c953d330.png"
+  },
+  {
+    "revision": "b5f646ae2713ce2b9784",
+    "url": "/circus/static/js/main.b5f646ae.chunk.js"
   },
   {
     "revision": "b3857492688f6f32822a56058578b166",
@@ -104,7 +108,7 @@ self.__precacheManifest = [
     "url": "/circus/static/media/ironHackFooter.56213e61.svg"
   },
   {
-    "revision": "86846bb4bbbc5d950fe9c9da1b9d1cea",
+    "revision": "c0f73eef4ec693bb77cb9676cd26ad66",
     "url": "/circus/index.html"
   }
 ];
