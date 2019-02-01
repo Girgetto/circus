@@ -6,9 +6,13 @@ import {
 } from './style';
 
 const footer = [
-  ['Apply', 'work with us', 'Press'],
-  ['FAQ', 'Contact', 'Privacy Policy'],
-  ['Twitter', 'Facebook', 'Instagram', 'YouTube'],
+  [{ name: 'Apply', url: '#' }, { name: 'work with us', url: '#' }, { name: 'Press', url: '#' }],
+  [{ name: 'FAQ', url: '#' }, { name: 'Contact', url: '#' }, { name: 'Privacy Policy', url: '#' }],
+  [
+    { name: 'Twitter', url: 'https://twitter.com/ironhackmad?lang=es' },
+    { name: 'Facebook', ulr: 'https://www.facebook.com/theironhack/' },
+    { name: 'Instagram', url: 'https://www.instagram.com/ironhack/?hl=es' },
+    { name: 'YouTube', url: 'https://www.youtube.com/channel/UCWD3Q1-d9vzxt1cXUmpbjqg' }],
 ];
 
 const lowerRow = { marginTop: '10vmin', alignItems: 'center' };
@@ -23,8 +27,8 @@ const Footer = () => (
           <ul>
             {x.map((word, index) => (
               <li key={`${x + index}`}>
-                <A href="/">
-                  {word}
+                <A href={word.url} target="_blank">
+                  {word.name}
                 </A>
               </li>
             ))}

@@ -17,7 +17,7 @@ export const MainDiv = styled.div`
     height: 60rem
   }
   @media(max-width: 768px) and (min-width: 426px) {
-    height: 80rem
+    height: 60rem
   }
 `;
 
