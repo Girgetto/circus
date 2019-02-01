@@ -1,7 +1,7 @@
 {
   "main.css": "/circus/static/css/main.df2ceaa8.chunk.css",
-  "main.js": "/circus/static/js/main.09d568ce.chunk.js",
-  "main.js.map": "/circus/static/js/main.09d568ce.chunk.js.map",
+  "main.js": "/circus/static/js/main.ce2fbc3b.chunk.js",
+  "main.js.map": "/circus/static/js/main.ce2fbc3b.chunk.js.map",
   "static/js/1.5812fbe0.chunk.js": "/circus/static/js/1.5812fbe0.chunk.js",
   "static/js/1.5812fbe0.chunk.js.map": "/circus/static/js/1.5812fbe0.chunk.js.map",
   "runtime~main.js": "/circus/static/js/runtime~main.a1afa860.js",
@@ -30,6 +30,6 @@
   "static/media/ironHackFooter.svg": "/circus/static/media/ironHackFooter.56213e61.svg",
   "static/css/main.df2ceaa8.chunk.css.map": "/circus/static/css/main.df2ceaa8.chunk.css.map",
   "index.html": "/circus/index.html",
-  "precache-manifest.724edcc7e3a2a0d3bea25f4031da3db4.js": "/circus/precache-manifest.724edcc7e3a2a0d3bea25f4031da3db4.js",
+  "precache-manifest.a706bbca558992d2325deeab5e0dc357.js": "/circus/precache-manifest.a706bbca558992d2325deeab5e0dc357.js",
   "service-worker.js": "/circus/service-worker.js"
 }
