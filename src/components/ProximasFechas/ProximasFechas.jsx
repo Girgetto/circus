@@ -84,7 +84,9 @@ export default class ProximasFechas extends Component {
                         </div>
                       ))}
                       <Button type="button">
-                          Aplicar
+                        <a href="https://ironhack.typeform.com/to/K7cC3w" rel="noopener noreferrer" target="_blank">
+Aplicar
+                        </a>
                       </Button>
                     </DescriptionDiv>
                   </SelectorDiv>
