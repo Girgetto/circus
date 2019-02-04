@@ -50,12 +50,6 @@
   ],
   "proximasFechasTitle": "Próximo evento",
   "proximasFechas":[
-    { "color": "rgb(245, 200, 205)", "date":"16 - 17 Marzo", "title":"Información general",
-      "descriptions": 
-      [
-        {"grey":"16 - 17 de Marzo || Madrid","title":"Información general","hours":["Fecha: 16 y 17 de Marzo","Lugar: La Nave, Calle Cifuentes, 5", "28021 Madrid", "Transporte Disponible", "Cercanías, C4 / C5 / Regional","Bus", "Puente Alcocer-Carretera de Andalucía-Alcocer:", "líneas 59/79/N13", "Intercambiador:", "líneas 411 / 412 / 415 / 422 / 423 /424 /426 / 427 / 432 / 447 / 448", "Villaverde Cruce:", "líneas 22/79/130/18/116/130", "Metro", "Línea 3","Villaverde Bajo-Cruce"]}
-      ]
-    },
     { "color": "rgb(202, 223, 255)", "date":"16 - 17 Marzo","title":"Partners",
       "descriptions": 
       [
@@ -72,6 +66,12 @@
       "descriptions": 
       [
         {"title":"Día 2","hours": ["Elige tu track: Programa una Landing page o Diseña un prototipo de app","10:00 - 10:15 Introducción","10:15 - 11:40 Workshop Parte 1","11:40 - 13:30 Ejercicio Individual", "13:30 - 14:30 Comida", "14:30 - 15:30 Workshop Parte 2", "15:30 - 17:30 Proyecto Individual"]}
+      ]
+    },
+    { "color": "rgb(245, 200, 205)", "date":"16 - 17 Marzo", "title":"Información general",
+      "descriptions": 
+      [
+        {"grey":"16 - 17 de Marzo || Madrid","title":"Información general","hours":["Fecha: 16 y 17 de Marzo","Lugar: La Nave, Calle Cifuentes, 5", "28021 Madrid", "Transporte Disponible", "Cercanías, C4 / C5 / Regional","Bus", "Puente Alcocer-Carretera de Andalucía-Alcocer:", "líneas 59/79/N13", "Intercambiador:", "líneas 411 / 412 / 415 / 422 / 423 /424 /426 / 427 / 432 / 447 / 448", "Villaverde Cruce:", "líneas 22/79/130/18/116/130", "Metro", "Línea 3","Villaverde Bajo-Cruce"]}
       ]
     }
   ]
