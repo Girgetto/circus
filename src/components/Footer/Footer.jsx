@@ -6,7 +6,7 @@ import {
 } from './style';
 
 const footer = [
-  [{ name: 'Apply', url: '#' }, { name: 'work with us', url: '#' }, { name: 'Press', url: '#' }],
+  [{ name: 'Apply', url: 'https://ironhack.typeform.com/to/K7cC3w' }, { name: 'work with us', url: '#' }, { name: 'Press', url: '#' }],
   [{ name: 'FAQ', url: '#' }, { name: 'Contact', url: '#' }, { name: 'Privacy Policy', url: '#' }],
   [
     { name: 'Twitter', url: 'https://twitter.com/ironhackmad?lang=es' },
