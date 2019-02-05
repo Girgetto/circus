@@ -4,9 +4,9 @@ import Texts from './utils/Texts';
 import {
   CircleDiv, MainDiv, Img, LeftDiv, RightDiv,
 } from './style';
-import francisco from '../../assets/img/testimonials/Francisco.png';
-import xue from '../../assets/img/testimonials/Xue.png';
 import javier from '../../assets/img/testimonials/Javier.png';
+import xue from '../../assets/img/testimonials/Xue.png';
+import francisco from '../../assets/img/testimonials/Francisco.png';
 
 const partners = [javier, xue, francisco];
 export default class Fourth extends Component {
