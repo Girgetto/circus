@@ -76,6 +76,9 @@ export const Item = styled.div`
   font-size: 1.2rem !important;
   font-weight: bold !important;
   width: 15rem;
+  @media (min-width: 769px) {
+    justify-content: center;
+  }
 `;
 
 export const P = styled.p`

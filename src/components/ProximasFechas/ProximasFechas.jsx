@@ -78,7 +78,7 @@ export default class ProximasFechas extends Component {
                           <p>{content.description}</p>
                           {content.hours && content.hours.map(hour => (
                             <ul key={hour}>
-                              <li><p>{hour}</p></li>
+                              <li><p style={{ lineHeight: '3rem' }}>{hour}</p></li>
                             </ul>
                           ))}
                         </div>
