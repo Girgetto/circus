@@ -11,11 +11,20 @@ export const RightDiv = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color: #2D293C;
+  background-color: ${props => props.color};
   color: white;
   border-radius: 20px;
+  border: 1px solid #2D293C;
+  :hover {
+    transition: .3s;
+    background-color: #2D293C;
+  }
   @media(max-width: 768px) {
     font-size: 5vw;
+    background-color: #2D293C;
+    >a {
+      color: white;
+    }
   }
 `;
 

@@ -1,12 +1,19 @@
 import styled from 'styled-components';
 
 export const Button = styled.button`
-  background-color: #2D293C;
-  color: white;
   padding: 1rem 10vw;
   border-radius: 20px;
   margin-top: 2vw;
   font-weight: 500;
+  border: 1px solid #2D293C;
+  :hover {
+    transition: .3s;
+    background-color: #2D293C;
+  }
+  @media (max-width: 768px) {
+    background-color: #2D293C;
+    color: white;
+  }
 `;
 
 export const MainDiv = styled.div`

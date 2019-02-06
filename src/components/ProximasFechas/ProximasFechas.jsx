@@ -84,7 +84,11 @@ export default class ProximasFechas extends Component {
                         </div>
                       ))}
                       <Button type="button">
-                        <a href="https://ironhack.typeform.com/to/K7cC3w" rel="noopener noreferrer" target="_blank">
+                        <a
+                          href="https://ironhack.typeform.com/to/K7cC3w"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
 Aplicar
                         </a>
                       </Button>
@@ -108,13 +112,17 @@ Aplicar
                       <li><p>{hour}</p></li>
                     </ul>
                   ))}
+                  <Button type="button" color={text.proximasFechas[index].color}>
+                    <a
+                      href="https://ironhack.typeform.com/to/K7cC3w"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+Aplicar
+                    </a>
+                  </Button>
                 </div>
               ))}
-              <Button type="button">
-                <a href="https://ironhack.typeform.com/to/K7cC3w" rel="noopener noreferrer" target="_blank">
-Aplicar
-                </a>
-              </Button>
             </div>
           </InnerRightDiv>
         </RightDiv>

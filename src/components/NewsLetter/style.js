@@ -24,9 +24,17 @@ export const MainDiv = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color: #2D293C;
+  background-color: #F5C8CD;
   border-radius: 20px;
-  color: #fff;
+  border: 1px solid #2D293C;
+  >a {
+    color: #F5C8CD;
+  }
+  :hover {
+    transition: .3s;
+    background-color: #2D293C;
+    color: white;
+  }
   :focus{
   outline: none;
 }
