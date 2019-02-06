@@ -4,7 +4,6 @@ export const MainDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70vw;
   @media (max-width: 768px) {
     display: none;
   }
@@ -20,7 +19,7 @@ export const NavbarDiv = styled.div`
   right: 0;
   left: 0;
   top: 0;
-  height: 5rem;
+  height: 3rem;
   box-shadow: 0px 4px 30px rgba(0,0,0,0.11);
   @media (max-width: 768px) {
     height: 2rem;
@@ -75,7 +74,12 @@ export const Item = styled.div`
   padding: 0 1rem;
   font-size: 1.2rem !important;
   font-weight: bold !important;
-  width: 15rem;
+  >a {
+    @media (min-width: 769px) {
+      width: 15vw;
+    }
+    text-align: center;
+  }
   @media (min-width: 769px) {
     justify-content: center;
   }
@@ -92,5 +96,7 @@ export const ImgContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 3rem;
+  @media(min-width: 769px) {
+    margin-left: 9rem;
+  }
 `;

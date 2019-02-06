@@ -107,11 +107,13 @@ Aplicar
                   <p style={greyP}>{x.grey}</p>
                   <h2 style={{ marginBottom: '2rem' }}>{x.title}</h2>
                   <p>{x.description}</p>
-                  {x.hours && x.hours.map(hour => (
-                    <ul key={hour}>
-                      <li><p>{hour}</p></li>
-                    </ul>
-                  ))}
+                  <div style={{ marginBottom: '3rem' }}>
+                    {x.hours && x.hours.map(hour => (
+                      <ul key={hour}>
+                        <li><p style={{ lineHeight: '3rem' }}>{hour}</p></li>
+                      </ul>
+                    ))}
+                  </div>
                   <Button type="button" color={text.proximasFechas[index].color}>
                     <a
                       href="https://ironhack.typeform.com/to/K7cC3w"

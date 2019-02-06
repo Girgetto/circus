@@ -53,7 +53,7 @@
     { "color": "rgb(245, 200, 205)", "date":"16 - 17 Marzo", "title":"Información general",
       "descriptions": 
       [
-        {"grey":"16 - 17 de Marzo || Madrid","title":"Información general","hours":["Fecha: 16 y 17 de Marzo","Lugar: La Nave, Calle Cifuentes, 5", "28021 Madrid", "Transporte Disponible", "Cercanías, C4 / C5 / Regional","Bus", "Puente Alcocer-Carretera de Andalucía-Alcocer:", "líneas 59/79/N13", "Intercambiador:", "líneas 411 / 412 / 415 / 422 / 423 /424 /426 / 427 / 432 / 447 / 448", "Villaverde Cruce:", "líneas 22/79/130/18/116/130", "Metro", "Línea 3","Villaverde Bajo-Cruce"]}
+        {"grey":"16 - 17 de Marzo || Madrid","title":"Información general","hours":["Fecha: 16 y 17 de Marzo","Lugar: La Nave, Calle Cifuentes, 5 28021 Madrid", "Transporte Disponible: Cercanías, Bus, Metro"]}
       ]
     },
     { "color": "#FFF6C1", "date":"16 - 17 Marzo","title":"Día 1",

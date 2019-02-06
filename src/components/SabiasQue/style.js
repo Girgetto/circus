@@ -5,7 +5,7 @@ export const MainDiv = styled.div`
   justify-content: center;
   align-items: center;
   height: 35rem;
-  margin-bottom: 6rem;
+  margin-top: 2rem;
   @media(max-width: 768px){
     flex-direction: column;
     text-align: center;

@@ -12,7 +12,9 @@ export const Button = styled.button`
   }
   @media (max-width: 768px) {
     background-color: #2D293C;
-    color: white;
+    >a {
+      color: white;
+    } 
   }
 `;
 
@@ -58,8 +60,7 @@ export const MainTitle = styled.h1`
 `;
 
 export const MainDescription = styled.h3`
-  padding-top: 5vw;
-  padding-bottom: 2vw;
+  padding: 1rem 0;
   font-size: 2vw;
     @media(max-width:768px){
       text-align: center;
