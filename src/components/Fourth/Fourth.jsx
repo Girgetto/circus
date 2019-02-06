@@ -39,7 +39,7 @@ export default class Fourth extends Component {
         </LeftDiv>
         <RightDiv>
           <Texts text={text} counter={counter} />
-          <div className="center" style={{ flexDirection: 'row', marginTop: '4rem' }}>
+          <div className="center" style={{ flexDirection: 'row', marginTop: '2rem' }}>
             {text.fourthText.map((x, i) => (
               <CircleDiv key={x}>
                 <svg className="circle" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
