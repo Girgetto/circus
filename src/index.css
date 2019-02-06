@@ -108,13 +108,13 @@ button > a {
 }
 
 .slideLeft {
-  transition: 2s;
-  transform: translateX(-10rem);
+  transition: 8s;
+  transform: translateX(-30rem);
 }
 
 .slideRight {
-  transition: 2s;
-  transform: translateX(10rem);
+  transition: 8s;
+  transform: translateX(30rem);
 }
 
 @media(max-width: 768px) {
@@ -128,12 +128,12 @@ button > a {
 
 	.slideLeft {
 		transition: 10s;
-		transform: translateX(-25rem);
+		transform: translateX(-40rem);
 	}
 	
 	.slideRight {
 		transition: 10s;
-		transform: translateX(25rem);
+		transform: translateX(40rem);
 	}
 }
 
