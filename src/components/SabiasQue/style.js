@@ -9,7 +9,7 @@ export const MainDiv = styled.div`
   @media(max-width: 768px){
     flex-direction: column;
     text-align: center;
-    margin-bottom: 0rem;
+    margin-bottom: 10rem;
   }
 `;
 

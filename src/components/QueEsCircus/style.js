@@ -13,6 +13,7 @@ export const MainDiv = styled.div`
     transform: skewY(0deg);
     justify-content: space-between;
     text-align: center;
+    margin-bottom: 10rem;
   }
   @media (max-width: 425px) {
     height: 35rem;

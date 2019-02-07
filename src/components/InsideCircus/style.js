@@ -5,6 +5,7 @@ export const Button = styled.button`
   border-radius: 20px;
   margin-top: 2vw;
   font-weight: 500;
+  background-color: #ffffff;
   border: 1px solid #2D293C;
   :hover {
     transition: .3s;

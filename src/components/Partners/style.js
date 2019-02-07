@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Svg = styled.svg`
   padding: 2rem;
-}
 `;
 
 export const ImgDiv = styled.div`
