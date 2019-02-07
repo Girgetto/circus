@@ -11,26 +11,26 @@ import {
 export default class QueAprenderas extends Component {
   constructor(props) {
     super(props);
+    const { text } = this.props;
+    this.startInterval = () => {
+      this.intervalVar = setInterval(() => {
+        const { index } = this.state;
+        this.setState({ index: index > text.fifth.length - 2 ? 0 : index + 1 });
+      }, 5000);
+    };
     this.state = {
       index: 0,
     };
     this.changer = this.changer.bind(this);
-    this.timer = this.timer.bind(this);
   }
 
   componentDidMount() {
-    this.timer();
-  }
-
-  timer() {
-    const { text } = this.props;
-    setInterval(() => {
-      const { index } = this.state;
-      this.setState({ index: index > text.fifth.length - 2 ? 0 : index + 1 });
-    }, 5000);
+    this.startInterval();
   }
 
   changer(index) {
+    clearInterval(this.intervalVar);
+    this.startInterval();
     this.setState({ index });
   }
 
