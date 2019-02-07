@@ -17,28 +17,38 @@ import {
 export default class Partners extends Component {
   constructor() {
     super();
+    const seconds = 10;
+    this.startInterval = () => {
+      this.interval = setInterval(() => { this.startSlider(); }, seconds * 1000);
+    };
     this.state = {
-      photos: [bbva, spotahome, eventbrite, ironHack, campusMadrid, cabify, opinator,
+      photos: [bbva, spotahome, eventbrite,
+        ironHack, campusMadrid, cabify, opinator,
         deliveroo, carto, playmotic],
       animate: false,
     };
   }
 
   componentDidMount() {
-    const seconds = 10;
-    setInterval(() => { this.startSlider(); }, seconds * 1000);
+    this.startInterval();
   }
 
   moveToEnd() {
+    clearInterval(this.interval);
+    this.startInterval();
     this.setState({ animate: false });
   }
 
   moveToHead() {
+    clearInterval(this.interval);
+    this.startInterval();
     this.setState({ animate: true });
   }
 
   clickMoveTogle() {
     const { animate } = this.state;
+    clearInterval(this.interval);
+    this.startInterval();
     this.setState({ animate: !animate });
   }
 
