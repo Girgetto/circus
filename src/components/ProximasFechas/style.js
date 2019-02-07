@@ -92,6 +92,10 @@ export const MainDiv = styled.div`
 export const Li = styled.li`
   width: 100%;
   cursor: pointer;
+  :hover {
+    background-color: ${props => props.color};
+    fill-opacity: 0.1
+  }
   @media(max-width: 768px){
     background-color: ${props => (props.index === `${props.i}` ? props.color : '')};
   }

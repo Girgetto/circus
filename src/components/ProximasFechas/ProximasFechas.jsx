@@ -51,9 +51,10 @@ export default class ProximasFechas extends Component {
       <MainDiv id="proximasFechas" className="translate">
         <OptionsDiv
           className="translate-child"
-          onClick={e => this.setColor(e.target.id)}
+          onMouseOver={e => this.setColor(e.target.id)}
           role="presentation"
           onKeyDown={this.handleKeyDown}
+          onFocus={() => 0}
         >
           <TitleDivProximoEvento>
             <H2>{text.proximasFechasTitle}</H2>
@@ -61,7 +62,7 @@ export default class ProximasFechas extends Component {
           </TitleDivProximoEvento>
           <Ul>
             {text.proximasFechas.map((x, i) => (
-              <Li key={x.title}>
+              <Li key={x.title} color={x.color}>
                 <InnerLiDiv id={i}>
                   <SelectorDiv {...this.state} color={x.color} i={i} key={x.title}>
                     <TitleDiv id={i}>
