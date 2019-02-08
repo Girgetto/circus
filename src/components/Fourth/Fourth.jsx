@@ -32,7 +32,7 @@ export default class Fourth extends Component {
     const { text } = this.props;
     return (
       <MainDiv
-        className="transition"
+        className="transition fourth"
       >
         <LeftDiv>
           <Img src={partners[counter]} alt="" />

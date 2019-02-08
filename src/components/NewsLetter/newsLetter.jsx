@@ -13,7 +13,11 @@ const newsLetter = () => (
 Suscríbete a la newsletter
         </H2>
         <Input type="email" placeholder="Tu correo electrónico" name="EMAIL" id="mce-EMAIL" required />
-        <Button type="submit">Suscribirse</Button>
+        <Button type="submit">
+          <p>
+          Suscribirse
+          </p>
+        </Button>
       </form>
     </InnerDiv>
   </MainDiv>

@@ -169,3 +169,43 @@ button:hover > a {
 		line-height: 3.3rem !important;
 	}
 }
+
+@media(min-width: 2000px) {
+	#porQueCircus {
+		margin: 10rem 0px;
+	}
+
+	#queEsCircus {
+		height: 55rem;
+	}
+
+	#insideCircus {
+		margin-bottom: -7rem;
+	}
+
+	.fourth {
+		height: 45rem;
+	}
+
+	#queAprendaras {
+		padding: 12rem 0rem;
+	}
+
+	.sixth {
+		height: 45rem;
+	}
+
+	#proximasFechas > .translate-child {
+		margin-left: 6rem;
+		margin-top: 3rem;
+	}
+
+	a {
+		font-size: 1.5vw;
+		line-height: 3rem;
+	}
+
+	p {
+		line-height: 3rem;
+	}
+}

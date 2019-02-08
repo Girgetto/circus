@@ -27,7 +27,7 @@ export default class Sixth extends Component {
     const { text } = this.props;
     return (
       <MainDiv
-        className="transition"
+        className="transition sixth"
       >
         <LeftDiv className="order">
           <Texts text={text} counter={counter} />

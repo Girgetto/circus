@@ -31,9 +31,12 @@ export const Button = styled.button`
     color: #F5C8CD;
   }
   :hover {
+    cursor: pointer;
     transition: .3s;
     background-color: #2D293C;
-    color: white;
+    >p {
+      color: white;
+    }
   }
   :focus{
   outline: none;

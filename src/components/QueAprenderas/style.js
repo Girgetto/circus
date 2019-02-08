@@ -61,6 +61,9 @@ export const InnerDescription = styled.div`
     min-height: 30rem;
     max-width: 75vw;
   }
+  @media(min-width: 2000px) {
+    max-width: 50rem;
+  }
 `;
 
 export const UpperDescriptonDiv = styled.div`
