@@ -13,6 +13,8 @@ import Sidenav from './utils/Sidenav';
 const openNav = () => {
   document.getElementById('mySidenav').style.width = '100%';
 };
+
+const languages = ['/es', '/pt'];
 export default class Navbar extends Component {
   componentDidMount() {
     const { setLanguage, location } = this.props;
@@ -24,25 +26,29 @@ export default class Navbar extends Component {
     const { location } = this.props;
     return (
       <NavbarDiv>
-        {(location.pathname !== '/pt' && location.pathname !== '/es')
-        && <Redirect to="es" />}
-        <Sidenav id="mySidenav" {...this.props} />
-        <ImgContainer>
-          <AnchorLink offset={() => 70} style={{ display: 'flex' }} href="#insideCircus">
-            <img src={circusLogo} alt="" />
-          </AnchorLink>
-        </ImgContainer>
-        <LinksAndFlags {...this.props} />
-        <MenuDiv>
-          <P>Menu</P>
-          <img
-            src={menu}
-            alt="menu"
-            onClick={openNav}
-            onKeyDown={this.handleKeyDown}
-            role="presentation"
-          />
-        </MenuDiv>
+        {!languages.includes(location.pathname)
+          ? <Redirect to="es" />
+          : (
+            <React.Fragment>
+              <Sidenav id="mySidenav" {...this.props} />
+              <ImgContainer>
+                <AnchorLink offset={() => 70} style={{ display: 'flex' }} href="#insideCircus">
+                  <img src={circusLogo} alt="" />
+                </AnchorLink>
+              </ImgContainer>
+              <LinksAndFlags {...this.props} />
+              <MenuDiv>
+                <P>Menu</P>
+                <img
+                  src={menu}
+                  alt="menu"
+                  onClick={openNav}
+                  onKeyDown={this.handleKeyDown}
+                  role="presentation"
+                />
+              </MenuDiv>
+            </React.Fragment>
+          )}
       </NavbarDiv>
     );
   }

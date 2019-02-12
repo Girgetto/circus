@@ -49,7 +49,7 @@ export default class App extends Component {
         <Switch>
           <Navbar setLanguage={this.setLanguage} text={this.getLanguage()} />
         </Switch>
-        {components.map(Componenti => <Componenti text={this.getLanguage()} />)}
+        {components.map(Components => <Components key={Components} text={this.getLanguage()} />)}
       </React.Fragment>
     );
   }
