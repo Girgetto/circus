@@ -31,7 +31,14 @@ export default class App extends Component {
 
   getLanguage() {
     const { language } = this.state;
-    return language === 'es' ? spainTexts : portugueseTexts;
+    switch (language) {
+      case 'es':
+        return spainTexts;
+      case 'pt':
+        return portugueseTexts;
+      default:
+        return spainTexts;
+    }
   }
 
   render() {
