@@ -31,22 +31,22 @@ const lenguages = {
   marginTop: '0.5rem',
 };
 
+const countryList = [{ name: 'ES', path: '/es' }, { name: 'PT', path: '/pt' }];
+
+
 const Sidenav = ({ location, text, setLanguage }) => (
   <div id="mySidenav" className="sidenav">
     <div style={upperDiv}>
       <img src={circus} alt="" style={{ marginLeft: '2rem' }} />
       <div style={lenguages}>
-        <Link to="/pt" onClick={() => setLanguage('pt')}>
-          <p style={{ padding: '0 0.5rem', textDecoration: `${location.pathname === '/pt' ? 'underline' : ''}` }}>
-  PT
+        {countryList.map(country => (
+          <Link key={country.name} to={country.path} onClick={() => setLanguage(country.path.replace('/', ''))}>
+            <p style={{ padding: '0 0.5rem', textDecoration: `${location.pathname === country.path ? 'underline' : ''}` }}>
+              {country.name}
+            </p>
+          </Link>
+        ))}
 
-          </p>
-        </Link>
-        <Link to="/es" onClick={() => setLanguage('es')}>
-          <p style={{ padding: '0 0.5rem', textDecoration: `${location.pathname === '/es' ? 'underline' : ''}` }}>
-  ES
-          </p>
-        </Link>
       </div>
       <button
         type="button"

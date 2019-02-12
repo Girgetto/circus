@@ -19,7 +19,8 @@ const imgStyle = {
   alignItems: 'center',
 };
 
-const flags = { es: spainFlag, pt: portugalFlag };
+const flags = { es: { flag: spainFlag, name: 'Spain' }, pt: { flag: portugalFlag, name: 'Portugal' } };
+const countryList = [{ name: 'Spain', flag: spainFlag, path: '/es' }, { name: 'Portugal', flag: portugalFlag, path: '/pt' }];
 
 const LinksAndFlags = ({ location, text, setLanguage }) => (
   <MainDiv>
@@ -31,27 +32,31 @@ const LinksAndFlags = ({ location, text, setLanguage }) => (
     <DropDown className="dropdown">
       <img
         style={imgStyle}
-        src={flags[location.pathname.replace('/', '')]}
+        src={flags[location.pathname.replace('/', '')].flag}
         alt=""
       />
       <DropdownContent className="dropdown-content">
-        <Link
-          to={`${location.pathname === '/es' ? '/pt' : '/es'}`}
-          onClick={
+        {countryList.map(country => (country.path !== location.pathname ? (
+          <Link
+            key={country.name}
+            to={country.path}
+            onClick={
             () => setLanguage(
-              location.pathname.replace('/', '') === 'es' ? 'pt' : 'es',
+              country.path.replace('/', ''),
             )}
-        >
-          <div style={{ display: 'flex' }}>
-            <p style={{ padding: '0 0.5rem' }}>
-              {location.pathname === '/es' ? 'Portugal' : 'Spain'}
-            </p>
-            <img
-              src={location.pathname === '/es' ? portugalFlag : spainFlag}
-              alt=""
-            />
-          </div>
-        </Link>
+          >
+            <div style={{ display: 'flex' }}>
+              <p style={{ padding: '0 0.5rem' }}>
+                {country.name}
+              </p>
+              <img
+                src={country.flag}
+                alt=""
+              />
+            </div>
+          </Link>
+        ) : ''))}
+
       </DropdownContent>
     </DropDown>
   </MainDiv>
