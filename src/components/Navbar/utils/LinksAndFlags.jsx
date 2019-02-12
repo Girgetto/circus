@@ -19,6 +19,8 @@ const imgStyle = {
   alignItems: 'center',
 };
 
+const flags = { es: spainFlag, pt: portugalFlag };
+
 const LinksAndFlags = ({ location, text, setLanguage }) => (
   <MainDiv>
     {text.navbar.map(x => (
@@ -29,8 +31,7 @@ const LinksAndFlags = ({ location, text, setLanguage }) => (
     <DropDown className="dropdown">
       <img
         style={imgStyle}
-        src={
-      location.pathname === '/es' ? spainFlag : portugalFlag}
+        src={flags[location.pathname.replace('/', '')]}
         alt=""
       />
       <DropdownContent className="dropdown-content">
