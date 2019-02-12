@@ -15,6 +15,8 @@ import Partners from './Partners';
 import NewsLetter from './NewsLetter';
 import Footer from './Footer/Footer';
 
+const components = [InsideCircus, QueEsCircus, SabiasQue, Fourth,
+  QueAprenderas, Sixth, ProximasFechas, Partners, NewsLetter, Footer];
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -47,16 +49,7 @@ export default class App extends Component {
         <Switch>
           <Navbar setLanguage={this.setLanguage} text={this.getLanguage()} />
         </Switch>
-        <InsideCircus text={this.getLanguage()} />
-        <QueEsCircus text={this.getLanguage()} />
-        <SabiasQue text={this.getLanguage()} />
-        <Fourth text={this.getLanguage()} />
-        <QueAprenderas text={this.getLanguage()} />
-        <Sixth text={this.getLanguage()} />
-        <ProximasFechas text={this.getLanguage()} />
-        <Partners text={this.getLanguage()} />
-        <NewsLetter text={this.getLanguage()} />
-        <Footer text={this.getLanguage()} />
+        {components.map(Componenti => <Componenti text={this.getLanguage()} />)}
       </React.Fragment>
     );
   }
