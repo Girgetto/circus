@@ -30,7 +30,11 @@ const InsideCircus = ({ text }) => (
 );
 
 InsideCircus.defaultProps = {
-  text: { first: 'Loading' },
+  text: {
+    first: 'Loading',
+    insideDescription: 'Loading',
+    inside3: 'Loading',
+  },
 };
 
 InsideCircus.propTypes = {
