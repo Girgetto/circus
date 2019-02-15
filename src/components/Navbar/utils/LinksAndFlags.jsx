@@ -56,7 +56,6 @@ const LinksAndFlags = ({ location, text, setLanguage }) => (
             </div>
           </Link>
         ) : ''))}
-
       </DropdownContent>
     </DropDown>
   </MainDiv>

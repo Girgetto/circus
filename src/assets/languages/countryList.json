@@ -1,0 +1,4 @@
+[
+  { "name": "Spain", "flag": "spainFlag", "path": "/es" }, 
+  { "name": "Portugal", "flag": "portugalFlag", "path": "/pt" }
+]
