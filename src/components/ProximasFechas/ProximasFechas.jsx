@@ -5,10 +5,11 @@ import first from '../../assets/img/icon/first.svg';
 import second from '../../assets/img/icon/second.svg';
 import third from '../../assets/img/icon/third.svg';
 import fourth from '../../assets/img/icon/fourth.svg';
+import RightDiv from './utils/rightDiv';
 import {
-  RightDiv, Button, Ul, SelectorDiv, DescriptionDiv,
+  Button, Ul, SelectorDiv, DescriptionDiv,
   TitleDiv, OptionsDiv, MainDiv, Li, H2, InnerLiDiv,
-  InnerTitleDiv, TitleDivProximoEvento, InnerRightDiv,
+  InnerTitleDiv, TitleDivProximoEvento,
 } from './style';
 
 const imgArr = [first, second, third, fourth];
@@ -100,35 +101,7 @@ Aplicar
             ))}
           </Ul>
         </OptionsDiv>
-        <RightDiv text={text} index={index}>
-          <InnerRightDiv className="translate-child">
-            <div>
-              {text.proximasFechas[index].descriptions.map(x => (
-                <div key={x.title} style={{ marginBottom: '2rem' }}>
-                  <p style={greyP}>{x.grey}</p>
-                  <h2 style={{ marginBottom: '2rem' }}>{x.title}</h2>
-                  <p>{x.description}</p>
-                  <div style={{ marginBottom: '3rem' }}>
-                    {x.hours && x.hours.map(hour => (
-                      <ul key={hour}>
-                        <li><p style={{ lineHeight: '3rem' }}>{hour}</p></li>
-                      </ul>
-                    ))}
-                  </div>
-                  <Button type="button" color={text.proximasFechas[index].color}>
-                    <a
-                      href="https://ironhack.typeform.com/to/K7cC3w"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-Aplicar
-                    </a>
-                  </Button>
-                </div>
-              ))}
-            </div>
-          </InnerRightDiv>
-        </RightDiv>
+        <RightDiv text={text} index={index} />
       </MainDiv>
     );
   }
