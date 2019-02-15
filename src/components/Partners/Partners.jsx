@@ -7,9 +7,9 @@ import opinator from '../../assets/img/logos/opinator.svg';
 import deliveroo from '../../assets/img/logos/deliverooLogo.png';
 import carto from '../../assets/img/logos/CARTO-logo-positive.svg';
 import playmotic from '../../assets/img/logos/playtomic_imagotipo_RGB.png';
-import bbva from '../../assets/img/logos/bbva.png';
-import spotahome from '../../assets/img/logos/spotahome.png';
-import eventbrite from '../../assets/img/logos/eventbrite.png';
+// import bbva from '../../assets/img/logos/bbva.png';
+// import spotahome from '../../assets/img/logos/spotahome.png';
+// import eventbrite from '../../assets/img/logos/eventbrite.png';
 import {
   ImgDiv, MainDiv, H2, Img, InnerDiv, ImgContainer,
 } from './style';
@@ -18,7 +18,7 @@ export default class Partners extends Component {
   constructor() {
     super();
     this.state = {
-      photos: [bbva, spotahome, eventbrite,
+      photos: [
         ironHack, campusMadrid, cabify, opinator,
         deliveroo, carto, playmotic],
     };
