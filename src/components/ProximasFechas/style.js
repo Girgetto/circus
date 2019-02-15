@@ -65,7 +65,6 @@ export const DescriptionDiv = styled.div`
 
 export const TitleDiv = styled.div`
   display: flex;
-
 `;
 
 export const OptionsDiv = styled.div`

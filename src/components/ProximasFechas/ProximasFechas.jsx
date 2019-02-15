@@ -1,21 +1,15 @@
 /* eslint-env browser */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import first from '../../assets/img/icon/first.svg';
-import second from '../../assets/img/icon/second.svg';
-import third from '../../assets/img/icon/third.svg';
-import fourth from '../../assets/img/icon/fourth.svg';
+import RightDiv from './utils/RightDiv';
+import LeftDiv from './utils/LeftDiv';
 import {
-  RightDiv, Button, Ul, SelectorDiv, DescriptionDiv,
-  TitleDiv, OptionsDiv, MainDiv, Li, H2, InnerLiDiv,
-  InnerTitleDiv, TitleDivProximoEvento, InnerRightDiv,
+  OptionsDiv, MainDiv,
 } from './style';
 
-const imgArr = [first, second, third, fourth];
 
 const divHeight = ['30rem', '45rem', '45rem', '45rem', '60rem'];
 
-const greyP = { color: 'gray', marginBottom: '0.5rem' };
 
 export default class ProximasFechas extends Component {
   constructor(props) {
@@ -56,79 +50,9 @@ export default class ProximasFechas extends Component {
           onKeyDown={this.handleKeyDown}
           onFocus={() => 0}
         >
-          <TitleDivProximoEvento>
-            <H2>{text.proximasFechasTitle}</H2>
-            <p>{text.proximasFechas[0].date}</p>
-          </TitleDivProximoEvento>
-          <Ul>
-            {text.proximasFechas.map((x, i) => (
-              <Li key={x.title} color={x.color}>
-                <InnerLiDiv id={i}>
-                  <SelectorDiv {...this.state} color={x.color} i={i} key={x.title}>
-                    <TitleDiv id={i}>
-                      <img src={imgArr[i]} alt="1" style={{ marginRight: '2rem' }} />
-                      <InnerTitleDiv {...this.state} color={x.color} i={i}>
-                        <p id={i}>{x.title}</p>
-                      </InnerTitleDiv>
-                    </TitleDiv>
-                    <DescriptionDiv id={`description${i}`} style={{ overflowY: 'scroll' }}>
-                      {text.proximasFechas[index].descriptions.map(content => (
-                        <div key={content.title} style={{ marginBottom: '2rem' }}>
-                          <p style={greyP}>{content.grey}</p>
-                          <h2 style={{ marginBottom: '2rem' }}>{content.title}</h2>
-                          <p>{content.description}</p>
-                          {content.hours && content.hours.map(hour => (
-                            <ul key={hour}>
-                              <li><p style={{ lineHeight: '3rem' }}>{hour}</p></li>
-                            </ul>
-                          ))}
-                        </div>
-                      ))}
-                      <Button type="button">
-                        <a
-                          href="https://ironhack.typeform.com/to/K7cC3w"
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-Aplicar
-                        </a>
-                      </Button>
-                    </DescriptionDiv>
-                  </SelectorDiv>
-                </InnerLiDiv>
-              </Li>
-            ))}
-          </Ul>
+          <LeftDiv text={text} index={index} this={this} />
         </OptionsDiv>
-        <RightDiv text={text} index={index}>
-          <InnerRightDiv className="translate-child">
-            <div>
-              {text.proximasFechas[index].descriptions.map(x => (
-                <div key={x.title} style={{ marginBottom: '2rem' }}>
-                  <p style={greyP}>{x.grey}</p>
-                  <h2 style={{ marginBottom: '2rem' }}>{x.title}</h2>
-                  <p>{x.description}</p>
-                  <div style={{ marginBottom: '3rem' }}>
-                    {x.hours && x.hours.map(hour => (
-                      <ul key={hour}>
-                        <li><p style={{ lineHeight: '3rem' }}>{hour}</p></li>
-                      </ul>
-                    ))}
-                  </div>
-                  <Button type="button" color={text.proximasFechas[index].color}>
-                    <a
-                      href="https://ironhack.typeform.com/to/K7cC3w"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-Aplicar
-                    </a>
-                  </Button>
-                </div>
-              ))}
-            </div>
-          </InnerRightDiv>
-        </RightDiv>
+        <RightDiv text={text} index={index} />
       </MainDiv>
     );
   }
