@@ -1,19 +1,12 @@
 /* eslint-env browser */
 import React, { Component } from 'react';
 import { Switch } from 'react-router-dom';
-import Navbar from './Navbar';
-import spainTexts from '../assets/texts/spain.json';
-import portugueseTexts from '../assets/texts/portuguese.json';
-import InsideCircus from './InsideCircus';
-import QueEsCircus from './QueEsCircus';
-import SabiasQue from './SabiasQue';
-import Fourth from './Fourth';
-import QueAprenderas from './QueAprenderas';
-import Sixth from './Sixth';
-import ProximasFechas from './ProximasFechas';
-import Partners from './Partners';
-import NewsLetter from './NewsLetter';
-import Footer from './Footer/Footer';
+import spainTexts from '../assets/languages/spain.json';
+import portugueseTexts from '../assets/languages/portuguese.json';
+import {
+  Navbar, InsideCircus, QueEsCircus, SabiasQue, Fourth, QueAprenderas,
+  Sixth, ProximasFechas, Partners, NewsLetter, Footer,
+} from '.';
 
 const components = [InsideCircus, QueEsCircus, SabiasQue, Fourth,
   QueAprenderas, Sixth, ProximasFechas, Partners, NewsLetter, Footer];
@@ -34,8 +27,6 @@ export default class App extends Component {
   getLanguage() {
     const { language } = this.state;
     switch (language) {
-      case 'es':
-        return spainTexts;
       case 'pt':
         return portugueseTexts;
       default:

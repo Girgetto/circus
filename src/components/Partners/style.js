@@ -33,6 +33,9 @@ export const H2 = styled.h2`
   font-size: 1.5vw;
   margin-top: 5rem;
   text-align: center;
+  @media(max-width:768px){
+    font-size: 5vw;
+  }
 `;
 
 export const Img = styled.img`
