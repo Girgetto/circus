@@ -9,7 +9,6 @@ export const ImgDiv = styled.div`
   width: 100%;
   display: flex; 
   flex-direction: row; 
-  margin-top: 3rem;
   flex-wrap: wrap;
   justify-content: space-around;
   @media(max-width:1024px){
@@ -20,7 +19,7 @@ export const ImgDiv = styled.div`
 `;
 
 export const MainDiv = styled.div`
-  height: 20rem;
+  height: 35rem;
   padding-bottom: 10rem;
   background-color: white;
   box-shadow: rgba(0,0,0,0.11) 0px 4px 30px;
@@ -31,6 +30,7 @@ export const MainDiv = styled.div`
 `;
 
 export const H2 = styled.h2`
+  font-size: 1.5vw;
   margin-top: 5rem;
   text-align: center;
 `;
@@ -50,7 +50,9 @@ export const InnerDiv = styled.div`
 `;
 
 export const ImgContainer = styled.div`
-  width: 75rem;
+  flex-flow: wrap;
+  width: 100%;
+  height: 125%;
   justify-content: center;
   align-items: center;
   display: flex;

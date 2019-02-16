@@ -10,6 +10,10 @@ import playmotic from '../../assets/img/logos/playtomic_imagotipo_RGB.png';
 // import bbva from '../../assets/img/logos/bbva.png';
 // import spotahome from '../../assets/img/logos/spotahome.png';
 // import eventbrite from '../../assets/img/logos/eventbrite.png';
+import elReferente from '../../assets/img/logos/elReferente.svg';
+import comunicacion from '../../assets/img/logos/comunicacion.svg';
+import whatsNew from '../../assets/img/logos/whatsNew.svg';
+import mkm from '../../assets/img/logos/mkm.svg';
 import {
   ImgDiv, MainDiv, H2, Img, InnerDiv, ImgContainer,
 } from './style';
@@ -21,11 +25,14 @@ export default class Partners extends Component {
       photos: [
         ironHack, campusMadrid, cabify, opinator,
         deliveroo, carto, playmotic],
+      photosBottom: [
+        elReferente, comunicacion, whatsNew, mkm,
+      ],
     };
   }
 
   render() {
-    const { photos } = this.state;
+    const { photos, photosBottom } = this.state;
     return (
       <MainDiv
         className="transition center shadow"
@@ -35,6 +42,18 @@ export default class Partners extends Component {
           <ImgDiv>
             <ImgContainer>
               {photos.map(image => (
+                <Img
+                  key={image}
+                  src={image}
+                  alt=""
+                />
+              ))}
+            </ImgContainer>
+          </ImgDiv>
+          <H2>Media Partners que apoyan Circus.</H2>
+          <ImgDiv>
+            <ImgContainer>
+              {photosBottom.map(image => (
                 <Img
                   key={image}
                   src={image}
