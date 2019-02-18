@@ -5,7 +5,7 @@ export const Svg = styled.svg`
 `;
 
 export const ImgDiv = styled.div`
-  height: 10rem;
+  height: 25rem;
   width: 100%;
   display: flex; 
   flex-direction: row; 
@@ -25,6 +25,7 @@ export const MainDiv = styled.div`
   box-shadow: rgba(0,0,0,0.11) 0px 4px 30px;
   transform: skewY(-5deg);
   @media(max-width:768px){
+    height: 75rem;
     transform: skewY(0deg);
   }
 `;
@@ -34,7 +35,8 @@ export const H2 = styled.h2`
   margin-top: 5rem;
   text-align: center;
   @media(max-width:768px){
-    font-size: 5vw;
+    font-size: 6vw;
+    margin-top: 10rem;
   }
 `;
 
@@ -43,6 +45,9 @@ export const Img = styled.img`
   max-width: 15vw;
   object-fit: contain;
   max-width: 10rem;
+  @media(max-width:768px){
+    width: 9rem;
+  }
 `;
 
 export const InnerDiv = styled.div`
@@ -61,8 +66,8 @@ export const ImgContainer = styled.div`
   display: flex;
   overflow: hidden;
   @media (max-width:768px) {
-    width: 19rem;
-    height: 7rem;
+    width: 100%;
+    height: 30rem;
   }
 `;
 

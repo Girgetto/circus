@@ -1,7 +1,7 @@
 {
   "navbar": 
   [
-    {"text":"¿Qué es Circus?pt", "href":"#queEsCircus", "offset":"100", "offsetM":"100"},
+    {"text":"¿Qué es Circus?", "href":"#queEsCircus", "offset":"100", "offsetM":"100"},
     {"text":"Historias", "href":"#porQueCircus", "offset":"160", "offsetM":"200"},
     {"text":"Contenido","href":"#queAprendaras", "offset":"100", "offsetM":"-50"},
     {"text":"Próximas fechas","href":"#proximasFechas", "offset":"100", "offsetM":"100"}

@@ -10,6 +10,7 @@ import {
 
 const components = [InsideCircus, QueEsCircus, SabiasQue, Fourth,
   QueAprenderas, Sixth, ProximasFechas, Partners, NewsLetter, Footer];
+
 export default class App extends Component {
   constructor(props) {
     super(props);
