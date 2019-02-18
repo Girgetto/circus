@@ -38,7 +38,7 @@ export default class Partners extends Component {
         className="transition center shadow"
       >
         <InnerDiv className="center">
-          <H2>Partners que apoyan Circus.</H2>
+          <H2>Partners que apoyan Circus</H2>
           <ImgDiv>
             <ImgContainer>
               {photos.map(image => (
@@ -50,7 +50,7 @@ export default class Partners extends Component {
               ))}
             </ImgContainer>
           </ImgDiv>
-          <H2>Media Partners que apoyan Circus.</H2>
+          <H2>Media Partners</H2>
           <ImgDiv>
             <ImgContainer>
               {photosBottom.map(image => (

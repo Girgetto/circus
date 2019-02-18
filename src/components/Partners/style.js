@@ -60,7 +60,6 @@ export const InnerDiv = styled.div`
 export const ImgContainer = styled.div`
   flex-flow: wrap;
   width: 100%;
-  height: 125%;
   justify-content: center;
   align-items: center;
   display: flex;
