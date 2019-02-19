@@ -45,6 +45,9 @@ export const Img = styled.img`
   max-width: 15vw;
   object-fit: contain;
   max-width: 10rem;
+  @media(min-width:2000px){
+    max-width: 20rem;
+  }
   @media(max-width:768px){
     width: 9rem;
   }

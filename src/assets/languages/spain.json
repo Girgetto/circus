@@ -74,5 +74,10 @@
         {"title":"Partners", "description":"BBVA, Eventbrite, Spotahome, Ironhack y más empresas a ser confirmadas"}
       ]
     }
-  ]
+  ],
+  "cookie": {
+    "p": "Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio web.",
+    "a": "Lee más",
+    "button": "Entendido!"
+  }
 }

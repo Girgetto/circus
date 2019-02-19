@@ -20,7 +20,7 @@ const lowerRow = { marginTop: '10vmin', alignItems: 'center' };
 const imgStyle = { padding: '0 1rem' };
 
 const Footer = () => (
-  <Div className="center">
+  <Div id="footer" className="center">
     <Row>
       {footer.map((x, i) => (
         <Box key={`${x + i}`}>

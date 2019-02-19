@@ -5,11 +5,11 @@ import spainTexts from '../assets/languages/spain.json';
 import portugueseTexts from '../assets/languages/portuguese.json';
 import {
   Navbar, InsideCircus, QueEsCircus, SabiasQue, Fourth, QueAprenderas,
-  Sixth, ProximasFechas, Partners, NewsLetter, Footer,
+  Sixth, ProximasFechas, Partners, NewsLetter, Footer, Cookies,
 } from '.';
 
 const components = [InsideCircus, QueEsCircus, SabiasQue, Fourth,
-  QueAprenderas, Sixth, ProximasFechas, Partners, NewsLetter, Footer];
+  QueAprenderas, Sixth, ProximasFechas, Partners, NewsLetter, Footer, Cookies];
 
 export default class App extends Component {
   constructor(props) {

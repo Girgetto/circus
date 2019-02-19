@@ -14,6 +14,8 @@ export const Box = styled.div`
 `;
 
 export const P = styled.p`
+  display: flex;
+  align-items: center;
   color:white;
   font-weight: 200 !important;
   font-size: 1rem;

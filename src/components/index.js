@@ -8,7 +8,8 @@ import Sixth from './Sixth';
 import ProximasFechas from './ProximasFechas';
 import Partners from './Partners';
 import NewsLetter from './NewsLetter';
-import Footer from './Footer/Footer';
+import Footer from './Footer';
+import Cookies from './Cookies';
 
 export {
   Navbar,
@@ -22,4 +23,5 @@ export {
   Partners,
   NewsLetter,
   Footer,
+  Cookies,
 };

@@ -53,12 +53,13 @@ export default class Partners extends Component {
           <H2>Media Partners</H2>
           <ImgDiv>
             <ImgContainer>
-              {photosBottom.map(image => (
-                <Img
-                  key={image}
-                  src={image}
-                  alt=""
-                />
+              {photosBottom.map((image, i) => (
+                <a key={image} href={i === 2 ? 'https://wwwhatsnew.com/' : '#partners'}>
+                  <Img
+                    src={image}
+                    alt=""
+                  />
+                </a>
               ))}
             </ImgContainer>
           </ImgDiv>

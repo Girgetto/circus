@@ -180,7 +180,7 @@ button:hover > a {
 	}
 
 	#insideCircus {
-		margin-bottom: -7rem;
+		margin-bottom: 0rem;
 	}
 
 	.fourth {
@@ -206,6 +206,10 @@ button:hover > a {
 	}
 
 	p {
-		line-height: 3rem;
+		line-height: 4rem;
+	}
+
+	#footer li {
+		line-height: 4rem;
 	}
 }
