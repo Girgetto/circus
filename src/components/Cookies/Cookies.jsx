@@ -20,7 +20,13 @@ export default class Cookies extends Component {
         <InnerDiv>
           <p style={{ marginRight: '1em' }}>
             {text.cookie.p}
-            <a target="_blanck" style={{ textDecoration: 'underline' }} href="https://cookiesandyou.com/">{text.cookie.a}</a>
+            <a
+              target="_blanck"
+              style={{ textDecoration: 'underline' }}
+              href="https://cookiesandyou.com/"
+            >
+              {text.cookie.a}
+            </a>
           </p>
           <Button onClick={() => this.hideCookie()}>
             {text.cookie.button}
