@@ -18,8 +18,10 @@ export default class Cookies extends Component {
     return (
       <MainDiv {...this.state}>
         <InnerDiv>
-          <p style={{ marginRight: '1em' }}>
-            {text.cookie.p}
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <p style={{ marginRight: '1em' }}>
+              {text.cookie.p}
+            </p>
             <a
               target="_blanck"
               style={{ textDecoration: 'underline' }}
@@ -27,7 +29,7 @@ export default class Cookies extends Component {
             >
               {text.cookie.a}
             </a>
-          </p>
+          </div>
           <Button onClick={() => this.hideCookie()}>
             {text.cookie.button}
           </Button>

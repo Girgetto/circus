@@ -13,6 +13,7 @@ export const MainDiv = styled.div`
 export const Button = styled.button`
   background-color: #FFF6C1;
   cursor: pointer;
+  border-radius: 20px;
 `;
 
 export const InnerDiv = styled.div`
