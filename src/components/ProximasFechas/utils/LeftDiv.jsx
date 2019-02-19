@@ -5,7 +5,7 @@ import second from '../../../assets/img/icon/second.svg';
 import third from '../../../assets/img/icon/third.svg';
 import fourth from '../../../assets/img/icon/fourth.svg';
 import {
-  Button, Ul, SelectorDiv, DescriptionDiv,
+  Ul, SelectorDiv, DescriptionDiv,
   TitleDiv, Li, H2, InnerLiDiv,
   InnerTitleDiv, TitleDivProximoEvento,
 } from '../style';
@@ -46,15 +46,14 @@ export default function LeftDiv({ text, index }) {
                       ))}
                     </div>
                   ))}
-                  <Button type="button">
-                    <a
-                      href="https://ironhack.typeform.com/to/K7cC3w"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
+                  <a
+                    className="anchor"
+                    href="https://ironhack.typeform.com/to/K7cC3w"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
 Aplicar
-                    </a>
-                  </Button>
+                  </a>
                 </DescriptionDiv>
               </SelectorDiv>
             </InnerLiDiv>

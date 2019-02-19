@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  RightDiv, InnerRightDiv, Button,
+  RightDiv, InnerRightDiv,
 } from '../style';
 
 const greyP = { color: 'gray', marginBottom: '0.5rem' };
@@ -24,15 +24,14 @@ export default function rightDiv({ text, index }) {
                     </ul>
                   ))}
                 </div>
-                <Button type="button" color={text.proximasFechas[index].color}>
-                  <a
-                    href="https://ironhack.typeform.com/to/K7cC3w"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
+                <a
+                  className="anchor"
+                  href="https://ironhack.typeform.com/to/K7cC3w"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
 Aplicar
-                  </a>
-                </Button>
+                </a>
               </div>
             ))}
           </div>

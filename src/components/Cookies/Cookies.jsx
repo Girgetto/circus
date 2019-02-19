@@ -6,17 +6,20 @@ export default class Cookies extends Component {
     super();
     this.state = {
       display: 'true',
+      remove: 'block',
     };
   }
 
   hideCookie() {
     this.setState({ display: 'false' });
+    setTimeout(() => { this.setState({ remove: 'none' }); }, 1000);
   }
 
   render() {
     const { text } = this.props;
+    const { remove } = this.state;
     return (
-      <MainDiv {...this.state}>
+      <MainDiv style={{ display: `${remove}` }} {...this.state}>
         <InnerDiv>
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <p style={{ marginRight: '1em' }}>

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Helvetica Neue;
-  src: url('./assets/fonts/HelveticaNeue.ttc');
+  font-family: "Helvetica Neue";
+  src: url("./assets/fonts/HelveticaNeue.ttf");
 }
 
 html, body, div, span, applet, object, iframe,
@@ -124,6 +124,27 @@ button:hover > a {
 .slideRight {
   transition: 8s;
   transform: translateX(30rem);
+}
+
+.anchor {
+	padding: 1rem 10vw;
+  border-radius: 20px;
+  margin-top: 2vw;
+  font-weight: 500;
+  border: 1px solid #2D293C;
+}
+
+@media (max-width: 768px) {
+	.anchor {
+		background-color: #2D293C;
+		color: white;
+	}
+}
+
+.anchor:hover {
+	transition: .3s;
+	background-color: #2D293C;
+	color: white;
 }
 
 @media(max-width: 768px) {

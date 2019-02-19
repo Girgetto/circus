@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import first from '../../assets/img/first.jpg';
 import {
-  Button, MainDiv, ImgDiv, TextDiv,
+  MainDiv, ImgDiv, TextDiv,
   TextBox, MainTitle, MainDescription, Description, Img, ButtonDiv,
 } from './style';
 
@@ -20,11 +20,9 @@ const InsideCircus = ({ text }) => (
         <Description>{text.inside3}</Description>
       </TextBox>
       <ButtonDiv>
-        <Button type="button">
-          <AnchorLink offset={() => 100} href="#proximasFechas">
-            {text.insideButton}
-          </AnchorLink>
-        </Button>
+        <AnchorLink className="anchor" offset={() => 100} href="#proximasFechas">
+          {text.insideButton}
+        </AnchorLink>
       </ButtonDiv>
     </TextDiv>
   </MainDiv>
