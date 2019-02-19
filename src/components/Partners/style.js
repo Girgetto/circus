@@ -54,6 +54,7 @@ export const Img = styled.img`
 `;
 
 export const InnerDiv = styled.div`
+  height: 100%;
   transform: skewY(5deg);
   @media (max-width:768px) {
     transform: skewY(0deg);
