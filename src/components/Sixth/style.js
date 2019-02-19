@@ -7,7 +7,6 @@ export const MainDiv = styled.div`
   transform: skewY(-5deg);
   box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 30px;
   @media(max-width:768px){
-    flex-direction: column;
     transform: skewY(0deg);
     margin-bottom: 10rem;
     .order:nth-child(1) { order: 1; }
@@ -28,6 +27,7 @@ export const RightDiv = styled.div`
 export const LeftDiv = styled.div`
   width: 100%;
   transform: skewY(5deg);
+  height: 100%;
   @media (max-width:768px) {
     transform: skewY(0deg);
   }

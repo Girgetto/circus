@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const MainDiv = styled.div`
   height: 50%;
   margin: 4vw 0.5vw;
+  @media (max-width: 768px) {
+    height: 75%;
+  }
 `;
 
 export const InnerDiv = styled.div`

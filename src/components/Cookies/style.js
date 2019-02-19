@@ -25,7 +25,7 @@ export const InnerDiv = styled.div`
     flex-direction: column;
     a {
       margin-left: .5em;
-      font-size: 3.5vw;
+      font-size: 7.5vw;
     }
   }
 `;
