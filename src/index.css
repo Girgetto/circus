@@ -252,4 +252,8 @@ button:hover > a {
 	.lower-footer-row {
 		margin-top: 30rem !important;
 	}
+
+	.sixth, .fourth {
+		height: 45rem;
+	}
 }
