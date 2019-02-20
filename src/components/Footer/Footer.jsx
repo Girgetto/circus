@@ -36,7 +36,7 @@ const Footer = () => (
         </Box>
       ))}
     </Row>
-    <Row style={lowerRow}>
+    <Row style={lowerRow} className="lower-footer-row">
       <ImgCircusDiv>
         <img src={circus} alt="" />
       </ImgCircusDiv>

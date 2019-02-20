@@ -34,7 +34,9 @@ export default class Cookies extends Component {
             </a>
           </div>
           <Button onClick={() => this.hideCookie()}>
-            {text.cookie.button}
+            <p>
+              {text.cookie.button}
+            </p>
           </Button>
         </InnerDiv>
       </MainDiv>

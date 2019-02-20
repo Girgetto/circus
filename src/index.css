@@ -222,15 +222,34 @@ button:hover > a {
 	}
 
 	a {
-		font-size: 1.5vw;
+		font-size: 1.2vw;
 		line-height: 3rem;
 	}
 
 	p {
+		font-size: 1.2vw;
 		line-height: 4rem;
+	}
+
+	h2 {
+		font-size: 2vw;
+	}
+
+	#news-letter {
+		height: 40rem;
+		margin-bottom: -10rem;
+	}
+
+	#news-letter input {
+		width: 35rem;
+		font-size: 2.2rem;
 	}
 
 	#footer li {
 		line-height: 4rem;
+	}
+
+	.lower-footer-row {
+		margin-top: 30rem !important;
 	}
 }
