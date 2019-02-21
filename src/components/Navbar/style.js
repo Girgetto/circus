@@ -19,7 +19,8 @@ export const NavbarDiv = styled.div`
   right: 0;
   left: 0;
   top: 0;
-  height: 3rem;
+  transition: .5s;
+  height: ${props => (props.isAnimation ? '2rem' : '5rem')};
   box-shadow: 0px 4px 30px rgba(0,0,0,0.11);
   @media (max-width: 768px) {
     height: 2rem;
@@ -99,4 +100,9 @@ export const ImgContainer = styled.div`
   @media(min-width: 769px) {
     margin-left: 9rem;
   }
+`;
+
+export const ImgAnimation = styled.img`
+  transition: 1s;
+  transform:${props => (props.isAnimation ? 'scale(1)' : 'scale(1.3)')};
 `;
