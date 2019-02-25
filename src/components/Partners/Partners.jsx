@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Parallax } from 'react-scroll-parallax';
 import ironHack from '../../assets/img/logos/ironHack.svg';
 import campusMadrid from '../../assets/img/logos/campusMadrid.svg';
 import cabify from '../../assets/img/logos/cabify.svg';
@@ -18,6 +19,7 @@ import {
   ImgDiv, MainDiv, H2, Img, InnerDiv, ImgContainer,
 } from './style';
 
+
 export default class Partners extends Component {
   constructor() {
     super();
@@ -34,37 +36,50 @@ export default class Partners extends Component {
   render() {
     const { photos, photosBottom } = this.state;
     return (
-      <MainDiv
-        className="transition center shadow"
+      <Parallax
+        className="custom-class"
+        offsetYMax={20}
+        offsetYMin={-20}
+        slowerScrollRate
+        tag="figure"
       >
-        <InnerDiv className="center">
-          <H2>Partners que apoyan Circus</H2>
-          <ImgDiv>
-            <ImgContainer>
-              {photos.map(image => (
-                <Img
-                  key={image}
-                  src={image}
-                  alt=""
-                />
-              ))}
-            </ImgContainer>
-          </ImgDiv>
-          <H2>Media Partners</H2>
-          <ImgDiv>
-            <ImgContainer>
-              {photosBottom.map((image, i) => (
-                <a key={image} href={i === 2 ? 'https://wwwhatsnew.com/' : '#partners'}>
+        <MainDiv
+          className="transition center shadow"
+        >
+          <InnerDiv className="center">
+            <H2>Partners que apoyan Circus</H2>
+            <ImgDiv>
+              <ImgContainer>
+                {photos.map(image => (
                   <Img
+                    key={image}
                     src={image}
                     alt=""
                   />
-                </a>
-              ))}
-            </ImgContainer>
-          </ImgDiv>
-        </InnerDiv>
-      </MainDiv>
+                ))}
+              </ImgContainer>
+            </ImgDiv>
+            <H2>Media Partners</H2>
+            <ImgDiv>
+              <ImgContainer>
+                {photosBottom.map((image, i) => (
+                  <a
+                    key={image}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={i === 2 ? 'https://wwwhatsnew.com/' : '#partners'}
+                  >
+                    <Img
+                      src={image}
+                      alt=""
+                    />
+                  </a>
+                ))}
+              </ImgContainer>
+            </ImgDiv>
+          </InnerDiv>
+        </MainDiv>
+      </Parallax>
     );
   }
 }

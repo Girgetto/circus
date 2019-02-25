@@ -5,6 +5,7 @@ import {
   MainDiv, LeftDiv, CircleDiv,
 } from './style';
 
+
 export default class Sixth extends Component {
   constructor(props) {
     super(props);
@@ -26,6 +27,7 @@ export default class Sixth extends Component {
     const { counter } = this.state;
     const { text } = this.props;
     return (
+
       <MainDiv
         className="transition sixth"
       >
@@ -48,6 +50,7 @@ export default class Sixth extends Component {
           </div>
         </LeftDiv>
       </MainDiv>
+
     );
   }
 }
