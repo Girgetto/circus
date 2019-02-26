@@ -23,9 +23,13 @@ export const InnerDiv = styled.div`
   align-items: center;
   @media(max-width: 768px) {
     flex-direction: column;
+    p {
+      width: 65%;
+    }
+
     a {
       margin-left: .5em;
-      font-size: 7.5vw;
+      font-size: 5.5vw;
     }
   }
 `;
