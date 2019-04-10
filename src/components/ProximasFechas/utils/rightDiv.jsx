@@ -23,6 +23,15 @@ export default function rightDiv({ text, index }) {
                       <li><p style={{ lineHeight: '3rem' }}>{hour}</p></li>
                     </ul>
                   ))}
+                  <ul>
+                    {x.points && x.points.map(point => (
+                      <li key={point}>
+•
+                        {' '}
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
                 <a
                   className="anchor"

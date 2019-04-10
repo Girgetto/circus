@@ -8,7 +8,7 @@ import {
 } from './style';
 
 
-const divHeight = ['30rem', '45rem', '45rem', '45rem', '60rem'];
+const divHeight = ['45rem', '45rem', '45rem', '45rem', '60rem'];
 
 
 export default class ProximasFechas extends Component {

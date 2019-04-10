@@ -44,6 +44,15 @@ export default function LeftDiv({ text, index }) {
                           <li><p style={{ lineHeight: '3rem' }}>{hour}</p></li>
                         </ul>
                       ))}
+                      <ul>
+                        {content.points && content.points.map(point => (
+                          <li key={point}>
+•
+                            {' '}
+                            {point}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   ))}
                   <a

@@ -33,8 +33,17 @@ body {
 	line-height: 1;
 }
 ol, ul {
+	font-family: Helvetica Neue;
+	line-height: 2rem;
+	font-size: 1.4vw;
+	color: #000;
 	list-style: none;
 }
+
+li {
+	font-size: 1.4vw;
+}
+
 blockquote, q {
 	quotes: none;
 }
@@ -150,6 +159,10 @@ button:hover > a {
 @media(max-width: 768px) {
 	a {
 		font-size: 4.5vw;
+	}
+
+	li {
+		font-size: 3vw;
 	}
 
 	img {

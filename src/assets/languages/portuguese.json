@@ -48,30 +48,30 @@
     "Xue Ying Dong Wu - HR Specialist Inspiralia",
     "Francisco Mora-Figueroa - Senior Manager Financial Services Minsait"
   ],
-  "proximasFechasTitle": "Próximo evento",
+  "proximasFechasTitle": "Aprende más",
   "proximasFechas":[
-    { "color": "rgb(245, 200, 205)", "date":"16 - 17 Marzo", "title":"Información general",
+    { "color": "rgb(245, 200, 205)", "date":"", "title":"Información general",
       "descriptions": 
       [
-        {"grey":"16 - 17 de Marzo || Madrid","title":"Información general","hours":["Fecha: 16 y 17 de Marzo","Lugar: La Nave, Calle Cifuentes, 5 28021 Madrid", "Transporte Disponible: Cercanías, Bus, Metro"]}
+        {"grey":"","title":"Certificado habilidades digitales","hours":["El certificado se obtiene mediante la participación de los tres eventos, Discover, Define y Build. Cada evento le aporta al participante competencias diferentes en torno al mundo digital ¿Porque completarlo?"], "points":["Permite validar lo que has aprendido en Circus", "Puedes participar en los eventos en el orden que quieras, ya que son independientes unos de otros.", "Desarrollarás competencias que te permitirán trabajar mejor en un entorno digital"]}
       ]
     },
-    { "color": "#FFF6C1", "date":"16 - 17 Marzo","title":"Día 1",
+    { "color": "#FFF6C1", "date":"16 - 17 Marzo","title":"Discover",
       "descriptions": 
       [
-        {"title":"Día 1","hours": ["10:00 - 10:15 Introducción y Bienvenida","10:15 - 11:00 Innovación y Disrupción Digital - Ignacio Villoch BBVA","11:15 - 12:00 Internet 101: Todo lo que necesitas saber - Emilio García Eventbrite","12:10 - 13:00 Tech Team: Perfiles que se necesitan y día a día - Tech Team Spotahome", "13:00 - 14:30 Comida", "Tarde", "Elige tu track", "14:30 - 15:30 Case Studies de transformación digital por Industria", "15:30 - 16:00 Q&A", "16:00 Finalización y Networking"]}
+        {"title":"Discover","hours": ["Comenzaremos de cero explicándote el funcionamiento de internet, qué roles existen dentro de un equipo técnico, qué son los datos y cómo automatizar tareas por medio de la tecnología. Todo lo necesario para que adaptes tu perfil al mundo digital."]}
       ]
     },
-    { "color": "rgb(185, 233, 228)", "date":"16 - 17 Marzo","title":"Día 2",
+    { "color": "rgb(185, 233, 228)", "date":"16 - 17 Marzo","title":"Define",
       "descriptions": 
       [
-        {"title":"Día 2","hours": ["Elige tu track: Programa una Landing page o Diseña un prototipo de app","10:00 - 10:15 Introducción","10:15 - 11:40 Workshop Parte 1","11:40 - 13:30 Ejercicio Individual", "13:30 - 14:30 Comida", "14:30 - 15:30 Workshop Parte 2", "15:30 - 17:30 Proyecto Individual"]}
+        {"title":"Define","hours": ["Durante un taller de un día, tendrás una visión general de lo que es “Design Thinking”, como son los pasos a la hora de diseñar un prototipo de app y experimentar con herramientas de diseño. Es necesario que traigas tu ordenador."]}
       ]
     },
-    { "color": "rgb(202, 223, 255)", "date":"16 - 17 Marzo","title":"Partners",
+    { "color": "rgb(202, 223, 255)", "date":"16 - 17 Marzo","title":"Build",
       "descriptions": 
       [
-        {"title":"Partners", "description":"BBVA, Eventbrite, Spotahome, Ironhack y más empresas a ser confirmadas"}
+        {"title":"Build", "description":"Aprende cómo funcionan las páginas web en este taller práctico en el que te introducirán en HTML, CSS y Javascript los elementos necesarios para realizar tu primera página web. Es necesario que traigas tu ordenador."}
       ]
     }
   ],
